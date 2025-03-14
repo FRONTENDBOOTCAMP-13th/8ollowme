@@ -20,26 +20,47 @@
   /* 글자 크기 */
 
   /* 헤딩 */
-  --font-h-m: 16px; /* 16px */
-  --font-h-l: 21.33px; /* 21.33px */
-  --font-h-xl: 28.43px; /* 28.43px */
-  --font-h-2xl: 37.9px; /* 37.9px */
-  --font-h-3xl: 50.52px; /* 50.52px */
+  --font-h-m: 1rem; /* 16px */
+  --font-h-l: 1.3331rem; /* 21.33px */
+  --font-h-xl: 1.7769rem; /* 28.43px */
+  --font-h-2xl: 2.3687rem; /* 37.9px */
+  --font-h-3xl: 3.1575rem; /* 50.52px */
 
   /* 레이블 */
-  --font-l-s: 12px; /* 12px */
-  --font-l-m: 16px; /* 16px */
-  --font-l-l: 21.33px; /* 21.33px */
-  --font-l-xl: 28.43px; /* 28.43px */
-  --font-l-xxl: 37.9px; /* 37.9px */
+  --font-l-s: 0.75rem; /* 12px */
+  --font-l-m: 1rem; /* 16px */
+  --font-l-l: 1.3331rem; /* 21.33px */
+  --font-l-xl: 1.7769rem; /* 28.43px */
+  --font-l-xxl: 2.3687rem; /* 37.9px */
 
   /* 본문 */
-  font-p-s: 12px; /* 12px */
-  font-p-m: 16px; /* 16px */
-  font-p-l: 21.33px; /* 21.33px */
-  font-p-xl: 28.43px; /* 28.43px */
+  font-p-s: 0.75rem; /* 12px */
+  font-p-m: 1rem; /* 16px */
+  font-p-l: 1.3331rem; /* 21.33px */
+  font-p-xl: 1.7769rem; /* 28.43px */
 
   /* 색상 */
-  --primary-color: #fecee0;
-  --secondary-color: #f9e8ee;
+  --pink-100: #fff4f7;
+  --pink-200: #ffdae4;
+  --pink-300: #ffc0d1;
+  --pink-400: #fea6be;
+  --pink-500: #fecee0; /* pink color */
+  --pink-600: #e5b9ca;
+  --pink-700: #cc9eb3;
+  --pink-800: #b3849d;
+  --pink-900: #996b86;
+
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+
+  --white: #fff;
+  --black: #121212;
+  --red: #ff0000;
 }
