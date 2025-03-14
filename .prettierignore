@@ -1,0 +1,14 @@
+# 포멧팅 제외
+# node_modules 폴더 무시
+node_modules/
+
+# 빌드 폴더 무시
+dist/
+build/
+
+# 특정 파일 무시
+*.min.js
+*.log
+
+# 특정 디렉토리 및 하위 파일 무시
+coverage/
