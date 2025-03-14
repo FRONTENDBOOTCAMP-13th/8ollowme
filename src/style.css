@@ -1,6 +1,45 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
   --font-sans: "Pretendard Variable", sans-serif;
 
+  /* 여백 (4px 규칙) */
+  --spacing-1: 4px; /* 4px */
+  --spacing-2: 8px; /* 8px */
+  --spacing-3: 12px; /* 12px */
+  --spacing-4: 16px; /* 16px */
+  --spacing-5: 20px; /* 20px */
+  --spacing-6: 24px; /* 24px */
+  --spacing-7: 28px; /* 28px */
+  --spacing-8: 32px; /* 32px */
+  --spacing-9: 36px; /* 36px */
+  --spacing-10: 40px; /* 40px */
+  --spacing-11: 44px; /* 44px */
+  --spacing-12: 48px; /* 48px */
+
+  /* 글자 크기 */
+
+  /* 헤딩 */
+  --font-h-m: 16px; /* 16px */
+  --font-h-l: 21.33px; /* 21.33px */
+  --font-h-xl: 28.43px; /* 28.43px */
+  --font-h-2xl: 37.9px; /* 37.9px */
+  --font-h-3xl: 50.52px; /* 50.52px */
+
+  /* 레이블 */
+  --font-l-s: 12px; /* 12px */
+  --font-l-m: 16px; /* 16px */
+  --font-l-l: 21.33px; /* 21.33px */
+  --font-l-xl: 28.43px; /* 28.43px */
+  --font-l-xxl: 37.9px; /* 37.9px */
+
+  /* 본문 */
+  font-p-s: 12px; /* 12px */
+  font-p-m: 16px; /* 16px */
+  font-p-l: 21.33px; /* 21.33px */
+  font-p-xl: 28.43px; /* 28.43px */
+
+  /* 색상 */
+  --primary-color: #fecee0;
+  --secondary-color: #f9e8ee;
 }
