@@ -34,17 +34,17 @@
   --font-l-xxl: 2.3687rem; /* 37.9px */
 
   /* 본문 */
-  font-p-s: 0.75rem; /* 12px */
-  font-p-m: 1rem; /* 16px */
-  font-p-l: 1.3331rem; /* 21.33px */
-  font-p-xl: 1.7769rem; /* 28.43px */
+  --font-p-s: 0.75rem; /* 12px */
+  --font-p-m: 1rem; /* 16px */
+  --font-p-l: 1.3331rem; /* 21.33px */
+  --font-p-xl: 1.7769rem; /* 28.43px */
 
   /* 색상 */
   --pink-100: #fff4f7;
   --pink-200: #ffdae4;
   --pink-300: #ffc0d1;
   --pink-400: #fea6be;
-  --pink-500: #fecee0; /* pink color */
+  --pink-500: #fecee0; /* primary color */
   --pink-600: #e5b9ca;
   --pink-700: #cc9eb3;
   --pink-800: #b3849d;
