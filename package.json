@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "scripts": {
-      "format": "prettier --write . --ignore-path .gitignore"
-    },
+    "format": "prettier --write . --ignore-path .gitignore",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
