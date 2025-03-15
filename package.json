@@ -17,5 +17,58 @@
     "prettier": "^3.5.3",
     "tailwindcss": "^4.0.13",
     "vite": "^6.2.1"
-  }
+  },
+  "gitmoji.onlyUseCustomEmoji": true,
+  "gitmoji.addCustomEmoji": [
+    {
+      "emoji": "🎉",
+      "code": ":init:",
+      "description": "초기 설정"
+    },
+    {
+      "emoji": "✨",
+      "code": ":feat:",
+      "description": "기능 추가, 변경"
+    },
+    {
+      "emoji": "🔥",
+      "code": ":remove:",
+      "description": "파일이나 코드 삭제"
+    },
+    {
+      "emoji": "🐛",
+      "code": ":fix:",
+      "description": "버그, 오류 수정"
+    },
+    {
+      "emoji": "📝",
+      "code": ":docs:",
+      "description": "readme.md, json 파일 등 수정, 라이브러리 설치 (문서 관련, 코드 수정 없음)"
+    },
+    {
+      "emoji": "💄",
+      "code": ":style:",
+      "description": "CSS 등 사용자 UI 디자인 변경 (제품 코드 수정 발생, 코드 형식, 정렬, 주석 등의 변경)"
+    },
+    {
+      "emoji": "♻️",
+      "code": ":refactor:",
+      "description": "코드 리팩토링"
+    },
+    {
+      "emoji": "🧪",
+      "code": ":test:",
+      "description": "테스트 코드 추가, 삭제, 변경 등 (코드 수정 없음, 테스트 코드에 관련된 모든 변경에 해당)"
+    },
+    {
+      "emoji": "🐎",
+      "code": ":ci:",
+      "description": "npm 모듈 설치 등"
+    },
+    {
+      "emoji": "🐳",
+      "code": ":chore:",
+      "description": "패키지 매니저 설정할 경우, etc 등"
+    }
+  ]
 }

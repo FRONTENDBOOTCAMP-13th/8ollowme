@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>login-setting-follow</title>
+    <link rel="icon" href="/assets/favicon.svg" />
+    <link rel="preload" as="font" href="/public/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/components/login/login.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="max-w-md w-full p-6">
+      <!-- 아이디 -->
+      <div class="mb-4">
+        <input
+          type="text"
+          placeholder="아이디를 입력해주세요"
+          class="w-full h-12 px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2"
+        />
+      </div>
+
+      <!-- 비밀번호 -->
+      <div class="mb-4">
+        <input
+          type="password"
+          placeholder="비밀번호를 입력해주세요"
+          class="w-full h-12 px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2"
+        />
+      </div>
+
+      <!-- 회원가입 아이디, 비밀번호 입력창 -->
+      <div class="mb-4">
+        <label for="confirm" class="block text-black text-sm mb-1"
+          >텍스트 확인</label
+        >
+        <input
+          type="password"
+          placeholder="비밀번호를 입력해주세요"
+          class="w-full h-12 px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2"
+        />
+      </div>
+
+      <!-- 로그인 버튼 -->
+      <button
+        class="w-full h-12 bg-black text-white rounded-lg font-semibold hover:bg-gray-200 transition mb-4"
+      >
+        로그인
+      </button>
+
+      <!-- 회원가입 버튼 -->
+      <button
+        class="w-full h-12 border border-black text-whit e rounded-lg font-semibold hover:bg-gray-800 transition mb-4"
+      >
+        회원가입
+      </button>
+
+      <!-- 검색창 + 돋보기버튼 -->
+      <div class="mb-4 relative">
+        <input
+          type="search"
+          placeholder="원하는 지역을 검색해 보세요"
+          class="w-full h-12 px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2"
+        />
+        <button class="absolute right-4 inset-y-0 flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-600 hover:text-black transition"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- 이대로 저장 버튼 -->
+      <button
+        class="w-full h-12 bg-black text-white rounded-lg font-semibold hover:bg-gray-200 transition mb-4 flex items-center justify-center gap-2"
+      >
+        <!-- 연필 아이콘 -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 text-white"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M12 20h9" />
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z" />
+        </svg>
+        이대로 저장할래요
+      </button>
+
+      <!-- 지역 선택탭 -->
+      <div>
+        <div
+          class="mb-4 select-box w-full p-4 h-16 flex items-center justify-between rounded-lg bg-gray-200 text-black border border-gray-300 transition"
+        >
+          <div>
+            <p class="text-sm text-gray-600">함께 추천하는</p>
+            <p class="text-lg font-bold">부천역</p>
+          </div>
+          <!-- 플러스 아이콘 -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-500"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </div>
+
+        <!-- 선택됨 -->
+        <div
+          class="mb-4 select-box w-full p-4 h-16 flex items-center justify-between rounded-lg bg-black text-white border border-gray-700 transition"
+        >
+          <div>
+            <p class="text-sm">함께 추천하는</p>
+            <p class="text-lg font-bold">부천역</p>
+          </div>
+          <!-- 체크 아이콘 -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 관심지역카드 -->
+      <div class="card">
+        <!-- 미선택 상태 -->
+        <div
+          class="mb-4 w-24 h-24 flex flex-col items-center justify-between p-3 rounded-lg border transition bg-gray-200 text-black border-gray-300 relative"
+        >
+          <!-- 이미지 -->
+          <div class="w-12 h-12 rounded-full overflow-hidden bg-amber-300">
+            <img
+              src="https://source.unsplash.com/100x100/?city"
+              alt="지역 이미지"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- 텍스트 -->
+          <p class="text-sm font-semibold">제주도</p>
+
+          <!-- 플러스 아이콘 -->
+          <div class="absolute top-2 right-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-500"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+        </div>
+
+        <!-- 선택 상태 -->
+        <div
+          class="w-24 h-24 flex flex-col items-center justify-between p-3 rounded-lg border transition bg-gray-900 text-white border-gray-700 relative"
+        >
+          <!-- 이미지 -->
+          <div class="w-12 h-12 rounded-full overflow-hidden bg-amber-300">
+            <img
+              src="https://source.unsplash.com/100x100/?city"
+              alt="지역 이미지"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- 텍스트 -->
+          <p class="text-sm font-semibold">제주도</p>
+
+          <!-- 체크 아이콘 -->
+          <div class="absolute top-2 right-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-white"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+    </div>
+  </body>
+</html>

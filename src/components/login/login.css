@@ -1,0 +1,5 @@
+@import "../../style.css";
+
+body {
+  background-color: var(--white);
+}
