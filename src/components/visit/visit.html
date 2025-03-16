@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Re:8lace - visit component</title>
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 미랑컬헤어 상동점 -->
+    <article class="bg-white p-space-4 w-80 h-[5.375rem]">
+      <div class="flex justify-between items-end w-[18.25rem] h-6">
+        <span class="text-label-s font-bold">미랑컬헤어 상동점</span>
+        <svg width="24" height="24" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5 10.5L7 7M7 7L3.5 3.5M7 7L10.5 3.5M7 7L3.5 10.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+        <time datetime="2023-1-18" class="-my-0.5 block text-phrase-s text-gray-600">2023.1.18 (수) 9번째 방문</time>
+        <p class="text-phrase-s text-gray-700">인봉 실장</p>
+    </article>
+
+    <!-- '이런 곳 좋아요!' -->
+     <article class="bg-white w-80 h-[12.3125rem] py-space-10 px-[4.625rem] flex flex-col flex-nowrap items-center text-center">
+        <p class="text-label-m font-bold">이 곳이 마음에 든다면,</p>
+        <p class="text-phrase-s text-gray-600 my-space-2 whitespace-nowrap">'좋아요' 누르고 취향이 비슷한 사람을 <br />추천받으세요.</p>
+        <div class="keyword-style w-[8.0625rem] px-space-5 gap-space-1">
+          <p>❤️️</p>
+          <span class="text-label-s text-white font-bold whitespace-nowrap">이런 곳 좋아요!</span>
+        </div>
+    </article>
+
+    <!-- 어떤 점이 좋았나요? -->
+     <article class="bg-gray-50 w-80 h-[6.125rem] py-space-6 px-[3.8125rem] flex flex-col items-center text-center">
+      <p class=" font-bold text-label-m mb-space-2 whitespace-nowrap">어떤 점이 좋았나요? (1개~5개)</p>
+      <p class="text-label-s text-gray-500 whitespace-nowrap">이 장소에 어울리는 키워드를 골라주세요.</p>
+    </article>
+
+    <!-- 키워드 -->
+    <article class="flex flex-col gap-space-2 w-[11.3125rem] my-space-2">
+      <div class="keyword-style">
+        <p>💚</p>
+        <span class="text-style">원하는 스타일로 잘해줘요</span>
+      </div>
+      <div class="keyword-style w-[10.6875rem]">
+        <p>✨</p>
+        <span class="text-style">스타일 추천을 잘해줘요</span>
+      </div>
+      <div class="keyword-style w-[7.75rem]">
+        <p>💇‍♀️</p>
+        <span class="text-style">고급스러워요</span>
+      </div>
+      <div class="keyword-style bg-gray-50 w-[7.0625rem]">
+        <p>😎</p>
+        <span class="text-style text-gray-600">트렌디해요</span>
+      </div>
+    </article>
+
+    <!-- 리뷰를 남겨주세요 -->
+     <article class="w-72 h-[16.5625rem] flex flex-col gap-space-4 items-center mt-[2.125rem] mb-[1.375rem]">
+        <p class="text-label-m font-bold">리뷰를 남겨주세요</p>
+        <button type="button" class="text-label-s border font-bold w-[8.75rem] h-[2.625rem] py-space-3 px-space-3 rounded-sm flex flex-col flex-wrap content-center gap-space-1">
+          <img src="/src/assets/Icon/photo.svg" alt="사진 추가하기" class="w-[1.125rem] h-[1.125rem]"/>
+          사진추가
+          <span class="text-gray-600">최대 20장</span>
+        </button>
+        <div class="bg-gray-50 text-phrase-s py-6 px-3 w-[17.9375rem] h-[6.8125rem] rounded-lg">
+          <p class="text-gray-500">리뷰 작성하기</p>
+          <p class="text-gray-600">진짜 맨날 근처오면 와서 4-5개씩은 <br />사가는 곳입니다. 비건디저트 특유...</p>
+          <p class="text-right">0<span class="text-gray-500">/400</span></p>
+        </div>  
+
+        <div class="text-label-s w-[18rem] h-[2.625rem] flex items-center justify-between">
+          <a href="/" class="underline">리뷰 작성 유의사항</a>
+          <button type="submit" class="bg-pink-500 w-[6.125rem] h-[2.625rem] text-white font-bold rounded-sm">등록하기</button>
+        </div>
+     </article>
+  </body>
+</html>
