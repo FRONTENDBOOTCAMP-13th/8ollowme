@@ -40,15 +40,11 @@
   --text-phrase-xl: 1.7769rem; /* 28.43px */
 
   /* 색상 */
-  --color-pink-100: #fff4f7;
-  --color-pink-200: #ffdae4;
-  --color-pink-300: #ffc0d1;
-  --color-pink-400: #fea6be;
-  --color-pink-500: #fecee0; /* primary color */
-  --color-pink-600: #e5b9ca;
-  --color-pink-700: #cc9eb3;
-  --color-pink-800: #b3849d;
-  --color-pink-900: #996b86;
+  --color-primary-color: #fecee0;
+  --color-secondary-color: #ffb6c1;
+  --color-tertiary-color: #ffe4e1;
+  --color-text-default: #5c3d2e;
+  --color-hover-color: #f29caa;
 
   --color-gray-50: #f9f9f9;
   --color-gray-100: #f8f9fa;
@@ -100,4 +96,25 @@
 }
 .icon-box-48 {
   @apply flex items-center justify-center w-12 h-12;
+}
+
+@layer components {
+  .keyword-style {
+    @apply w-[11.3125rem] h-[2.4375rem] py-[.625rem] px-[1.125rem] bg-primary-color flex items-center justify-center rounded-sm;
+  }
+  .text-style {
+    @apply text-label-s text-white font-bold whitespace-nowrap;
+  }
+}
+
+@layer components {
+  .img-box {
+    @apply w-[111px] h-[111px] bg-gray-600 flex flex-col items-center justify-center;
+  }
+  .text-top {
+    @apply text-[var(--font-p-s)] text-gray-700;
+  }
+  .text-bottom {
+    @apply text-[var(--font-p-m)] text-gray-700;
+  }
 }
