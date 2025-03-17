@@ -1,59 +1,62 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Pretendard Variable', sans-serif;
+  --text-sans: 'Pretendard Variable', sans-serif;
 
   /* 여백 (4px 규칙) */
-  --spacing-1: 0.25rem; /* 4px */
-  --spacing-2: 0.5rem; /* 8px */
-  --spacing-3: 0.75rem; /* 12px */
-  --spacing-4: 1rem; /* 16px */
-  --spacing-5: 1.25rem; /* 20px */
-  --spacing-6: 1.5rem; /* 24px */
-  --spacing-7: 1.75rem; /* 28px */
-  --spacing-8: 2rem; /* 32px */
-  --spacing-9: 2.25rem; /* 36px */
-  --spacing-10: 2.5rem; /* 40px */
-  --spacing-11: 2.75rem; /* 44px */
-  --spacing-12: 3rem; /* 48px */
+  --spacing-space-1: 0.25rem; /* 4px */
+  --spacing-space-2: 0.5rem; /* 8px */
+  --spacing-space-3: 0.75rem; /* 12px */
+  --spacing-space-4: 1rem; /* 16px */
+  --spacing-space-5: 1.25rem; /* 20px */
+  --spacing-space-6: 1.5rem; /* 24px */
+  --spacing-space-7: 1.75rem; /* 28px */
+  --spacing-space-8: 2rem; /* 32px */
+  --spacing-space-9: 2.25rem; /* 36px */
+  --spacing-space-10: 2.5rem; /* 40px */
+  --spacing-space-11: 2.75rem; /* 44px */
+  --spacing-space-12: 3rem; /* 48px */
 
   /* 글자 크기 */
 
   /* 헤딩 */
-  --font-h-m: 1rem; /* 16px */
-  --font-h-l: 1.3331rem; /* 21.33px */
-  --font-h-xl: 1.7769rem; /* 28.43px */
-  --font-h-2xl: 2.3687rem; /* 37.9px */
-  --font-h-3xl: 3.1575rem; /* 50.52px */
+  --text-head-m: 1rem; /* 16px */
+  --text-head-l: 1.3331rem; /* 21.33px */
+  --text-head-xl: 1.7769rem; /* 28.43px */
+  --text-head-2xl: 2.3687rem; /* 37.9px */
+  --text-head-3xl: 3.1575rem; /* 50.52px */
 
   /* 레이블 */
-  --font-l-s: 0.75rem; /* 12px */
-  --font-l-m: 1rem; /* 16px */
-  --font-l-l: 1.3331rem; /* 21.33px */
-  --font-l-xl: 1.7769rem; /* 28.43px */
-  --font-l-xxl: 2.3687rem; /* 37.9px */
+  --text-label-s: 0.75rem; /* 12px */
+  --text-label-m: 1rem; /* 16px */
+  --text-label-l: 1.3331rem; /* 21.33px */
+  --text-label-xl: 1.7769rem; /* 28.43px */
+  --text-label-xxl: 2.3687rem; /* 37.9px */
 
   /* 본문 */
-  --font-p-s: 0.75rem; /* 12px */
-  --font-p-m: 1rem; /* 16px */
-  --font-p-l: 1.3331rem; /* 21.33px */
-  --font-p-xl: 1.7769rem; /* 28.43px */
+  --text-phrase-s: 0.75rem; /* 12px */
+  --text-phrase-m: 1rem; /* 16px */
+  --text-phrase-l: 1.3331rem; /* 21.33px */
+  --text-phrase-xl: 1.7769rem; /* 28.43px */
 
   /* 색상 */
-  --primary-color: #fecee0; /* primary color */
+  --primary-color: #fecee0;
   --secondary-color: #ffb6c1;
+  --tertiary-color: #ffe4e1;
+  --text-default: #5c3d2e;
+  --hover-color: #f29caa;
 
-  --gray-100: #f8f9fa;
-  --gray-200: #e9ecef;
-  --gray-300: #dee2e6;
-  --gray-400: #ced4da;
-  --gray-500: #adb5bd;
-  --gray-600: #6c757d;
-  --gray-700: #495057;
-  --gray-800: #343a40;
-  --gray-900: #212529;
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
 
-  --white: #fff;
-  --black: #121212;
-  --red: #ff0000;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: #ff0000;
 }
