@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>- Tailwind CSS</title>
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="w-screen flex flex-col gap-4 p-4">
+    <!--          section: coupon header section          -->
+    <section class="components-section bg-gray-200">
+      <!--          follow: coupon header component          -->
+      <header class="flex justify-start items-center gap-2 px-2 py-1 bg-white min-w-[320px]">
+        <div class="icon-box-32">
+          <img src="../../assets/icons/left.svg" alt="" class="icon" />
+        </div>
+        <span class="text-label-m font-bold">내 쿠폰함</span>
+      </header>
+    </section>
+
+    <!--          section: filter button section          -->
+    <section class="components-section">
+      <!--          follow: icon button component          -->
+      <button class="filter-btn default">
+        <div class="icon-box-18">
+          <img src="../../assets/icons/down-gray.svg" alt="down버튼" />
+        </div>
+        <span>가까운 순</span>
+      </button>
+      <!--          follow: default button component          -->
+      <button class="filter-btn default">
+        <span>예약 0</span>
+      </button>
+      <!--          follow: active button component          -->
+      <button class="filter-btn active">
+        <span>사용완료 2</span>
+      </button>
+    </section>
+
+    <!--          section: coupon section          -->
+    <section class="components-section bg-gray-200">
+      <!--          follow: used coupon component          -->
+      <article class="min-w-[293px] flex items-center">
+        <div class="flex py-3 px-2.5 gap-2.5 items-center justify-center bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] max-w-[236px] rounded-[4px]">
+          <div class="icon-box-34 p-2 rounded-[8px] bg-primary-color">
+            <img src="../../assets/icons/gift.svg" alt="선물 아이콘" class="icon" />
+          </div>
+          <div class="flex-1 max-w-[172px]">
+            <p class="truncate text-secondary-color text-label-s font-semibold">아이클리닉 인천부평 아이폰 수리센터</p>
+            <p class="truncate text-label-s font-semibold">강화 유리필름 & 케이스 쿠폰</p>
+            <p class="truncate text-phrase-s leading-[1.6] text-contents-contentTertiary">유효 기간 없음</p>
+          </div>
+        </div>
+        <button class="flex flex-col items-center justify-center py-5 px-4.5 rounded-lg bg-primary-color shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] hover:bg-hover-color">
+          <span class="text-label-s font-semibold text-white">쿠폰<br />사용</span>
+        </button>
+      </article>
+      <!--          follow: unused coupon component          -->
+      <article class="min-w-[293px] flex items-center">
+        <div class="flex py-3 px-2.5 gap-2.5 items-center justify-center bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] max-w-[236px] rounded-[4px]">
+          <div class="icon-box-34 p-2 rounded-[8px] bg-contents-contentTertiary">
+            <img src="../../assets/icons/gift.svg" alt="선물 아이콘" class="icon" />
+          </div>
+          <div class="flex-1 max-w-[172px]">
+            <p class="truncate text-contents-contentSecondary text-label-s font-semibold">아이클리닉 인천부평 아이폰 수리센터</p>
+            <p class="truncate text-contents-contentSecondary text-label-s font-semibold">강화 유리필름 & 케이스 쿠폰</p>
+            <p class="truncate text-phrase-s leading-[1.6] text-contents-contentTertiary">유효 기간 없음</p>
+          </div>
+        </div>
+        <button class="flex flex-col items-center justify-center py-4.5 px-2 rounded-lg bg-gray-50 border-l border-dashed border-gray-300 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)]">
+          <div class="icon-box-24">
+            <img src="../../assets/icons/check-gray.svg" alt="체크 아이콘" />
+          </div>
+          <span class="text-label-s font-semibold text-contents-contentTertiary">사용완료</span>
+        </button>
+      </article>
+    </section>
+  </body>
+</html>
