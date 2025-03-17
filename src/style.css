@@ -60,3 +60,12 @@
   --color-black: #000;
   --color-red: #ff0000;
 }
+
+@layer components {
+  .keyword-style {
+    @apply w-[11.3125rem] h-[2.4375rem] py-[.625rem] px-[1.125rem] bg-primary-color flex items-center justify-center rounded-sm;
+  }
+  .text-style {
+    @apply text-label-s text-white font-bold whitespace-nowrap;
+  }
+}
