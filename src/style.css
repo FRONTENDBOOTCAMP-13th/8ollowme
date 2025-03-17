@@ -69,3 +69,15 @@
     @apply text-label-s text-white font-bold whitespace-nowrap;
   }
 }
+
+@layer components {
+  .img-box {
+    @apply w-[111px] h-[111px] bg-gray-600 flex flex-col items-center justify-center;
+  }
+  .text-top {
+    @apply text-[var(--font-p-s)] text-gray-700;
+  }
+  .text-bottom {
+    @apply text-[var(--font-p-m)] text-gray-700;
+  }
+}
