@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  --text-sans: 'Pretendard Variable', sans-serif;
+  --font-sans: 'Pretendard Variable', sans-serif;
 
   /* 여백 (4px 규칙) */
   --spacing-space-1: 0.25rem; /* 4px */
@@ -20,7 +20,7 @@
   /* 글자 크기 */
 
   /* 헤딩 */
-  --text-head-m: 1rem; /* 16px */
+  --text-16: 1rem; /* 16px */
   --text-head-l: 1.3331rem; /* 21.33px */
   --text-head-xl: 1.7769rem; /* 28.43px */
   --text-head-2xl: 2.3687rem; /* 37.9px */
@@ -40,12 +40,17 @@
   --text-phrase-xl: 1.7769rem; /* 28.43px */
 
   /* 색상 */
-  --primary-color: #fecee0;
-  --secondary-color: #ffb6c1;
-  --tertiary-color: #ffe4e1;
-  --text-default: #5c3d2e;
-  --hover-color: #f29caa;
+  --color-pink-100: #fff4f7;
+  --color-pink-200: #ffdae4;
+  --color-pink-300: #ffc0d1;
+  --color-pink-400: #fea6be;
+  --color-pink-500: #fecee0; /* primary color */
+  --color-pink-600: #e5b9ca;
+  --color-pink-700: #cc9eb3;
+  --color-pink-800: #b3849d;
+  --color-pink-900: #996b86;
 
+  --color-gray-50: #f9f9f9;
   --color-gray-100: #f8f9fa;
   --color-gray-200: #e9ecef;
   --color-gray-300: #dee2e6;
@@ -59,4 +64,40 @@
   --color-white: #fff;
   --color-black: #000;
   --color-red: #ff0000;
+
+  --color-primary: #171f31;
+  --color-lightblue-300: #aac4fa;
+  --color-lightblue-400: #8db0f9;
+  --color-contents-contentTertiary: #a6a6a6;
+  --color-contents-contentSecondary: #6b6b6b;
+  --cheeze-cake: url(./assets/images/cheeze-cake.png);
+}
+
+/* 리뷰 페이지 */
+.card-gradient {
+  background: linear-gradient(2deg, #ffffff 43.39%, rgba(0, 0, 0, 0) 83.57%);
+}
+.components-section {
+  @apply flex gap-2 p-2 border-2 border-gray-400 rounded-md w-full items-center;
+}
+.icon {
+  @apply w-full h-full bg-center bg-cover;
+}
+.icon-box-12 {
+  @apply flex items-center justify-center w-3 h-3;
+}
+.icon-box-14 {
+  @apply flex items-center justify-center w-3.5 h-3.5;
+}
+.icon-box-18 {
+  @apply flex items-center justify-center w-4.5 h-4.5;
+}
+.icon-box-24 {
+  @apply flex items-center justify-center w-6 h-6;
+}
+.icon-box-32 {
+  @apply flex items-center justify-center w-8 h-8;
+}
+.icon-box-48 {
+  @apply flex items-center justify-center w-12 h-12;
 }
