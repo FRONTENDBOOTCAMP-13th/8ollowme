@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  --text-sans: 'Pretendard Variable', sans-serif;
+  --font-sans: 'Pretendard Variable', sans-serif;
 
   /* 여백 (4px 규칙) */
   --spacing-space-1: 0.25rem; /* 4px */
