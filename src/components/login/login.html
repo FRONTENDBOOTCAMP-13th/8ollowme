@@ -10,70 +10,35 @@
     <link rel="stylesheet" href="/src/components/login/login.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="bg-(--pink-500)">
+  <body class="bg-white">
     <div class="max-w-md w-fukll p-6">
       <!-- 아이디 -->
-      <div class="mb-4 bg-[#ffe4e1]">
-        <input
-          type="text"
-          placeholder="아이디를 입력해주세요"
-          class="text-[#5c3d2e] w-full h-12 px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2"
-        />
+      <div class="mb-4">
+        <input type="text" placeholder="아이디를 입력해주세요" class="text-text-default w-full min-w-[251px] h-[43px] px-4 border border-black rounded-lg bg-transparent focus:outline-none focus:ring-2" />
       </div>
 
       <!-- 비밀번호 -->
-      <div class="mb-4 bg-[#ffe4e1]">
-        <input
-          type="password"
-          placeholder="비밀번호를 입력해주세요"
-          class="text-[#5c3d2e] w-full h-12 px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2"
-        />
+      <div class="mb-4">
+        <input type="password" placeholder="비밀번호를 입력해주세요" class="text-text-default w-full min-w-[251px] h-[43px] px-4 border border-black rounded-lg bg-transparent focus:outline-none focus:ring-2" />
       </div>
 
       <!-- 회원가입 아이디, 비밀번호 입력창 -->
       <div class="mb-4">
-        <label for="confirm" class="block text-black text-sm mb-1"
-          >텍스트 확인</label
-        >
-        <input
-          type="password"
-          placeholder="비밀번호를 입력해주세요"
-          class="w-full h-12 px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2"
-        />
+        <label for="confirm" class="block text-black text-sm mb-1">텍스트 확인</label>
+        <input type="password" placeholder="비밀번호를 입력해주세요" class="w-full min-w-[251px] h-[43px] px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2" />
       </div>
 
       <!-- 로그인 버튼 -->
-      <button
-        class="w-full h-12 bg-[#ffb6c1] text-[#5C3D2E] rounded-lg font-semibold hover:bg-gray-200 transition mb-4"
-      >
-        로그인
-      </button>
+      <button class="w-full min-w-[251px] h-[43px] bg-secondary-color text-text-default rounded-lg font-semibold hover:bg-hover-color transition mb-4">로그인</button>
 
       <!-- 회원가입 버튼 -->
-      <button
-        class="w-full h-12 border border-black text-whit e rounded-lg font-semibold hover:bg-gray-800 transition mb-4"
-      >
-        회원가입
-      </button>
+      <button class="w-full min-w-[251px] h-[43px] border border-black text-text-default rounded-lg font-semibold hover:bg-hover-color hover:border-hover-color transition mb-4">회원가입</button>
 
       <!-- 검색창 + 돋보기버튼 -->
       <div class="mb-4 relative">
-        <input
-          type="search"
-          placeholder="원하는 지역을 검색해 보세요"
-          class="w-full h-12 px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2"
-        />
+        <input type="search" placeholder="원하는 지역을 검색해 보세요" class="text-text-default w-full h-12 px-4 border border-black rounded-lg bg-transparent focus:outline-none focus:ring-2" />
         <button class="absolute right-4 inset-y-0 flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-gray-600 hover:text-black transition"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 hover:text-black transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
@@ -81,20 +46,9 @@
       </div>
 
       <!-- 이대로 저장 버튼 -->
-      <button
-        class="w-full h-12 bg-black text-white rounded-lg font-semibold hover:bg-gray-200 transition mb-4 flex items-center justify-center gap-2"
-      >
+      <button class="w-full h-12 bg-secondary-color text-text-default rounded-lg font-semibold hover:bg-hover-color hover:border-hover-color transition mb-4 flex items-center justify-center gap-2">
         <!-- 연필 아이콘 -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 text-white"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 20h9" />
           <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z" />
         </svg>
@@ -103,48 +57,26 @@
 
       <!-- 지역 선택탭 -->
       <div>
-        <div
-          class="mb-4 select-box w-full p-4 h-16 flex items-center justify-between rounded-lg bg-gray-200 text-black border border-gray-300 transition"
-        >
+        <div class="mb-4 select-box p-4 w-[141px] h-[66px] flex items-center justify-between rounded-lg bg-tertiary-color text-black border border-gray-300 transition">
           <div>
-            <p class="text-sm text-gray-600">함께 추천하는</p>
+            <p class="text-phrase-s text-gray-600">함께 추천하는</p>
             <p class="text-lg font-bold">부천역</p>
           </div>
           <!-- 플러스 아이콘 -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-gray-500"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="12" y1="5" x2="12" y2="19"></line>
             <line x1="5" y1="12" x2="19" y2="12"></line>
           </svg>
         </div>
 
         <!-- 선택됨 -->
-        <div
-          class="mb-4 select-box w-full p-4 h-16 flex items-center justify-between rounded-lg bg-black text-white border border-gray-700 transition"
-        >
+        <div class="mb-4 select-box w-[141px] h-[66px] p-4 flex items-center justify-between rounded-lg bg-secondary-color text-text-default border border-secondary-color transition">
           <div>
-            <p class="text-sm">함께 추천하는</p>
+            <p class="text-phrase-s">함께 추천하는</p>
             <p class="text-lg font-bold">부천역</p>
           </div>
           <!-- 체크 아이콘 -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-white"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
         </div>
@@ -153,33 +85,18 @@
       <!-- 관심지역카드 -->
       <div class="card">
         <!-- 미선택 상태 -->
-        <div
-          class="mb-4 w-24 h-24 flex flex-col items-center justify-between p-3 rounded-lg border transition bg-gray-200 text-black border-gray-300 relative"
-        >
+        <div class="mb-4 w-24 h-24 flex flex-col items-center justify-between p-3 rounded-lg border transition bg-tertiary-color text-black border-gray-300 relative">
           <!-- 이미지 -->
           <div class="w-12 h-12 rounded-full overflow-hidden bg-amber-300">
-            <img
-              src="https://source.unsplash.com/100x100/?city"
-              alt="지역 이미지"
-              class="w-full h-full object-cover"
-            />
+            <img src="https://source.unsplash.com/100x100/?city" alt="지역 이미지" class="w-full h-full object-cover" />
           </div>
 
           <!-- 텍스트 -->
-          <p class="text-sm font-semibold">제주도</p>
+          <p class="text-sm font-semibold text-text-default">제주도</p>
 
           <!-- 플러스 아이콘 -->
           <div class="absolute top-2 right-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 text-gray-500"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="12" y1="5" x2="12" y2="19"></line>
               <line x1="5" y1="12" x2="19" y2="12"></line>
             </svg>
@@ -187,33 +104,18 @@
         </div>
 
         <!-- 선택 상태 -->
-        <div
-          class="mb-4 w-24 h-24 flex flex-col items-center justify-between p-3 rounded-lg border transition bg-gray-900 text-white border-gray-700 relative"
-        >
+        <div class="mb-4 w-24 h-24 flex flex-col items-center justify-between p-3 rounded-lg border transition bg-primary-color text-white border-primary-color relative">
           <!-- 이미지 -->
           <div class="w-12 h-12 rounded-full overflow-hidden bg-amber-300">
-            <img
-              src="https://source.unsplash.com/100x100/?city"
-              alt="지역 이미지"
-              class="w-full h-full object-cover"
-            />
+            <img src="https://source.unsplash.com/100x100/?city" alt="지역 이미지" class="w-full h-full object-cover" />
           </div>
 
           <!-- 텍스트 -->
-          <p class="text-sm font-semibold">제주도</p>
+          <p class="text-text-default text-sm font-semibold">제주도</p>
 
           <!-- 체크 아이콘 -->
           <div class="absolute top-2 right-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 text-white"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
           </div>
@@ -221,53 +123,41 @@
       </div>
 
       <!-- 리뷰 모달 -->
-      <div
-        class="mb-4 bg-white text-black w-[222px] h-auto pt-3 rounded-lg relative"
-      >
+      <div class="mb-4 bg-tertiary-color text-black w-[222px] h-auto pt-3 rounded-lg relative">
         <!-- 닫기 버튼 -->
-        <button class="absolute top-0 right-0 text-gray-400 hover:text-black">
-          ✖
-        </button>
+        <button class="absolute top-0 right-0 text-gray-400 hover:text-black">✖</button>
 
         <!-- 유저 정보 -->
         <div class="border-gray-300 pl-2 pr-2">
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
               <!-- 프로필 이미지 -->
-              <div
-                class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-sm"
-              >
-                img
-              </div>
+              <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-sm">img</div>
               <div>
                 <p class="text-sm font-semibold">COOLIOON</p>
                 <p class="text-xs text-gray-500">사진리뷰 23</p>
               </div>
             </div>
             <!-- 팔로우 버튼 -->
-            <button class="bg-black text-white text-xs px-3 py-1 rounded-full">
-              팔로우
-            </button>
+            <button class="bg-black text-white text-xs px-3 py-1 rounded-full">팔로우</button>
           </div>
         </div>
 
         <!-- 이미지 그리드 -->
-        <div
-          class="grid grid-cols-2 grid-rows-2 w-[222px] h-[222px] gap-0 mt-2"
-        >
-          <div class="img-box border border-white">
+        <div class="grid grid-cols-2 grid-rows-2 w-[222px] h-[222px] gap-0 mt-2">
+          <div class="img-box border border-tertiary-color">
             <p class="text-top">text</p>
             <p class="text-bottom">img</p>
           </div>
-          <div class="img-box border border-white">
+          <div class="img-box border border-tertiary-color">
             <p class="text-top">text</p>
             <p class="text-bottom">img</p>
           </div>
-          <div class="img-box border border-white">
+          <div class="img-box border border-tertiary-color">
             <p class="text-top">text</p>
             <p class="text-bottom">img</p>
           </div>
-          <div class="img-box border border-white">
+          <div class="img-box border border-tertiary-color">
             <p class="text-top">text</p>
             <p class="text-bottom">img</p>
           </div>
@@ -281,19 +171,8 @@
           <div class="relative w-[141px] h-[140px] bg-gray-400 rounded-xs">
             <!-- 북마크 아이콘 -->
             <div class="absolute top-2 right-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 3v18l7-5 7 5V3z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l7-5 7 5V3z" />
               </svg>
             </div>
 
@@ -311,19 +190,8 @@
           <div class="relative w-[141px] h-[140px] bg-gray-400 rounded-xs">
             <!-- 북마크 아이콘 -->
             <div class="absolute top-2 right-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5 3v18l7-5 7 5V3z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l7-5 7 5V3z" />
               </svg>
             </div>
 

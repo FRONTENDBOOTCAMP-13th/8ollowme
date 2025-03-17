@@ -1,7 +1,11 @@
 @import '../../style.css';
 
+body {
+  /* background-color: yellow; */
+}
+
 .img-box {
-  background-color: var(--gray-500);
+  background-color: var(--color-gray-600);
   width: 111px;
   height: 111px;
   display: flex;
