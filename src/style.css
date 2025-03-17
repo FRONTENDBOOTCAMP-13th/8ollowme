@@ -40,11 +40,11 @@
   --text-phrase-xl: 1.7769rem; /* 28.43px */
 
   /* 색상 */
-  --primary-color: #fecee0;
-  --secondary-color: #ffb6c1;
-  --tertiary-color: #ffe4e1;
-  --text-default: #5c3d2e;
-  --hover-color: #f29caa;
+  --color-primary-color: #fecee0;
+  --color-secondary-color: #ffb6c1;
+  --color-tertiary-color: #ffe4e1;
+  --color-text-default: #5c3d2e;
+  --color-hover-color: #f29caa;
 
   --color-gray-100: #f8f9fa;
   --color-gray-200: #e9ecef;
@@ -63,7 +63,7 @@
 
 @layer components {
   .keyword-style {
-    @apply w-[11.3125rem] h-[2.4375rem] py-[.625rem] px-[1.125rem] bg-pink-500 flex items-center justify-center rounded-sm;
+    @apply w-[11.3125rem] h-[2.4375rem] py-[.625rem] px-[1.125rem] bg-primary-color flex items-center justify-center rounded-sm;
   }
   .text-style {
     @apply text-label-s text-white font-bold whitespace-nowrap;
