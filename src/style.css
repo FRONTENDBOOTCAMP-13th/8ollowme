@@ -1,7 +1,7 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-sans: "Pretendard Variable", sans-serif;
+  --font-sans: 'Pretendard Variable', sans-serif;
 
   /* 여백 (4px 규칙) */
   --spacing-1: 0.25rem; /* 4px */
@@ -40,15 +40,8 @@
   --font-p-xl: 1.7769rem; /* 28.43px */
 
   /* 색상 */
-  --pink-100: #fff4f7;
-  --pink-200: #ffdae4;
-  --pink-300: #ffc0d1;
-  --pink-400: #fea6be;
-  --pink-500: #fecee0; /* primary color */
-  --pink-600: #e5b9ca;
-  --pink-700: #cc9eb3;
-  --pink-800: #b3849d;
-  --pink-900: #996b86;
+  --primary-color: #fecee0; /* primary color */
+  --secondary-color: #ffb6c1;
 
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;

@@ -1,5 +1,19 @@
-@import "../../style.css";
+@import '../../style.css';
 
-body {
-  background-color: var(--white);
+.img-box {
+  background-color: var(--gray-500);
+  width: 111px;
+  height: 111px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-top {
+  font-size: var(--font-p-s);
+  color: var(--gray-700);
+}
+.text-bottom {
+  font-size: var(--font-p-m);
+  color: var(--gray-700);
 }
