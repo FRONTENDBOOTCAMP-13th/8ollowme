@@ -15,7 +15,7 @@
   </head>
   <body class="bg-gray-600">
     <!-- 상태바 -->
-    <div class="text-white">
+    <div class="text-white inline-block">
       <span class="text-label-m font-bold">COOLION</span>
       <button type="button">
         <svg
@@ -34,39 +34,41 @@
           />
         </svg>
       </button>
-      <table class="text-center">
+
+      <table class="text-center text-phrase-s">
         <tr>
-          <td class="border-r-[.0625rem] pr-space-4">리뷰</td>
-          <td class="border-r-[.0625rem] px-space-4">사진</td>
-          <td class="border-r-[.0625rem] px-space-4">팔로잉</td>
+          <td class="border-r-[1px] pr-space-4">리뷰</td>
+          <td class="border-r-[1px] px-space-4">사진</td>
+          <td class="border-r-[1px] px-space-4">팔로잉</td>
           <td class="pl-space-4">팔로워</td>
         </tr>
         <tr>
-          <td class="border-r-[.0625rem] pr-space-4">17</td>
-          <td class="border-r-[.0625rem] px-space-4">19</td>
-          <td class="border-r-[.0625rem] px-space-4">0</td>
+          <td class="border-r-[1px] pr-space-4">17</td>
+          <td class="border-r-[1px] px-space-4">19</td>
+          <td class="border-r-[1px] px-space-4">0</td>
           <td class="pl-space-4">2</td>
         </tr>
       </table>
     </div>
     <!-- 쿠폰-->
     <button
-      class="border-2 rounded-md p-space-1 text-phrase-s relative text-white"
+      type="button"
+      class="box-border border-2 rounded-md px-space-1 text-phrase-s relative text-white"
     >
-      <div>쿠폰</div>
-      <span
-        class="absolute w-[1.125rem] aspect-square left-[1.375rem] bottom-[.9375rem] text-black bg-white rounded-[50%]"
+      쿠폰
+      <div
+        class="absolute w-[1.125rem] aspect-square left-[25px] bottom-[8px] text-black bg-white rounded-[50%]"
       >
         1
-      </span>
+      </div>
     </button>
     <!-- 프로필 이미지 -->
     <div
-      class="relative bg-blue-950 border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square w-[2.875rem]"
+      class="relative bg-secondary-color border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square w-[46px]"
     >
       img
       <svg
-        class="box-content inline w-space-3 aspect-square p-space-1 absolute top-[1.25rem] left-[1.875rem] text-black bg-white rounded-[50%]"
+        class="box-content inline w-space-3 aspect-square p-space-1 absolute top-[20px] left-[30px] text-black bg-white rounded-[50%]"
         viewBox="0 0 18 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +85,7 @@
     <!-- 프로필 이미지(가로) -->
     <div class="flex">
       <div
-        class="relative w-[2.875rem] bg-blue-950 border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square"
+        class="relative w-[46px] bg-secondary-color border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square"
       >
         img
       </div>
@@ -94,7 +96,7 @@
     </div>
     <!-- 추가 버튼 -->
     <button
-      class="bg-blue-950 text-white rounded-md text-label-s font-bold p-space-1"
+      class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1"
     >
       <svg
         class="inline"
@@ -117,12 +119,14 @@
     <!-- 페이지 버튼 -->
     <button
       type="button"
-      class="rounded-2xl px-space-2 py-space-1 bg-blue-950 text-white"
+      class="rounded-2xl px-space-2 py-space-1 bg-secondary-color text-white"
     >
       text
     </button>
     <!-- 수정 버튼 -->
-    <button class="bg-blue-900 rounded-lg px-space-4 py-space-2 text-white">
+    <button
+      class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-2 text-white"
+    >
       <svg
         class="inline"
         width="18"
@@ -143,7 +147,7 @@
     </button>
     <!-- 팔로우 버튼 -->
     <button
-      class="inline bg-blue-900 rounded-lg px-space-4 py-space-2 text-white"
+      class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-2 text-white"
     >
       <svg
         class="inline"
@@ -165,26 +169,27 @@
       <span>text</span>
     </button>
     <!-- 프로필 페이지 -->
-    <div class="bg-blue-950 p-space-5 inline-block">
+    <div class="bg-primary-color p-space-5 pt-space-3 w-[20rem] font-sans">
       <div class="flex">
         <button
-          class="border-2 rounded-md p-space-1 text-phrase-s relative text-white ml-auto"
+          type="button"
+          class="box-border border-2 rounded-md px-space-1 text-phrase-s relative text-white ml-auto"
         >
-          <div>쿠폰</div>
-          <span
-            class="absolute w-[1.125rem] aspect-square left-[1.375rem] bottom-[.9375rem] text-black bg-white rounded-[50%]"
+          쿠폰
+          <div
+            class="absolute w-[1.125rem] aspect-square left-[25px] bottom-[8px] text-black bg-white rounded-[50%]"
           >
             1
-          </span>
+          </div>
         </button>
       </div>
       <div class="flex gap-space-4 items-center">
         <div
-          class="relative bg-blue-950 border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square w-[2.875rem]"
+          class="relative bg-secondary-color border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square w-[46px]"
         >
           img
           <svg
-            class="box-content inline w-space-3 aspect-square p-space-1 absolute top-[1.25rem] left-[1.875rem] text-black bg-white rounded-[50%]"
+            class="box-content inline w-space-3 aspect-square p-space-1 absolute top-[20px] left-[30px] text-black bg-white rounded-[50%]"
             viewBox="0 0 18 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +203,7 @@
             />
           </svg>
         </div>
-        <div class="text-white">
+        <div class="text-white inline-block">
           <span class="text-label-m font-bold">COOLION</span>
           <button type="button">
             <svg
@@ -218,16 +223,16 @@
             </svg>
           </button>
           <table class="text-center">
-            <tr>
-              <td class="border-r-[.0625rem] pr-space-4">리뷰</td>
-              <td class="border-r-[.0625rem] px-space-4">사진</td>
-              <td class="border-r-[.0625rem] px-space-4">팔로잉</td>
+            <tr class="text-phrase-s">
+              <td class="border-r-[1px] pr-space-3">리뷰</td>
+              <td class="border-r-[1px] px-space-3">사진</td>
+              <td class="border-r-[1px] px-space-3">팔로잉</td>
               <td class="pl-space-4">팔로워</td>
             </tr>
-            <tr>
-              <td class="border-r-[.0625rem] pr-space-4">17</td>
-              <td class="border-r-[.0625rem] px-space-4">19</td>
-              <td class="border-r-[.0625rem] px-space-4">0</td>
+            <tr class="text-label-s">
+              <td class="border-r-[1px] pr-space-3">17</td>
+              <td class="border-r-[1px] px-space-3">19</td>
+              <td class="border-r-[1px] px-space-3">0</td>
               <td class="pl-space-4">2</td>
             </tr>
           </table>
@@ -235,7 +240,7 @@
       </div>
       <div class="mt-space-2 flex gap-space-1">
         <button
-          class="bg-blue-900 rounded-lg px-space-4 py-space-2 text-white grow-1"
+          class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white grow-1"
         >
           <svg
             class="inline"
@@ -255,9 +260,9 @@
           </svg>
           <span>text</span>
         </button>
-        <!-- 팔로우 버튼 -->
+        <!-- 리뷰 버튼 -->
         <button
-          class="inline bg-blue-900 rounded-lg px-space-4 py-space-2 text-white grow-1"
+          class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white grow-1"
         >
           <svg
             class="inline"
@@ -281,22 +286,22 @@
       </div>
     </div>
     <!-- 포스트 -->
-    <div class="bg-white px-space-4 py-space-2">
+    <div class="bg-white px-space-4 py-space-2 w-[20rem] font-sans">
       <div class="flex items-center">
         <div class="flex">
           <div
-            class="relative w-[2.875rem] bg-blue-950 border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square"
+            class="relative w-[46px] bg-secondary-color border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square"
           >
             img
           </div>
-          <div class="font-bold text-label-s">
+          <div class="font-bold text-label-s text-text-default">
             <p>멋쟁이 사자처럼</p>
             <p class="text-gray-400">text</p>
           </div>
         </div>
         <button
           type="button"
-          class="rounded-2xl px-space-2 py-space-1 bg-blue-950 text-white ml-auto"
+          class="rounded-2xl px-space-2 bg-secondary-color text-white ml-auto"
         >
           text
         </button>
@@ -315,7 +320,9 @@
           fill="#A6A6A6"
         />
       </svg>
-      <p class="break-words text-ellipsis line-clamp-3">
+      <p
+        class="break-words text-ellipsis line-clamp-3 text-phrase-s text-text-default"
+      >
         군인은 현역을 면한 후가 아니면 국무위원으로 임명될 수 없다. 공무원의
         신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 국가는
         농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을
@@ -326,7 +333,9 @@
       </p>
     </div>
     <!-- 로고 페이지 -->
-    <div class="bg-blue-950 inline-block text-center px-[65px] py-[50px]">
+    <div
+      class="bg-primary-color text-white inline-block text-center px-[4.0625rem] py-[3.125rem] w-[20rem]"
+    >
       <svg
         class="mx-auto"
         width="42"
@@ -339,15 +348,15 @@
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M21 0C32.598 0 42 9.40202 42 21C42 22.4157 41.8599 23.7986 41.5929 25.1358C39.7394 39.1032 21.1104 55 21.1104 55C21.1104 55 5.25689 41.4717 1.34456 28.4096C0.475507 26.1054 0 23.6083 0 21C0 9.40202 9.40202 0 21 0Z"
-          fill="white"
+          fill="currentColor"
         />
         <path
           d="M29 21C29 16.5817 25.4183 13 21 13C16.5817 13 13 16.5817 13 21C13 25.4183 16.5817 29 21 29C25.4183 29 29 25.4183 29 21Z"
-          fill="#171F31"
+          fill="var(--color-primary-color)"
         />
       </svg>
 
-      <p class="text-white text-head-2xl">Lion Place</p>
+      <p class="text-current font-bold text-head-2xl">Lion Place</p>
     </div>
     <!-- 프로필 메뉴 선택자 -->
     <div>
@@ -358,30 +367,20 @@
       >
       <a
         href="/"
-        class="box-border py-space-1 px-space-4 bg-transparent border-b-2 border-current text-blue-300 font-bold"
+        class="box-border py-space-1 px-space-4 bg-transparent border-b-2 border-current text-text-default font-bold"
         >text
       </a>
     </div>
     <!-- 프로필 메뉴 -->
-    <div class="inline-flex bg-blue-950 gap-space-4">
+    <div class="inline-flex bg-primary-color gap-space-4 font-bold text-white">
       <a
         href="/"
-        class="block py-space-1 px-space-4 bg-transparent border-b-2 border-current text-blue-300 font-bold"
+        class="block py-space-1 px-space-4 bg-transparent border-b-2 border-current text-text-default"
         >피드
       </a>
-      <a
-        href="/"
-        class="block py-space-1 px-space-4 bg-transparent text-gray-400 font-bold"
-        >방문</a
-      >
-      <a
-        href="/"
-        class="block py-space-1 px-space-4 bg-transparent text-gray-400 font-bold"
-        >리뷰</a
-      >
-      <a
-        href="/"
-        class="block py-space-1 px-space-4 bg-transparent text-gray-400 font-bold"
+      <a href="/" class="block py-space-1 px-space-4 bg-transparent">방문</a>
+      <a href="/" class="block py-space-1 px-space-4 bg-transparent">리뷰</a>
+      <a href="/" class="block py-space-1 px-space-4 bg-transparent"
         >예약·주문</a
       >
     </div>
