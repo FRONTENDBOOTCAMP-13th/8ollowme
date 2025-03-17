@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>feed</title>
+    <link rel="icon" href="/assets/favicon.svg" />
+    <link rel="preload" as="font" href="/public/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/components/feed/feed.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="bg-cyan-950 m-10">
+    <div class="mb-4 w-[288px] h-[90px] bg-white flex flex-col justify-center p-2">
+      <!-- 식당이름 및 메뉴 한 줄 정렬 -->
+      <div class="flex items-center justify-center space-x-1">
+        <h2 class="text-phrase-m font-bold whitespace-nowrap">마포곱창타운 연남점</h2>
+        <p class="text-phrase-s text-gray-400 whitespace-nowrap">곱창, 막창, 양</p>
+      </div>
+
+      <!-- 평점 및 리뷰 -->
+      <div class="flex justify-center items-center space-x-2">
+        <div class="flex items-center space-x-1">
+          <label class="cursor-pointer flex items-center">
+            <input type="checkbox" class="hidden peer" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 peer-checked:text-red-500 transition" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+          </label>
+          <p class="text-phrase-m font-bold">4.47<span class="text-gray-500">/5</span></p>
+        </div>
+
+        <!-- 방문자리뷰 & 블로그 리뷰 -->
+        <div class="flex items-center space-x-1 whitespace-nowrap">
+          <a href="#" class="text-black text-phrase-s">방문자리뷰 2,229</a>
+          <span class="text-black text-phrase-s">•</span>
+          <a href="#" class="text-black text-phrase-s">블로그리뷰 1,063</a>
+        </div>
+      </div>
+      <!-- 설명 -->
+      <p class="text-phrase-s text-gray-500 mt-1 whitespace-nowrap">클레버티비 교육받는 사이 다녀온 마포홍대 곱창</p>
+    </div>
+
+    <!-- 출발 도착 버튼 -->
+    <div class="flex space-x-4">
+      <!-- 출발 버튼 -->
+      <button class="w-[83px] h-[30px] flex items-center justify-center border border-white rounded-full text-black font-bold space-x-1">
+        <img src="/src/assets/icons/check-box.svg" alt="체크 아이콘" class="w-4 h-4" />
+        <span>출발</span>
+      </button>
+
+      <!-- 도착 버튼 -->
+      <button class="w-[83px] h-[30px] flex items-center justify-center bg-secondary-color rounded-full text-white font-bold space-x-1">
+        <img src="/src/assets/icons/check-box.svg" alt="체크 아이콘" class="w-4 h-4" />
+        <span class="text-text-default">도착</span>
+      </button>
+
+      <!-- 한우곱창구이 -->
+      <div class="w-[141px] h-[156px] bg-white shadow-md">
+        <!-- 이미지 영역 -->
+        <div class="w-[141px] h-[106px] bg-gray-900"></div>
+
+        <!-- 설명 영역 -->
+        <div class="w-[141px] h-[50px] p-2 flex flex-col justify-center">
+          <p class="text-xs font-medium text-black truncate">향소곱창구이(한우곱창구이한우곱창구이)</p>
+          <p class="text-sm font-bold text-red-500">25,000원</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
