@@ -20,6 +20,7 @@ export default defineConfig({
         reserve: 'src/components/reserve/reserve.html',
         review: 'src/components/review/review.html',
         visit: 'src/components/visit/visit.html',
+        visitpage: 'src/pages/visit.html',
       },
     },
   },
