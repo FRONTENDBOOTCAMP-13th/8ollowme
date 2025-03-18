@@ -98,6 +98,7 @@
   @apply flex items-center justify-center w-12 h-12;
 }
 
+/* visit 페이지 */
 @layer components {
   .keyword-style {
     @apply w-[11.3125rem] h-[2.4375rem] py-[.625rem] px-[1.125rem] bg-primary-color flex items-center justify-center rounded-sm;
@@ -107,6 +108,7 @@
   }
 }
 
+/* login, setting, follow 페이지 */
 @layer components {
   .img-box {
     @apply w-[111px] h-[111px] bg-gray-600 flex flex-col items-center justify-center;
