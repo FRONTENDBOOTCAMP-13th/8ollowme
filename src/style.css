@@ -139,3 +139,19 @@
     }
   }
 }
+
+.panel-dialog {
+  width: 100%;
+  min-width: 300px;
+  max-width: 540px;
+  max-height: 400px;
+  margin: auto;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.panel-dialog img {
+  margin: 5px;
+}
