@@ -5,60 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>타입 선택바</title>
     <link rel="icon" href="/assets/favicon.svg" />
-    <link
-      rel="preload"
-      as="font"
-      href="/assets/font/woff2/PretendardVariable.woff2"
-    />
+    <link rel="preload" as="font" href="/assets/font/woff2/PretendardVariable.woff2" />
     <link rel="stylesheet" href="/styles/output.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="m-4">
     <!-- 피 선택자 -->
-    <button
-      class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s"
-    >
-      입력
-    </button>
-    <button
-      class="text-white bg-tertiary-color border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s"
-    >
-      입력하세요
-    </button>
+    <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">입력</button>
+    <button class="text-white bg-tertiary-color border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">입력하세요</button>
     <!-- 타입 선택바 -->
-    <div
-      class="flex px-space-4 py-space-2 gap-space-1 min-w-[450px] font-sans text-text-default"
-    >
-      <button
-        class="text-white bg-tertiary-color border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s"
-      >
-        한식
-      </button>
-      <button
-        class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s"
-      >
-        아이와 함께
-      </button>
-      <button
-        class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s"
-      >
-        양식
-      </button>
-      <button
-        class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s"
-      >
-        문화예술
-      </button>
-      <button
-        class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s"
-      >
-        일식
-      </button>
-      <button
-        class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s"
-      >
-        중식
-      </button>
+    <div class="flex px-space-4 py-space-2 gap-space-1 w-[320px] overflow-x-auto whitespace-nowrap font-sans text-text-default">
+      <button class="text-white bg-tertiary-color border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">한식</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">아이와 함께</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">양식</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">문화예술</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">일식</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">중식</button>
     </div>
   </body>
 </html>
