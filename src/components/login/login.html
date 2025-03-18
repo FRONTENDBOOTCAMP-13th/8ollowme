@@ -57,38 +57,38 @@
 
       <!-- 지역 선택탭 -->
       <div>
-        <div class="mb-4 select-box p-4 w-[141px] h-[66px] flex items-center justify-between rounded-lg bg-tertiary-color text-black border border-gray-300 transition">
-          <div>
-            <p class="text-phrase-s text-gray-600">함께 추천하는</p>
-            <p class="text-lg font-bold">부천역</p>
-          </div>
-          <!-- 플러스 아이콘 -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-        </div>
+        <!-- 숨겨진 체크박스 -->
+        <input type="checkbox" id="select-toggle" class="hidden peer" />
 
-        <!-- 선택됨 -->
-        <div class="mb-4 select-box w-[141px] h-[66px] p-4 flex items-center justify-between rounded-lg bg-secondary-color text-text-default border border-secondary-color transition">
+        <!-- 기본 상태 (플러스 아이콘) -->
+        <label for="select-toggle" class="mb-space-4 select-box p-space-4 w-[141px] h-[66px] flex items-center justify-between rounded-lg bg-tertiary-color text-text-default border border-gray-300 transition peer-checked:hidden">
           <div>
             <p class="text-phrase-s">함께 추천하는</p>
             <p class="text-lg font-bold">부천역</p>
           </div>
-          <!-- 체크 아이콘 -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-        </div>
+          <img src="/src/assets/icons/plus-circle.svg" alt="추가" class="h-6 w-6 text-gray-500" />
+        </label>
+
+        <!-- 선택됨 상태 (체크 아이콘) -->
+        <label for="select-toggle" class="mb-space-4 select-box w-[141px] h-[66px] p-space-4 items-center justify-between rounded-lg bg-secondary-color text-white border border-secondary-color transition hidden peer-checked:flex">
+          <div>
+            <p class="text-phrase-s">함께 추천하는</p>
+            <p class="text-lg font-bold">부천역</p>
+          </div>
+          <img src="/src/assets/icons/check-circle.svg" alt="체크" class="h-6 w-6 text-white" />
+        </label>
       </div>
 
       <!-- 관심지역카드 -->
       <div class="card">
+        <!-- 숨겨진 체크박스 -->
+        <input type="checkbox" id="select-card" class="hidden peer" />
+
         <!-- 미선택 상태 -->
-        <div class="mb-4 w-24 h-24 flex flex-col items-center justify-between p-3 rounded-lg border transition bg-tertiary-color text-black border-gray-300 relative">
+        <label for="select-card" class="w-[90px] h-[92px] flex flex-col items-center justify-between p-3 rounded-lg border transition bg-tertiary-color text-black border-gray-300 relative peer-checked:hidden">
           <!-- 이미지 -->
-          <div class="w-12 h-12 rounded-full overflow-hidden bg-amber-300">
-            <img src="https://source.unsplash.com/100x100/?city" alt="지역 이미지" class="w-full h-full object-cover" />
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img src="" alt="지역 이미지" class="w-full h-full object-cover" />
           </div>
 
           <!-- 텍스트 -->
@@ -96,30 +96,25 @@
 
           <!-- 플러스 아이콘 -->
           <div class="absolute top-2 right-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg>
+            <img src="/src/assets/icons/plus-circle.svg" alt="추가" class="h-5 w-5 text-gray-500" />
           </div>
-        </div>
+        </label>
 
         <!-- 선택 상태 -->
-        <div class="mb-4 w-24 h-24 flex flex-col items-center justify-between p-3 rounded-lg border transition bg-primary-color text-white border-primary-color relative">
+        <label for="select-card" class="w-[90px] h-[92px] flex flex-col items-center justify-between p-3 rounded-lg border transition bg-primary-color text-white border-primary-color relative hidden peer-checked:flex">
           <!-- 이미지 -->
-          <div class="w-12 h-12 rounded-full overflow-hidden bg-amber-300">
-            <img src="https://source.unsplash.com/100x100/?city" alt="지역 이미지" class="w-full h-full object-cover" />
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img src="" alt="지역 이미지" class="w-full h-full object-cover" />
           </div>
 
           <!-- 텍스트 -->
-          <p class="text-text-default text-sm font-semibold">제주도</p>
+          <p class="text-sm font-semibold text-text-default">제주도</p>
 
           <!-- 체크 아이콘 -->
           <div class="absolute top-2 right-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
+            <img src="/src/assets/icons/check-circle.svg" alt="체크" class="h-5 w-5 text-white" />
           </div>
-        </div>
+        </label>
       </div>
 
       <!-- 리뷰 모달 -->

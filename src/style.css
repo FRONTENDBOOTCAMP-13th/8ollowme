@@ -112,14 +112,11 @@
 }
 
 @layer components {
-  .img-box {
-    @apply w-[111px] h-[111px] bg-gray-600 flex flex-col items-center justify-center;
+  .default-card {
+    @apply w-[90px] h-[92px] flex flex-col items-center justify-between p-3 rounded-md border transition bg-tertiary-color border-tertiary-color;
   }
-  .text-top {
-    @apply text-[var(--font-p-s)] text-gray-700;
-  }
-  .text-bottom {
-    @apply text-[var(--font-p-m)] text-gray-700;
+  .change-card {
+    @apply w-[90px] h-[92px] flex flex-col items-center justify-between p-3 rounded-md border transition bg-primary-color border-primary-color;
   }
 }
 
@@ -137,5 +134,35 @@
     &:has(img) {
       @apply pl-2;
     }
+  }
+}
+/* setting 페이지 */
+@layer components {
+  .select-box {
+    @apply px-1 w-[141px] h-[66px] flex items-center gap-space-2 rounded-md border transition;
+  }
+
+  .select-box-default {
+    @apply bg-tertiary-color text-text-default border-tertiary-color;
+  }
+
+  .select-box-checked {
+    @apply bg-secondary-color text-white border-secondary-color hidden peer-checked:flex;
+  }
+
+  .select-text {
+    @apply text-phrase-s;
+  }
+
+  .select-title {
+    @apply text-phrase-m font-bold whitespace-nowrap;
+  }
+
+  .select-icon {
+    @apply h-5 w-5 text-gray-500;
+  }
+
+  .select-icon-checked {
+    @apply h-5 w-5 text-white;
   }
 }
