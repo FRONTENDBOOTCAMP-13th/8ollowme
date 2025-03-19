@@ -8,6 +8,7 @@
     <link rel="preload" as="font" href="/assets/font/woff2/PretendardVariable.woff2" />
     <link rel="stylesheet" href="/styles/output.css" />
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/clicked.js"></script>
   </head>
   <body class="m-4">
     <!-- 피 선택자 -->
@@ -21,6 +22,15 @@
       <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">문화예술</button>
       <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">일식</button>
       <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">중식</button>
+    </div>
+    <!-- js로 클릭가능하게 구현(src/clicked.js 필요) -->
+    <div class="flex px-space-4 py-space-2 gap-space-1 w-[320px] overflow-x-auto whitespace-nowrap font-sans text-text-default">
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0 clickable-btn">한식</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0 clickable-btn">아이와 함께</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0 clickable-btn">양식</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0 clickable-btn">문화예술</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0 clickable-btn">일식</button>
+      <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0 clickable-btn">중식</button>
     </div>
   </body>
 </html>

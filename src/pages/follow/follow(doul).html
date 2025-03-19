@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>feed</title>
+    <title>follow(doul)</title>
     <link rel="icon" href="/assets/favicon.svg" />
     <link rel="preload" as="font" href="/public/font/woff2/PretendardVariable.woff2" />
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/clicked.js"></script>
   </head>
   <body>
-    <div class="w-[320px] h-[692px] flex-col">
+    <div class="w-[320px] h-[692px] flex-col mx-auto">
       <!-- top -->
       <div class="inline-flex w-[20rem] px-space-4 py-space-2">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,12 +114,12 @@
       </nav>
       <!-- type select -->
       <div class="flex px-space-4 py-space-2 gap-space-1 w-[320px] overflow-x-auto whitespace-nowrap font-sans text-text-default">
-        <button class="text-white bg-tertiary-color border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">한식</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">아이와 함께</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">양식</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">문화예술</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">일식</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">중식</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0; clickable-btn">한식</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0; clickable-btn">아이와 함께</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0; clickable-btn">양식</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0; clickable-btn">문화예술</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0; clickable-btn">일식</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0; clickable-btn">중식</button>
       </div>
       <!-- contents -->
       <div class="bg-white h-[300px] py-space-1 px-space-3 overflow-y-auto">
@@ -128,7 +129,7 @@
             <span class="text-phrase-s">서울시 서교동</span>
             <span class="inline-flex ml-auto">
               <svg class="inline" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.2025 0.5 4.375C0.5 2.0575 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.81C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.0575 15.5 4.375C15.5 7.2025 12.95 9.52 9.0875 13.0225L8 14.0125Z" fill="#171F31" />
+                <path class="Heart" d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.2025 0.5 4.375C0.5 2.0575 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.81C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.0575 15.5 4.375C15.5 7.2025 12.95 9.52 9.0875 13.0225L8 14.0125Z" fill="#171F31" />
               </svg>
               <svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -162,7 +163,7 @@
             <span class="text-phrase-s">서울시 북창동</span>
             <span class="inline-flex ml-auto">
               <svg class="inline" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.2025 0.5 4.375C0.5 2.0575 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.81C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.0575 15.5 4.375C15.5 7.2025 12.95 9.52 9.0875 13.0225L8 14.0125Z" fill="#171F31" />
+                <path class="Heart" d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.2025 0.5 4.375C0.5 2.0575 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.81C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.0575 15.5 4.375C15.5 7.2025 12.95 9.52 9.0875 13.0225L8 14.0125Z" fill="#171F31" />
               </svg>
               <svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -196,7 +197,7 @@
             <span class="text-phrase-s">서울시 서교동</span>
             <span class="inline-flex ml-auto">
               <svg class="inline" width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.2025 0.5 4.375C0.5 2.0575 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.81C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.0575 15.5 4.375C15.5 7.2025 12.95 9.52 9.0875 13.0225L8 14.0125Z" fill="#171F31" />
+                <path class="Heart" d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.2025 0.5 4.375C0.5 2.0575 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.81C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.0575 15.5 4.375C15.5 7.2025 12.95 9.52 9.0875 13.0225L8 14.0125Z" fill="#171F31" />
               </svg>
               <svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

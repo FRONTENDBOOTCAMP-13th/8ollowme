@@ -139,3 +139,15 @@
     }
   }
 }
+
+/* type select btn click event style */
+@layer components {
+  .clickable-btn {
+    &:hover {
+      @apply bg-secondary-color text-white;
+    }
+    &.clicked {
+      @apply bg-secondary-color text-white;
+    }
+  }
+}
