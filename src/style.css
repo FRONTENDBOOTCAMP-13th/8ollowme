@@ -68,6 +68,20 @@
   --color-contents-contentTertiary: #a6a6a6;
   --color-contents-contentSecondary: #6b6b6b;
   --cheeze-cake: url(./assets/images/cheeze-cake.png);
+  --coffee: url(./assets/images/coffee.png);
+  --futatsu: url(./assets/images/futatsu.png);
+  --giraffe: url(./assets/images/giraffe.png);
+  --mapo-gopchang: url(./assets/images/mapo-gopchang.png);
+  --new-order: url(./assets/images/new-order.png);
+  --korak: url(./assets/images/korak.png);
+  --sea-love: url(./assets/images/sea-love.png);
+  --samjjusam: url(./assets/images/samjjusam.png);
+  --berry-cake: url(./assets/images/berry-cake.jpg);
+  --strawberry-cake: url(./assets/images/strawberry-cake.jpg);
+  --latte: url(./assets/images/latte.jpg);
+  --sakura: url(./assets/images/sakura.jpg);
+  --bookmark: url(./assets/icons/bookmark.svg);
+  --bookmark-pink: url(./assets/icons/bookmark-pink.svg);
 }
 
 /* 리뷰 페이지 */
@@ -92,11 +106,20 @@
 .icon-box-24 {
   @apply flex items-center justify-center size-6;
 }
+.icon-box-28 {
+  @apply flex items-center justify-center size-7;
+}
+.icon-box-30 {
+  @apply flex items-center justify-center size-7.5;
+}
 .icon-box-32 {
   @apply flex items-center justify-center size-8;
 }
 .icon-box-34 {
   @apply flex items-center justify-center size-8.5;
+}
+.icon-box-40 {
+  @apply flex items-center justify-center size-10;
 }
 .icon-box-48 {
   @apply flex items-center justify-center size-12;
@@ -118,11 +141,10 @@
   .text-top {
     @apply text-[var(--font-p-s)] text-gray-700;
   }
-  .text-bottom {
-    @apply text-[var(--font-p-m)] text-gray-700;
-  }
 }
-
+.text-bottom {
+  @apply text-[var(--font-p-m)] text-gray-700;
+}
 /* 쿠폰 페이지 */
 @layer components {
   .filter-btn {
