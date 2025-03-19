@@ -8,8 +8,8 @@ export default defineConfig({
       input: {
         index: 'index.html', // 기본 index.html
         common: 'src/components/common/common.html',
-        topbar: 'src/components/comon/components/top-bar.html',
-        placeselector: 'src/components/comon/components/place-selector.html',
+        topbar: 'src/components/common/components/top-bar.html',
+        placeselector: 'src/components/common/components/place-selector.html',
         typeselector: 'src/components/common/components/type-selector.html',
         bottombar: 'src/components/common/components/bottom-bar.html',
         card: 'src/components/common/components/card.html',
