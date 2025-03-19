@@ -21,7 +21,7 @@
   /* 글자 크기 */
 
   /* 헤딩 */
-  --text-16: 1rem; /* 16px */
+  --text-head-m: 1rem; /* 16px */
   --text-head-l: 1.3331rem; /* 21.33px */
   --text-head-xl: 1.7769rem; /* 28.43px */
   --text-head-2xl: 2.3687rem; /* 37.9px */
@@ -141,9 +141,9 @@
   .text-top {
     @apply text-[var(--font-p-s)] text-gray-700;
   }
-}
-.text-bottom {
-  @apply text-[var(--font-p-m)] text-gray-700;
+  .text-bottom {
+    @apply text-[var(--font-p-m)] text-gray-700;
+  }
 }
 /* 쿠폰 페이지 */
 @layer components {
@@ -151,7 +151,7 @@
     @apply py-2 px-3 rounded-2xl text-label-s font-semibold flex items-center justify-center cursor-pointer;
 
     &.default {
-      @apply bg-white border border-gray-100 text-contents-contentSecondary hover:bg-gray-200;
+      @apply bg-white border border-gray-300 text-contents-contentSecondary hover:bg-gray-300;
     }
     &.active {
       @apply bg-secondary-color text-white hover:bg-hover-color;
