@@ -10,7 +10,7 @@
     <script type="module" src="/src/components/visit/photo.js"></script>
   </head>
   <body>
-    <section class="w-80 sm:w-[28.125rem] lg:w-[40.625rem] mx-auto">
+    <section class="w-80 sm:w-[28.125rem] lg:w-[37.5rem] mx-auto">
       <!-- top bar -->
       <div class="flex px-space-4 py-space-2">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,82 +57,179 @@
       </article>
 
       <!-- keyword list -->
-      <article class="bg-gray-50 flex justify-between overflow-hidden">
-        <div class="flex flex-col gap-space-2 my-space-2 mx-space-5">
+      <article class="bg-gray-50 flex justify-between overflow-x-auto gap-4 w-full p-5 scrollbar-custom">
+        <div class="flex flex-col gap-space-2 my-space-2 mx-space-5 items-start">
           <div class="keyword-style">
-            <p>💚</p>
+            <p>💆‍♂️</p>
             <span class="text-style">원하는 스타일로 잘해줘요</span>
           </div>
-          <div class="keyword-style w-[10.6875rem]">
-            <p>💇‍♀️</p>
-            <span class="text-style">스타일 추천을 잘해줘요</span>
+          <div class="keyword-style bg-white">
+            <p>✨</p>
+            <span class="text-style text-gray-600">스타일 추천을 잘해줘요</span>
           </div>
-          <div class="keyword-style w-[7.75rem]">
-            <p>🌹</p>
-            <span class="text-style">고급스러워요</span>
-          </div>
-          <div class="keyword-style bg-white w-[7.0625rem]">
-            <p>😎</p>
-            <span class="text-style text-gray-600">트렌디해요</span>
-          </div>
-          <div class="self-center">
-            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_523_2303)">
-                <rect x="4.5" width="36" height="36" rx="18" fill="white" shape-rendering="crispEdges" />
-                <path d="M22.5 24.4627C22.3 24.4627 22.1065 24.4252 21.9195 24.3502C21.7315 24.2752 21.575 24.1752 21.45 24.0502L14.55 17.1502C14.275 16.8752 14.1375 16.5252 14.1375 16.1002C14.1375 15.6752 14.275 15.3252 14.55 15.0502C14.825 14.7752 15.175 14.6377 15.6 14.6377C16.025 14.6377 16.375 14.7752 16.65 15.0502L22.5 20.9002L28.35 15.0502C28.625 14.7752 28.975 14.6377 29.4 14.6377C29.825 14.6377 30.1749 14.7752 30.4499 15.0502C30.7249 15.3252 30.8625 15.6752 30.8625 16.1002C30.8625 16.5252 30.7249 16.8752 30.4499 17.1502L23.55 24.0502C23.4 24.2002 23.2375 24.3062 23.0625 24.3682C22.8875 24.4312 22.7 24.4627 22.5 24.4627Z" fill="#A6A6A6" />
-              </g>
-              <defs>
-                <filter id="filter0_d_523_2303" x="0.5" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_523_2303" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_523_2303" result="shape" />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-        </div>
-        <div class="flex flex-col gap-space-2 my-space-2 mx-space-5">
-          <div class="keyword-style w-[8.5625rem]">
-            <p>🔍</p>
-            <span class="text-style">시술이 꼼꼼해요</span>
-          </div>
-          <div class="keyword-style w-[10.0625rem]">
-            <p>💆‍♀️</p>
-            <span class="text-style">관리법을 잘 알려줘요</span>
-          </div>
-          <div class="keyword-style bg-white w-[7.25rem]">
+          <div class="keyword-style bg-white">
             <p>🤲</p>
             <span class="text-style text-gray-600">손이 빨라요</span>
           </div>
-          <div class="keyword-style bg-white w-[7.1875rem]">
-            <p>😃</p>
-            <span class="text-style text-gray-600">친절해요</span>
+          <div class="keyword-style">
+            <p>😎</p>
+            <span class="text-style">트렌디해요</span>
           </div>
-          <div class="self-center">
-            <svg width="45" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_523_2320)">
+          <!-- SVG 버튼 -->
+          <label for="toggle" class="place-items-center cursor-pointer">
+            <!-- 토글 체크박스 (숨김) -->
+            <input type="checkbox" id="toggle" class="hidden peer" />
+            <!-- 숨겨진 추가 키워드 -->
+            <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
+              <div class="keyword-style bg-white">
+                <p>💰</p>
+                <span class="text-style text-gray-600">비싼 만큼 가치있어요</span>
+              </div>
+              <div class="keyword-style bg-white">
+                <p>✂️</p>
+                <span class="text-style text-gray-600">커트 실력이 좋아요</span>
+              </div>
+              <div class="keyword-style bg-white">
+                <p>🔍</p>
+                <span class="text-style text-gray-600">모발 상태를 꼼꼼히 체크해줘요</span>
+              </div>
+            </div>
+            <!-- unchecked, checked -->
+            <svg class="bottom-0 sticky fill-current text-gray-700 transition-transform duration-300 peer-checked:text-gray-500 peer-checked:rotate-180" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_668_3755)">
                 <rect x="4" width="36" height="36" rx="18" fill="white" shape-rendering="crispEdges" />
-                <path d="M22 24.4627C21.8 24.4627 21.6065 24.4252 21.4195 24.3502C21.2315 24.2752 21.075 24.1752 20.95 24.0502L14.05 17.1502C13.775 16.8752 13.6375 16.5252 13.6375 16.1002C13.6375 15.6752 13.775 15.3252 14.05 15.0502C14.325 14.7752 14.675 14.6377 15.1 14.6377C15.525 14.6377 15.875 14.7752 16.15 15.0502L22 20.9002L27.85 15.0502C28.125 14.7752 28.475 14.6377 28.9 14.6377C29.325 14.6377 29.6749 14.7752 29.9499 15.0502C30.2249 15.3252 30.3625 15.6752 30.3625 16.1002C30.3625 16.5252 30.2249 16.8752 29.9499 17.1502L23.05 24.0502C22.9 24.2002 22.7375 24.3062 22.5625 24.3682C22.3875 24.4312 22.2 24.4627 22 24.4627Z" fill="#6B6B6B" />
+                <path d="M22 24.4627C21.8 24.4627 21.6065 24.4252 21.4195 24.3502C21.2315 24.2752 21.075 24.1752 20.95 24.0502L14.05 17.1502C13.775 16.8752 13.6375 16.5252 13.6375 16.1002C13.6375 15.6752 13.775 15.3252 14.05 15.0502C14.325 14.7752 14.675 14.6377 15.1 14.6377C15.525 14.6377 15.875 14.7752 16.15 15.0502L22 20.9002L27.85 15.0502C28.125 14.7752 28.475 14.6377 28.9 14.6377C29.325 14.6377 29.6749 14.7752 29.9499 15.0502C30.2249 15.3252 30.3625 15.6752 30.3625 16.1002C30.3625 16.5252 30.2249 16.8752 29.9499 17.1502L23.05 24.0502C22.9 24.2002 22.7375 24.3062 22.5625 24.3682C22.3875 24.4312 22.2 24.4627 22 24.4627Z" fill="currentcolor" />
               </g>
               <defs>
-                <filter id="filter0_d_523_2320" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="filter0_d_668_3755" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                   <feOffset dy="4" />
                   <feGaussianBlur stdDeviation="2" />
                   <feComposite in2="hardAlpha" operator="out" />
                   <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_523_2320" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_523_2320" result="shape" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_668_3755" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_668_3755" result="shape" />
                 </filter>
               </defs>
             </svg>
+          </label>
+        </div>
+        <!-- 2열 -->
+        <div class="flex flex-col gap-space-2 my-space-2 mx-space-5 items-start">
+          <div class="keyword-style bg-white">
+            <p>🛋️</p>
+            <span class="text-style text-gray-600">인테리어가 멋져요</span>
           </div>
+          <div class="keyword-style">
+            <p>🕰️</p>
+            <span class="text-style">예약하기 편리해요</span>
+          </div>
+          <div class="keyword-style bg-white">
+            <p>🚻</p>
+            <span class="text-style text-gray-600">화장실이 깨끗해요</span>
+          </div>
+          <div class="keyword-style bg-white">
+            <p>🅿️</p>
+            <span class="text-style text-gray-600">주차하기 편해요</span>
+          </div>
+          <!-- SVG 버튼 -->
+          <label for="toggle-col-2" class="place-items-center cursor-pointer">
+            <!-- 토글 체크박스 (숨김) -->
+            <input type="checkbox" id="toggle-col-2" class="hidden peer" />
+            <!-- 숨겨진 추가 키워드 -->
+            <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
+              <div class="keyword-style bg-white">
+                <p>💐</p>
+                <span class="text-style text-gray-600">특별한 날 가기 좋아요</span>
+              </div>
+              <div class="keyword-style bg-white">
+                <p>📸</p>
+                <span class="text-style text-gray-600">사진이 잘 나와요</span>
+              </div>
+              <div class="keyword-style bg-white">
+                <p>🎶</p>
+                <span class="text-style text-gray-600">음악이 좋아요</span>
+              </div>
+            </div>
+            <!-- unchecked, checked -->
+            <svg class="bottom-0 sticky fill-current text-gray-700 transition-transform duration-300 peer-checked:text-gray-500 peer-checked:rotate-180" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_668_3755)">
+                <rect x="4" width="36" height="36" rx="18" fill="white" shape-rendering="crispEdges" />
+                <path d="M22 24.4627C21.8 24.4627 21.6065 24.4252 21.4195 24.3502C21.2315 24.2752 21.075 24.1752 20.95 24.0502L14.05 17.1502C13.775 16.8752 13.6375 16.5252 13.6375 16.1002C13.6375 15.6752 13.775 15.3252 14.05 15.0502C14.325 14.7752 14.675 14.6377 15.1 14.6377C15.525 14.6377 15.875 14.7752 16.15 15.0502L22 20.9002L27.85 15.0502C28.125 14.7752 28.475 14.6377 28.9 14.6377C29.325 14.6377 29.6749 14.7752 29.9499 15.0502C30.2249 15.3252 30.3625 15.6752 30.3625 16.1002C30.3625 16.5252 30.2249 16.8752 29.9499 17.1502L23.05 24.0502C22.9 24.2002 22.7375 24.3062 22.5625 24.3682C22.3875 24.4312 22.2 24.4627 22 24.4627Z" fill="currentcolor" />
+              </g>
+              <defs>
+                <filter id="filter0_d_668_3755" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_668_3755" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_668_3755" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </label>
+        </div>
+        <!-- 3열 -->
+        <div class="flex flex-col gap-space-2 my-space-2 mx-space-5 items-start">
+          <div class="keyword-style">
+            <p>💖</p>
+            <span class="text-style">친절해요</span>
+          </div>
+          <div class="keyword-style bg-white">
+            <p>🌹</p>
+            <span class="text-style text-gray-600">고급스러워요</span>
+          </div>
+          <div class="keyword-style bg-white">
+            <p>🍵</p>
+            <span class="text-style text-gray-600">서비스가 만족스러워요</span>
+          </div>
+          <div class="keyword-style bg-white">
+            <p>😌</p>
+            <span class="text-style text-gray-600">편안한 분위기에요</span>
+          </div>
+          <!-- SVG 버튼 -->
+          <label for="toggle-col-3" class="place-items-center cursor-pointer">
+            <!-- 토글 체크박스 (숨김) -->
+            <input type="checkbox" id="toggle-col-3" class="hidden peer" />
+            <!-- 숨겨진 추가 키워드 -->
+            <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
+              <div class="keyword-style bg-white">
+                <p>🐶</p>
+                <span class="text-style text-gray-600">반려동물과 가기 좋아요</span>
+              </div>
+              <div class="keyword-style bg-white">
+                <p>🗣️</p>
+                <span class="text-style text-gray-600">대화하기 좋아요</span>
+              </div>
+              <div class="keyword-style bg-white">
+                <p>😥</p>
+                <span class="text-style text-gray-600">선택할 키워드가 없어요</span>
+              </div>
+            </div>
+            <!-- unchecked, checked -->
+            <svg class="bottom-0 sticky fill-current text-gray-700 transition-transform duration-300 peer-checked:text-gray-500 peer-checked:rotate-180" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_668_3755)">
+                <rect x="4" width="36" height="36" rx="18" fill="white" shape-rendering="crispEdges" />
+                <path d="M22 24.4627C21.8 24.4627 21.6065 24.4252 21.4195 24.3502C21.2315 24.2752 21.075 24.1752 20.95 24.0502L14.05 17.1502C13.775 16.8752 13.6375 16.5252 13.6375 16.1002C13.6375 15.6752 13.775 15.3252 14.05 15.0502C14.325 14.7752 14.675 14.6377 15.1 14.6377C15.525 14.6377 15.875 14.7752 16.15 15.0502L22 20.9002L27.85 15.0502C28.125 14.7752 28.475 14.6377 28.9 14.6377C29.325 14.6377 29.6749 14.7752 29.9499 15.0502C30.2249 15.3252 30.3625 15.6752 30.3625 16.1002C30.3625 16.5252 30.2249 16.8752 29.9499 17.1502L23.05 24.0502C22.9 24.2002 22.7375 24.3062 22.5625 24.3682C22.3875 24.4312 22.2 24.4627 22 24.4627Z" fill="currentcolor" />
+              </g>
+              <defs>
+                <filter id="filter0_d_668_3755" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_668_3755" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_668_3755" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </label>
         </div>
       </article>
 
@@ -170,8 +267,7 @@
       </article>
 
       <!-- 하단바 -->
-
-      <div class="bottom-0 sticky bg-white pb-space-2 flex w-full justify-between px-[1.0625rem] text-phrase-s font-sans">
+      <footer class="bottom-0 sticky bg-white pb-space-2 flex w-full justify-between px-[1.0625rem] text-phrase-s font-sans">
         <button class="inline-flex flex-col py-space-2 px-space-3">
           <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.75 7.44225C3.75 11.0813 6.933 14.0903 8.34225 15.2438C8.54475 15.4088 8.646 15.4928 8.79675 15.5348C8.91375 15.5678 9.08625 15.5678 9.20325 15.5348C9.354 15.4928 9.45525 15.4095 9.65775 15.2438C11.067 14.0903 14.25 11.0813 14.25 7.44225C14.2493 6.75903 14.1131 6.08273 13.8492 5.45254C13.5853 4.82235 13.1989 4.2508 12.7125 3.771C11.7233 2.79528 10.3894 2.24878 9 2.25C7.61058 2.24878 6.27667 2.79528 5.2875 3.771C4.80106 4.25077 4.41468 4.82232 4.15076 5.45251C3.88683 6.08271 3.75062 6.75902 3.75 7.44225Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -216,7 +312,7 @@
           </svg>
           <div>MY</div>
         </button>
-      </div>
+      </footer>
     </section>
   </body>
 </html>
