@@ -141,20 +141,22 @@
 }
 
 /* visit 모달 */
-.panel-dialog {
-  width: 100%;
-  min-width: 300px;
-  max-width: 540px;
-  max-height: 400px;
-  margin: auto;
-  border: none;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+@layer utilities {
+  .panel-dialog {
+    width: 100%;
+    min-width: 300px;
+    max-width: 540px;
+    max-height: 400px;
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-.panel-dialog img {
-  margin: 5px;
+  .panel-dialog img {
+    margin: 5px;
+  }
 }
 
 /* scrollbar-custom */
@@ -166,19 +168,5 @@
   /* Chrome, Safari, Opera, Edge */
   .scrollbar-custom::-webkit-scrollbar {
     display: none;
-  }
-
-  .scrollbar-custom::-webkit-scrollbar-track {
-    background: #e65050;
-    border-radius: 1px;
-  }
-
-  .scrollbar-custom::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 5px;
-  }
-
-  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-    background: #999;
   }
 }
