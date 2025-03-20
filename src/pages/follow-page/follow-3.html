@@ -147,6 +147,15 @@
       <!-- 사진 카드 -->
       <div class="grid grid-cols-2 w-[288px]">
         <div class="relative w-[141px] h-[140px] rounded-md bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+          <input type="checkbox" id="bookmark-toggle-1" class="hidden peer" />
+          <!-- 북마크 체크박스 -->
+          <input type="checkbox" id="bookmark-toggle-1" class="hidden peer" />
+
+          <!-- 북마크 버튼 (한 개의 label로 토글 처리) -->
+          <label for="bookmark-toggle-1" class="absolute top-2 right-2 cursor-pointer">
+            <img src="/src/assets/icons/bookmark-false.svg" alt="북마크" class="peer-checked:hidden w-6 h-6" />
+            <img src="/src/assets/icons/bookmark-true.svg" alt="북마크 선택됨" class="hidden peer-checked:block w-6 h-6" />
+          </label>
           <p class="text-label-s">서울 망원동</p>
           <p class="text-label-m font-bold">코랏</p>
         </div>
