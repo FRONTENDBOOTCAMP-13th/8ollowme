@@ -11,9 +11,9 @@
   </head>
 
   <body class="bg-white flex justify-center items-center overflow-auto">
-    <div class="flex flex-col items-center gap-space-2">
+    <div class="flex flex-col items-center w-[20rem] sm:w-[37.5rem] shadow-2xl shadow-secondary-color">
       <!-- top-bar -->
-      <div class="sticky inline-flex w-full px-space-4 py-space-2 bg-white top-0 z-10">
+      <div class="sticky inline-flex w-[20rem] sm:w-[37.5rem] px-space-4 py-space-2 bg-white top-0 z-10">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M5.04688 18.1562C7.49219 18.1562 9.28125 16.7734 9.26562 14.8594C9.28125 13.4375 8.375 12.4141 6.78125 12.2031V12.1094C8.01562 11.8516 8.85938 10.9375 8.84375 9.67188C8.85938 7.9375 7.375 6.53125 5.07812 6.53125C2.86719 6.53125 1.14062 7.83594 1.09375 9.73438H3.04688C3.08594 8.78125 4 8.1875 5.0625 8.1875C6.16406 8.1875 6.88281 8.82812 6.875 9.78125C6.88281 10.7656 6.04688 11.4375 4.84375 11.4375H3.82812V13H4.84375C6.3125 13.0078 7.1875 13.7344 7.1875 14.75C7.1875 15.7578 6.28906 16.4453 5.04688 16.4375C3.86719 16.4453 2.96094 15.8438 2.90625 14.9375H0.859375C0.90625 16.8438 2.63281 18.1562 5.04688 18.1562ZM12.2969 16.5938C12.9453 16.5938 13.5 16.0469 13.5 15.375C13.5 14.7188 12.9453 14.1797 12.2969 14.1719C11.625 14.1797 11.0703 14.7188 11.0781 15.375C11.0703 16.0469 11.625 16.5938 12.2969 16.5938ZM11.0781 9.3125C11.0703 9.98438 11.625 10.5312 12.2969 10.5312C12.9453 10.5312 13.5 9.98438 13.5 9.3125C13.5 8.65625 12.9453 8.11719 12.2969 8.10938C11.625 8.11719 11.0703 8.65625 11.0781 9.3125ZM15.4062 18H23.2656V16.2969H18.2344V16.2188L20.25 14.2188C22.4766 12.1172 23.0859 11.0859 23.0938 9.8125C23.0859 7.91406 21.5312 6.53125 19.2188 6.53125C16.9609 6.53125 15.3516 7.92188 15.3594 10.0625H17.2969C17.2891 8.91406 18.0391 8.1875 19.2031 8.1875C20.3047 8.1875 21.1406 8.85156 21.1406 9.90625C21.1406 10.8594 20.5469 11.5312 19.4062 12.6719L15.4062 16.5312V18ZM29.1562 18.1562C31.6562 18.1562 33.4453 16.8125 33.4531 14.9688C33.4453 13.5312 32.3672 12.3594 31.0156 12.1406V12.0781C32.1875 11.8281 33.0156 10.8047 33.0156 9.5625C33.0156 7.8125 31.375 6.53125 29.1562 6.53125C26.9219 6.53125 25.2891 7.8125 25.2812 9.5625C25.2891 10.7969 26.0938 11.8281 27.2812 12.0781V12.1406C25.9219 12.3594 24.8516 13.5312 24.8594 14.9688C24.8516 16.8125 26.6328 18.1562 29.1562 18.1562ZM26.9531 14.7812C26.9453 13.7109 27.8828 12.9297 29.1562 12.9375C30.4297 12.9297 31.3516 13.7188 31.3594 14.7812C31.3516 15.8281 30.4844 16.5469 29.1562 16.5469C27.8125 16.5469 26.9453 15.8281 26.9531 14.7812ZM27.2656 9.75C27.2734 8.78906 28.0234 8.125 29.1562 8.125C30.2656 8.125 31.0312 8.78906 31.0312 9.75C31.0312 10.7422 30.2422 11.4219 29.1562 11.4219C28.0547 11.4219 27.2734 10.7422 27.2656 9.75Z"
@@ -31,14 +31,14 @@
         </svg>
       </div>
 
-      <div class="flex justify-between w-[286px]">
-        <h2 class="text-phrase-m font-bold">관심지역 설정</h2>
+      <div class="flex justify-between w-full px-space-2">
+        <h2 class="text-phrase-m sm:text-phrase-l font-bold">관심지역 설정</h2>
         <img src="/src/assets/icons/close.svg" alt="닫기" class="cursor-pointer" />
       </div>
-      <p class="text-gray-700 text-phrase-s self-start">👍 요즘 많이 찾아봐요</p>
+      <p class="text-gray-700 text-phrase-s sm:text-phrase-m self-start p-space-2">👍 요즘 많이 찾아봐요</p>
 
       <!-- 지역카드 -->
-      <div class="grid grid-cols-3 gap-3">
+      <div class="grid grid-cols-3 sm:grid-cols-5 gap-3">
         <!-- 지역카드 1 -->
         <div class="card">
           <input type="checkbox" id="select-card-1" class="hidden peer" />
@@ -415,11 +415,13 @@
       </div>
 
       <!-- 이대로 저장 버튼 -->
-      <a href="/src/pages/setting-page/setting-3.html" class="sticky text-phrase-s bottom-space-10 w-[286px] h-[42px] bg-primary-color text-text-default rounded-md font-semibold hover:bg-hover-color hover:border-hover-color transition mb-space-4 flex items-center justify-center">
-        <!-- 연필 아이콘 -->
-        <img src="/src/assets/icons/pencil.svg" alt="편집" class="h-5 w-5" />
-        이대로 저장할래요
-      </a>
+      <div class="w-full px-space-2">
+        <a href="/src/pages/follow-page/follow-2.html" class="text-phrase-s sticky w-full h-[42px] bg-primary-color text-text-default rounded-md font-semibold hover:bg-hover-color hover:border-hover-color transition my-space-2 flex items-center justify-center">
+          <!-- 연필 아이콘 -->
+          <img src="/src/assets/icons/pencil.svg" alt="편집" class="h-5 w-5" />
+          이대로 저장할래요
+        </a>
+      </div>
 
       <!-- 하단 내비게이션 -->
       <div class="bg-white sticky bottom-0 pb-space-2 flex w-[320px] justify-center text-phrase-s font-sans">
