@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Setting Page-2</title>
+    <title>Follow 2</title>
     <link rel="icon" href="/assets/favicon.svg" />
     <link rel="preload" as="font" href="/public/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -11,7 +11,7 @@
   </head>
 
   <body class="bg-white flex justify-center items-center overflow-auto">
-    <div class="flex flex-col items-center gap-space-2">
+    <div class="flex flex-col items-center gap-space-2 w-[320px]">
       <!-- top-bar -->
       <div class="fixed inline-flex w-[320px] px-space-4 py-space-2 bg-white top-0 z-10">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,6 +30,7 @@
             fill="currentColor" />
         </svg>
       </div>
+
       <!-- 프로필 페이지 -->
       <div class="mt-space-10 bg-primary-color p-space-5 pt-space-3 w-[20rem] font-sans">
         <div class="flex">
@@ -91,36 +92,75 @@
         </div>
       </div>
 
+      <div class="w-full h-space-10 p-space-2 flex justify-between items-center">
+        <div class="flex space-x-2">
+          <img src="/src/assets/icons/hambuger.svg" alt="메뉴" />
+          <p class="text-gray-600 text-label-s">전체</p>
+          <img src="/src/assets/icons/photo-b.svg" alt="사진" />
+          <p class="text-black text-label-s">사진</p>
+        </div>
+        <div class="flex items-senter">
+          <p class="text-gray-700 text-label-s">최신순</p>
+          <button><img src="/src/assets/icons/down-gray.svg" alt="밑화살표" /></button>
+        </div>
+      </div>
+
+      <!-- 카테고리 -->
+      <div class="w-full flex whitespace-nowrap overflow-x-auto gap-x-2 gap-y-1 p-space-2">
+        <!-- 버튼 1 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 한식 </span>
+        </label>
+
+        <!-- 버튼 2 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 아이와 함께 </span>
+        </label>
+
+        <!-- 버튼 3 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 양식 </span>
+        </label>
+
+        <!-- 버튼 4 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 문화예술 </span>
+        </label>
+
+        <!-- 버튼 5 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 일식 </span>
+        </label>
+
+        <!-- 버튼 6 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 중식 </span>
+        </label>
+      </div>
+
+      <!-- 사진 카드 -->
       <div class="grid grid-cols-2 w-[288px]">
-        <div class="relative w-[141px] h-[140px] bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+        <div class="relative w-[141px] h-[140px] rounded-md bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
           <p class="text-label-s">서울 망원동</p>
           <p class="text-label-m font-bold">코랏</p>
         </div>
-        <div class="relative w-[141px] h-[140px] bg-[url('/src/assets/food/reviewFood2.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+
+        <div class="relative w-[141px] h-[140px] rounded-md bg-[url('/src/assets/food/reviewFood2.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
           <p class="text-label-s">서울 연남동</p>
           <p class="text-label-m font-bold">OBPC</p>
         </div>
-        <div class="relative w-[141px] h-[140px] bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+        <div class="relative w-[141px] h-[140px] rounded-md bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
           <p class="text-label-s">서울 망원동</p>
           <p class="text-label-m font-bold">코랏</p>
         </div>
-        <div class="relative w-[141px] h-[140px] bg-[url('/src/assets/food/reviewFood2.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
-          <p class="text-label-s">서울 연남동</p>
-          <p class="text-label-m font-bold">OBPC</p>
-        </div>
-        <div class="relative w-[141px] h-[140px] bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
-          <p class="text-label-s">서울 망원동</p>
-          <p class="text-label-m font-bold">코랏</p>
-        </div>
-        <div class="relative w-[141px] h-[140px] bg-[url('/src/assets/food/reviewFood2.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
-          <p class="text-label-s">서울 연남동</p>
-          <p class="text-label-m font-bold">OBPC</p>
-        </div>
-        <div class="relative w-[141px] h-[140px] bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
-          <p class="text-label-s">서울 망원동</p>
-          <p class="text-label-m font-bold">코랏</p>
-        </div>
-        <div class="relative w-[141px] h-[140px] bg-[url('/src/assets/food/reviewFood2.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+
+        <div class="relative w-[141px] h-[140px] rounded-md bg-[url('/src/assets/food/reviewFood2.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
           <p class="text-label-s">서울 연남동</p>
           <p class="text-label-m font-bold">OBPC</p>
         </div>
