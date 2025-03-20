@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Follow Page 1</title>
+    <link rel="icon" href="/assets/favicon.svg" />
+    <link rel="preload" as="font" href="/public/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+
+  <body class="bg-white flex justify-center items-center overflow-auto">
+    <div class="flex flex-col items-center max-w-[320px] w-full">
+      <!-- 탑바 -->
+      <div class="fixed inline-flex w-[320px] px-space-4 py-space-2 bg-white top-0 z-10">
+        <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.04688 18.1562C7.49219 18.1562 9.28125 16.7734 9.26562 14.8594C9.28125 13.4375 8.375 12.4141 6.78125 12.2031V12.1094C8.01562 11.8516 8.85938 10.9375 8.84375 9.67188C8.85938 7.9375 7.375 6.53125 5.07812 6.53125C2.86719 6.53125 1.14062 7.83594 1.09375 9.73438H3.04688C3.08594 8.78125 4 8.1875 5.0625 8.1875C6.16406 8.1875 6.88281 8.82812 6.875 9.78125C6.88281 10.7656 6.04688 11.4375 4.84375 11.4375H3.82812V13H4.84375C6.3125 13.0078 7.1875 13.7344 7.1875 14.75C7.1875 15.7578 6.28906 16.4453 5.04688 16.4375C3.86719 16.4453 2.96094 15.8438 2.90625 14.9375H0.859375C0.90625 16.8438 2.63281 18.1562 5.04688 18.1562ZM12.2969 16.5938C12.9453 16.5938 13.5 16.0469 13.5 15.375C13.5 14.7188 12.9453 14.1797 12.2969 14.1719C11.625 14.1797 11.0703 14.7188 11.0781 15.375C11.0703 16.0469 11.625 16.5938 12.2969 16.5938ZM11.0781 9.3125C11.0703 9.98438 11.625 10.5312 12.2969 10.5312C12.9453 10.5312 13.5 9.98438 13.5 9.3125C13.5 8.65625 12.9453 8.11719 12.2969 8.10938C11.625 8.11719 11.0703 8.65625 11.0781 9.3125ZM15.4062 18H23.2656V16.2969H18.2344V16.2188L20.25 14.2188C22.4766 12.1172 23.0859 11.0859 23.0938 9.8125C23.0859 7.91406 21.5312 6.53125 19.2188 6.53125C16.9609 6.53125 15.3516 7.92188 15.3594 10.0625H17.2969C17.2891 8.91406 18.0391 8.1875 19.2031 8.1875C20.3047 8.1875 21.1406 8.85156 21.1406 9.90625C21.1406 10.8594 20.5469 11.5312 19.4062 12.6719L15.4062 16.5312V18ZM29.1562 18.1562C31.6562 18.1562 33.4453 16.8125 33.4531 14.9688C33.4453 13.5312 32.3672 12.3594 31.0156 12.1406V12.0781C32.1875 11.8281 33.0156 10.8047 33.0156 9.5625C33.0156 7.8125 31.375 6.53125 29.1562 6.53125C26.9219 6.53125 25.2891 7.8125 25.2812 9.5625C25.2891 10.7969 26.0938 11.8281 27.2812 12.0781V12.1406C25.9219 12.3594 24.8516 13.5312 24.8594 14.9688C24.8516 16.8125 26.6328 18.1562 29.1562 18.1562ZM26.9531 14.7812C26.9453 13.7109 27.8828 12.9297 29.1562 12.9375C30.4297 12.9297 31.3516 13.7188 31.3594 14.7812C31.3516 15.8281 30.4844 16.5469 29.1562 16.5469C27.8125 16.5469 26.9453 15.8281 26.9531 14.7812ZM27.2656 9.75C27.2734 8.78906 28.0234 8.125 29.1562 8.125C30.2656 8.125 31.0312 8.78906 31.0312 9.75C31.0312 10.7422 30.2422 11.4219 29.1562 11.4219C28.0547 11.4219 27.2734 10.7422 27.2656 9.75Z"
+            fill="currentColor" />
+          <path d="M48.2026 7.70371L44.73 17.0837C44.5106 17.6764 43.8789 17.9809 43.3195 17.7633C43.1809 17.7084 43.0553 17.6255 42.9504 17.5196C42.8455 17.4138 42.7636 17.2875 42.7099 17.1485L41.6091 14.366C41.4023 13.8318 40.9922 13.4014 40.4687 13.169L37.8192 12.0134C37.268 11.7725 37.0171 11.1045 37.2581 10.5212C37.315 10.3804 37.3994 10.2522 37.5062 10.1442C37.6131 10.0361 37.7403 9.95035 37.8805 9.89179L46.8148 6.24596C47.3789 6.01554 48.0048 6.30487 48.2119 6.89287C48.3035 7.15304 48.2994 7.44121 48.2026 7.70371Z" fill="currentColor" />
+        </svg>
+        <svg class="ml-auto" width="65" height="20" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.7854 16H27.0601V14.7106H23.3092V7.5135H21.7854V16ZM26.814 8.79117H29.4396V16H30.9634V8.79117H33.5774V7.5135H26.814V8.79117ZM34.773 16H40.3173V14.7106H36.2968V12.3897H40.0008V11.1121H36.2968V8.79117H40.2939V7.5135H34.773V16Z" fill="currentColor" />
+          <path d="M59.0898 7.78125H47.0352C46.0492 7.78125 45.25 8.46061 45.25 9.29863V13.7014C45.25 14.5394 46.0492 15.2188 47.0352 15.2188H59.0898C60.0758 15.2188 60.875 14.5394 60.875 13.7014V9.29863C60.875 8.46061 60.0758 7.78125 59.0898 7.78125Z" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="square" />
+          <path d="M53.2187 9.60498H47.5034C47.4171 9.60498 47.3472 9.66444 47.3472 9.73779V13.2616C47.3472 13.335 47.4171 13.3945 47.5034 13.3945H53.2187C53.3049 13.3945 53.3749 13.335 53.3749 13.2616V9.73779C53.3749 9.66444 53.3049 9.60498 53.2187 9.60498Z" fill="currentColor" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="square" />
+          <path d="M62.75 10.2605V12.7394" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" />
+          <path
+            d="M14.6667 6.66675C15.1727 6.66675 15.5833 7.03841 15.5833 7.49591V15.8376C15.5833 16.2959 15.1727 16.6667 14.6667 16.6667C14.1607 16.6667 13.75 16.2951 13.75 15.8376V7.49591C13.75 7.03758 14.1607 6.66675 14.6667 6.66675ZM11 9.16675C11.2431 9.16675 11.4763 9.25455 11.6482 9.41083C11.8201 9.56711 11.9167 9.77907 11.9167 10.0001V15.8334C11.9167 16.0544 11.8201 16.2664 11.6482 16.4227C11.4763 16.579 11.2431 16.6667 11 16.6667C10.7569 16.6667 10.5237 16.579 10.3518 16.4227C10.1799 16.2664 10.0833 16.0544 10.0833 15.8334V10.0001C10.0833 9.77907 10.1799 9.56711 10.3518 9.41083C10.5237 9.25455 10.7569 9.16675 11 9.16675ZM7.33333 11.6667C7.83933 11.6667 8.25 12.0376 8.25 12.4951V15.8384C8.25 16.2959 7.83933 16.6667 7.33333 16.6667C6.82733 16.6667 6.41667 16.2959 6.41667 15.8384V12.4951C6.41703 12.386 6.44102 12.278 6.48729 12.1773C6.53355 12.0766 6.60117 11.9852 6.68629 11.9083C6.77141 11.8314 6.87236 11.7705 6.98338 11.729C7.0944 11.6876 7.21332 11.6664 7.33333 11.6667ZM3.66667 14.1667C4.17267 14.1667 4.58333 14.5334 4.58333 14.9867V15.8468C4.58237 15.9553 4.5579 16.0626 4.51132 16.1626C4.46473 16.2626 4.39694 16.3532 4.31182 16.4293C4.2267 16.5055 4.12591 16.5656 4.01522 16.6064C3.90452 16.6471 3.78608 16.6676 3.66667 16.6667C3.16067 16.6667 2.75 16.3001 2.75 15.8468V14.9867C2.75096 14.8782 2.77543 14.7709 2.82202 14.6709C2.8686 14.5709 2.93639 14.4803 3.02151 14.4042C3.10664 14.328 3.20742 14.2679 3.31812 14.2271C3.42881 14.1864 3.54725 14.1659 3.66667 14.1667Z"
+            fill="currentColor" />
+        </svg>
+      </div>
+
+      <!-- 상태바 -->
+      <div class="mt-space-10 w-full whitespace-nowrap inline-flex bg-primary-color gap-space-4 font-bold text-white">
+        <a href="/" class="text-phrase-m block py-space-1 px-space-3 bg-transparent border-b-2 border-current text-text-default">피드 </a>
+        <a href="/" class="text-phrase-m block py-space-1 px-space-3 bg-transparent">방문</a>
+        <a href="/" class="text-phrase-m block py-space-1 px-space-3 bg-transparent">리뷰</a>
+        <a href="/" class="text-phrase-m block py-space-1 px-space-3 bg-transparent">예약·주문</a>
+      </div>
+      <!-- 지역바 -->
+      <div class="whitespace-nowrap overflow-x-auto w-[320px] h-space-13 py-space-2 flex gap-space-1 relative text-text-default">
+        <button type="button" class="w-[54px] text-label-s rounded-sm bg-white font-bold">전체</button>
+        <button type="button" class="w-[54px] text-label-s rounded-sm bg-white font-bold">팔로잉</button>
+        <button type="button" class="w-[54px] text-label-s rounded-sm bg-white font-bold">홍익대</button>
+        <button type="button" class="w-[54px] text-label-s rounded-sm bg-white font-bold">합정역</button>
+        <button type="button" class="w-[54px] text-label-s rounded-sm bg-secondary-color text-white font-bold">망원동</button>
+        <div class="font-sans text-text-default font-bold backdrop-blur-[5px] left-[260.375px] top-0 bottom-0 right-0 absolute py-space-4">
+          <svg class="text-current inline self-center align-baseline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.75 7.44225C3.75 11.0813 6.933 14.0903 8.34225 15.2438C8.54475 15.4088 8.646 15.4928 8.79675 15.5348C8.91375 15.5678 9.08625 15.5678 9.20325 15.5348C9.354 15.4928 9.45525 15.4095 9.65775 15.2438C11.067 14.0903 14.25 11.0813 14.25 7.44225C14.2493 6.75903 14.1131 6.08273 13.8492 5.45254C13.5853 4.82235 13.1989 4.2508 12.7125 3.771C11.7233 2.79528 10.3894 2.24878 9 2.25C7.61058 2.24878 6.27667 2.79528 5.2875 3.771C4.80106 4.25077 4.41468 4.82232 4.15076 5.45251C3.88683 6.08271 3.75062 6.75902 3.75 7.44225Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7.5 6.75C7.5 7.14782 7.65804 7.52936 7.93934 7.81066C8.22064 8.09196 8.60218 8.25 9 8.25C9.39782 8.25 9.77936 8.09196 10.0607 7.81066C10.342 7.52936 10.5 7.14782 10.5 6.75C10.5 6.35218 10.342 5.97064 10.0607 5.68934C9.77936 5.40804 9.39782 5.25 9 5.25C8.60218 5.25 8.22064 5.40804 7.93934 5.68934C7.65804 5.97064 7.5 6.35218 7.5 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="text-label-s self-center text-current align-top">현위치</span>
+        </div>
+      </div>
+      <!--선택바 -->
+      <div class="w-full flex whitespace-nowrap overflow-x-auto gap-x-2 gap-y-1 p-space-2">
+        <button class="text-white bg-tertiary-color border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">한식</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">아이와 함께</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">양식</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">문화예술</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">일식</button>
+        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">중식</button>
+      </div>
+
+      <!-- 맘에 드는 리뷰 팔로우? -->
+      <div class="mb-space-6 mt-space-6 flex flex-col items-center text-center">
+        <div class="relative flex items-center justify-center w-[54px] h-[54px]">
+          <!-- 큰 원 -->
+          <div class="w-[46px] h-[46px] bg-primary-color text-white flex items-center justify-center rounded-full text-xs">img</div>
+          <!-- 체크 아이콘 (작은 원) -->
+          <div class="absolute bottom-0 right-0 w-[18px] h-[18px] bg-primary-color text-white flex items-center justify-center rounded-full border border-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+        </div>
+        <h2 class="text-label-m font-bold">맘에 드는 리뷰어 팔로우해볼까요?</h2>
+        <p class="text-phrase-s text-gray-600">여기서 최신 리뷰를 모아볼 수 있어요</p>
+      </div>
+      <!-- 찐 리뷰어 -->
+      <div class="bg-gray-200 w-full pl-space-4 h-[48px]">
+        <h2 class="mt-space-4 font-bold text-label-m"><span class="text-secondary-color">홍익대</span> 주변 찐 리뷰어 만나봐요</h2>
+      </div>
+
+      <!-- 리뷰 모달 -->
+      <div class="w-full h-[272px] px-space-4 bg-gray-200 overflow-auto">
+        <div class="flex overflow-x-auto space-x-space-4">
+          <!-- 모달 1 -->
+          <div class="m-space-2 bg-tertiary-color text-black w-[222px] h-[248px] pt-3 rounded-md relative shadow-md flex-shrink-0">
+            <!-- 닫기 버튼 -->
+            <button class="absolute -top-1.5 -right-1.5">
+              <img src="/src/assets/icons/close-circle.svg" alt="" />
+            </button>
+
+            <!-- 유저 정보 -->
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <!-- 프로필 이미지 -->
+                  <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-xs text-white">img</div>
+                  <div>
+                    <p class="text-sm font-bold">HANSOL</p>
+                    <p class="text-xs text-gray-500">사진리뷰 23</p>
+                  </div>
+                </div>
+                <!-- 팔로우 버튼 -->
+                <button class="bg-primary-color text-white text-xs px-3 py-1 rounded-full">팔로우</button>
+              </div>
+            </div>
+
+            <!-- 이미지 그리드 -->
+            <div class="grid grid-cols-2 w-[222px] h-[200px] gap-0 border-t border-white">
+              <div class="bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+                <p class="text-label-s">서울 망원동</p>
+                <p class="text-label-m font-bold">코랏</p>
+              </div>
+              <div class="bg-[url('/src/assets/food/reviewFood2.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+                <p class="text-label-s">서울 연남동</p>
+                <p class="text-label-m font-bold">OBPC</p>
+              </div>
+              <div class="bg-[url('/src/assets/food/reviewFood3.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+                <p class="text-label-s">서울 응암동</p>
+                <p class="text-label-m font-bold">기린 작업실</p>
+              </div>
+              <div class="bg-[url('/src/assets/food/reviewFood4.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+                <p class="text-label-s">서울 연남동</p>
+                <p class="text-label-m font-bold">뉴오더클럽</p>
+              </div>
+            </div>
+          </div>
+          <!-- 모달 2 -->
+          <div class="m-space-2 bg-tertiary-color text-black w-[222px] h-[248px] pt-3 rounded-md relative shadow-md flex-shrink-0">
+            <!-- 닫기 버튼 -->
+            <button class="absolute -top-1.5 -right-1.5">
+              <img src="/src/assets/icons/close-circle.svg" alt="" />
+            </button>
+
+            <!-- 유저 정보 -->
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <!-- 프로필 이미지 -->
+                  <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-xs text-white">img</div>
+                  <div>
+                    <p class="text-sm font-bold">WOOMIN</p>
+                    <p class="text-xs text-gray-500">사진리뷰 23</p>
+                  </div>
+                </div>
+                <!-- 팔로우 버튼 -->
+                <button class="bg-primary-color text-white text-xs px-3 py-1 rounded-full">팔로우</button>
+              </div>
+            </div>
+
+            <!-- 이미지 그리드 -->
+            <div class="grid grid-cols-2 w-[222px] h-[200px] gap-0 border-t border-white">
+              <div class="bg-[url('/src/assets/food/reviewFood1.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+                <p class="text-label-s">서울 망원동</p>
+                <p class="text-label-m font-bold">코랏</p>
+              </div>
+              <div class="bg-[url('/src/assets/food/reviewFood2.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+                <p class="text-label-s">서울 망원동</p>
+                <p class="text-label-m font-bold">코랏</p>
+              </div>
+              <div class="bg-[url('/src/assets/food/reviewFood3.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+                <p class="text-label-s">서울 망원동</p>
+                <p class="text-label-m font-bold">코랏</p>
+              </div>
+              <div class="bg-[url('/src/assets/food/reviewFood4.png')] bg-cover bg-center flex flex-col items-start justify-end border border-white text-white">
+                <p class="text-label-s">서울 망원동</p>
+                <p class="text-label-m font-bold">코랏</p>
+              </div>
+            </div>
+          </div>
+          <!-- 모달 1 -->
+          <div class="mt-space-2 bg-tertiary-color text-black w-[222px] h-[248px] pt-3 rounded-md relative shadow-md flex-shrink-0">
+            <!-- 닫기 버튼 -->
+            <button class="absolute -top-1.5 -right-1.5">
+              <img src="/src/assets/icons/close-circle.svg" alt="" />
+            </button>
+
+            <!-- 유저 정보 -->
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <!-- 프로필 이미지 -->
+                  <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-xs text-white">img</div>
+                  <div>
+                    <p class="text-sm font-semibold">COOLIOON</p>
+                    <p class="text-xs text-gray-500">사진리뷰 23</p>
+                  </div>
+                </div>
+                <!-- 팔로우 버튼 -->
+                <button class="bg-primary-color text-white text-xs px-3 py-1 rounded-full">팔로우</button>
+              </div>
+            </div>
+
+            <!-- 이미지 그리드 -->
+            <div class="grid grid-cols-2 w-[222px] h-[200px] gap-0 border-t border-white">
+              <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+                <p>text</p>
+                <p class="font-bold">img</p>
+              </div>
+              <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+                <p>text</p>
+                <p class="font-bold">img</p>
+              </div>
+              <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+                <p>text</p>
+                <p class="font-bold">img</p>
+              </div>
+              <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+                <p>text</p>
+                <p class="font-bold">img</p>
+              </div>
+            </div>
+          </div>
+          <!-- 모달 1 -->
+          <div class="mt-space-2 bg-tertiary-color text-black w-[222px] h-[248px] pt-3 rounded-md relative shadow-md flex-shrink-0">
+            <!-- 닫기 버튼 -->
+            <button class="absolute -top-1.5 -right-1.5">
+              <img src="/src/assets/icons/close-circle.svg" alt="" />
+            </button>
+
+            <!-- 유저 정보 -->
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <!-- 프로필 이미지 -->
+                  <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-xs text-white">img</div>
+                  <div>
+                    <p class="text-sm font-semibold">COOLIOON</p>
+                    <p class="text-xs text-gray-500">사진리뷰 23</p>
+                  </div>
+                </div>
+                <!-- 팔로우 버튼 -->
+                <button class="bg-primary-color text-white text-xs px-3 py-1 rounded-full">팔로우</button>
+              </div>
+            </div>
+
+            <!-- 이미지 그리드 -->
+            <div class="grid grid-cols-2 w-[222px] h-[200px] gap-0 border-t border-white">
+              <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+                <p>text</p>
+                <p class="font-bold">img</p>
+              </div>
+              <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+                <p>text</p>
+                <p class="font-bold">img</p>
+              </div>
+              <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+                <p>text</p>
+                <p class="font-bold">img</p>
+              </div>
+              <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+                <p>text</p>
+                <p class="font-bold">img</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-[60px]"></div>
+      <!-- 하단 내비게이션 -->
+      <div class="bg-white fixed bottom-0 pb-space-2 flex w-[320px] justify-center text-phrase-s font-sans">
+        <button class="inline-flex flex-col py-space-2 px-space-3">
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.75 7.44225C3.75 11.0813 6.933 14.0903 8.34225 15.2438C8.54475 15.4088 8.646 15.4928 8.79675 15.5348C8.91375 15.5678 9.08625 15.5678 9.20325 15.5348C9.354 15.4928 9.45525 15.4095 9.65775 15.2438C11.067 14.0903 14.25 11.0813 14.25 7.44225C14.2493 6.75903 14.1131 6.08273 13.8492 5.45254C13.5853 4.82235 13.1989 4.2508 12.7125 3.771C11.7233 2.79528 10.3894 2.24878 9 2.25C7.61058 2.24878 6.27667 2.79528 5.2875 3.771C4.80106 4.25077 4.41468 4.82232 4.15076 5.45251C3.88683 6.08271 3.75062 6.75902 3.75 7.44225Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7.5 6.75C7.5 7.14782 7.65804 7.52936 7.93934 7.81066C8.22064 8.09196 8.60218 8.25 9 8.25C9.39782 8.25 9.77936 8.09196 10.0607 7.81066C10.342 7.52936 10.5 7.14782 10.5 6.75C10.5 6.35218 10.342 5.97064 10.0607 5.68934C9.77936 5.40804 9.39782 5.25 9 5.25C8.60218 5.25 8.22064 5.40804 7.93934 5.68934C7.65804 5.97064 7.5 6.35218 7.5 6.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div>지도</div>
+        </button>
+        <button class="inline-flex flex-col py-space-2 px-space-3">
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 5.4V12.5137C4.5 13.5345 4.5 14.0452 4.653 14.3572C4.79142 14.6396 5.01504 14.8712 5.29228 15.0195C5.56951 15.1678 5.88634 15.2253 6.198 15.1838C6.543 15.1388 6.9675 14.8553 7.8165 14.289L7.81875 14.2875C8.1555 14.0625 8.3235 13.9507 8.49975 13.8885C8.8232 13.7742 9.17606 13.7742 9.4995 13.8885C9.67575 13.9507 9.8445 14.0633 10.1827 14.289C11.0325 14.8553 11.4578 15.138 11.8028 15.1838C12.1143 15.2251 12.431 15.1676 12.708 15.0193C12.9851 14.871 13.2086 14.6394 13.347 14.3572C13.5 14.0452 13.5 13.5345 13.5 12.5137V5.39775C13.5 4.55925 13.5 4.13925 13.3365 3.819C13.1925 3.53669 12.9627 3.30722 12.6802 3.1635C12.36 3 11.94 3 11.1 3H6.9C6.06 3 5.64 3 5.319 3.1635C5.03674 3.30727 4.80727 3.53674 4.6635 3.819C4.5 4.14 4.5 4.56 4.5 5.4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <div>저장</div>
+        </button>
+        <button class="inline-flex flex-col py-space-2 px-space-3">
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.25 4.5V15.75M11.25 4.5L15.75 2.25V13.5L11.25 15.75M11.25 4.5L6.75 2.25M11.25 15.75L6.75 13.5M6.75 2.25L2.25 4.5V15.75L6.75 13.5M6.75 2.25V13.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div>대중교통</div>
+        </button>
+        <button class="inline-flex flex-col py-space-2 px-space-3">
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.25 8.25H3.03375M3.03375 8.25H14.9662M3.03375 8.25C3.04275 8.211 3.0525 8.1735 3.06375 8.13525C3.10391 8.01565 3.1515 7.89867 3.20625 7.785L4.3665 5.175C4.59525 4.65975 4.71 4.401 4.8915 4.212C5.052 4.04475 5.2485 3.91725 5.466 3.8385C5.71275 3.75 5.99475 3.75 6.5595 3.75H11.4405C12.0045 3.75 12.288 3.75 12.534 3.8385C12.7515 3.91725 12.948 4.04475 13.1077 4.212C13.2892 4.401 13.404 4.659 13.6328 5.17425L14.7975 7.794C14.8717 7.96125 14.91 8.04675 14.9363 8.13525C14.9475 8.17275 14.9572 8.211 14.9662 8.25M3.03375 8.25C3.02435 8.29315 3.01685 8.33669 3.01125 8.3805C3 8.475 3 8.5695 3 8.76V12.75M14.9662 8.25H15.75M14.9662 8.25C14.976 8.2935 14.9827 8.337 14.988 8.3805C15 8.4735 15 8.568 15 8.7555V12.75M3 12.75H6M3 12.75V13.5C3 13.8978 3.15804 14.2794 3.43934 14.5607C3.72064 14.842 4.10218 15 4.5 15C4.89782 15 5.27936 14.842 5.56066 14.5607C5.84196 14.2794 6 13.8978 6 13.5V12.75M15 12.75H12M15 12.75V13.5C15 13.8978 14.842 14.2794 14.5607 14.5607C14.2794 14.842 13.8978 15 13.5 15C13.1022 15 12.7206 14.842 12.4393 14.5607C12.158 14.2794 12 13.8978 12 13.5V12.75M12 12.75H6"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+          <div>내비게이션</div>
+        </button>
+        <button class="inline-flex flex-col pt-space- pb-space-2 px-space-3">
+          <svg class="mb-space-1" width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="2" fill="#171F31" />
+          </svg>
+
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.9127 14.499C12.4208 13.948 11.8179 13.5073 11.1435 13.2059C10.4692 12.9044 9.73866 12.7491 9 12.75C7.44525 12.75 6.04875 13.425 5.08725 14.499M9 15.75C8.11358 15.75 7.23583 15.5754 6.41689 15.2362C5.59794 14.897 4.85382 14.3998 4.22703 13.773C3.60023 13.1462 3.10303 12.4021 2.76381 11.5831C2.42459 10.7642 2.25 9.88642 2.25 9C2.25 8.11358 2.42459 7.23583 2.76381 6.41689C3.10303 5.59794 3.60023 4.85382 4.22703 4.22703C4.85382 3.60023 5.59794 3.10303 6.41689 2.76381C7.23583 2.42459 8.11358 2.25 9 2.25C10.7902 2.25 12.5071 2.96116 13.773 4.22703C15.0388 5.4929 15.75 7.20979 15.75 9C15.75 10.7902 15.0388 12.5071 13.773 13.773C12.5071 15.0388 10.7902 15.75 9 15.75ZM9 10.5C8.70453 10.5 8.41194 10.4418 8.13896 10.3287C7.86598 10.2157 7.61794 10.0499 7.40901 9.84099C7.20008 9.63206 7.03434 9.38402 6.92127 9.11104C6.8082 8.83806 6.75 8.54547 6.75 8.25C6.75 7.95453 6.8082 7.66194 6.92127 7.38896C7.03434 7.11598 7.20008 6.86794 7.40901 6.65901C7.61794 6.45008 7.86598 6.28434 8.13896 6.17127C8.41194 6.0582 8.70453 6 9 6C9.59674 6 10.169 6.23705 10.591 6.65901C11.0129 7.08097 11.25 7.65326 11.25 8.25C11.25 8.84674 11.0129 9.41903 10.591 9.84099C10.169 10.2629 9.59674 10.5 9 10.5Z"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+          <div>MY</div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
