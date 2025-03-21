@@ -3,151 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Re:8lace - visit component</title>
+    <title>Re:8lace - reserve component</title>
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <!-- 예약, 주문-->
-    <!-- <div class="relative w-[8.75rem] h-[2.215rem] text-label-s">
-      <a href="/" class="w-[4.9375rem] h-[2.125rem] bg-blue-700 text-white font-bold rounded-2xl text-center leading-[34px] inline-block cursor-pointer z-10 relative">
-        <img src="/src/assets/icons/date.svg" alt="예약 아이콘" class="w-4 h-4 inline-block mr-1"> 예약
+    <!-- class="w-80 sm:w-[28.125rem] lg:w-[37.5rem]" -->
+
+    <!-- 첫 번째 예약-주문 -->
+    <div class="flex justify-center text-label-s py-space-5 px-[5.625rem]">
+      <a href="/" class="z-10 flex-1 flex items-center justify-center gap-space-1 px-space-4 py-space-2 rounded-2xl bg-primary-color text-white">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.25 3H13.5V2.25C13.5 1.8375 13.1625 1.5 12.75 1.5C12.3375 1.5 12 1.8375 12 2.25V3H6V2.25C6 1.8375 5.6625 1.5 5.25 1.5C4.8375 1.5 4.5 1.8375 4.5 2.25V3H3.75C2.9175 3 2.2575 3.675 2.2575 4.5L2.25 15C2.25 15.3978 2.40804 15.7794 2.68934 16.0607C2.97064 16.342 3.35218 16.5 3.75 16.5H14.25C15.075 16.5 15.75 15.825 15.75 15V4.5C15.75 3.675 15.075 3 14.25 3ZM14.25 14.25C14.25 14.6625 13.9125 15 13.5 15H4.5C4.0875 15 3.75 14.6625 3.75 14.25V6.75H14.25V14.25ZM5.25 8.25H6.75V9.75H5.25V8.25ZM8.25 8.25H9.75V9.75H8.25V8.25ZM11.25 8.25H12.75V9.75H11.25V8.25Z" fill="currentColor" />
+        </svg>
+        예약
       </a>
-      <a href="/" class="w-[4.9375rem] h-[2.125rem] bg-gray-400 text-white font-bold rounded-2xl text-center leading-[34px] inline-block absolute left-[3.9375rem] pointer-events-none opacity-50">
-        <img src="/src/assets/icons/spoon.svg" alt="주문 아이콘" class="w-4 h-4 inline-block mr-1"> 주문
+      <a href="#" class="-ml-4 flex-1 flex items-center justify-center gap-space-1 px-space-4 py-space-2 rounded-2xl bg-gray-100 text-primary-color">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_204_3460" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="2" y="0" width="14" height="18">
+            <path d="M5.25 1.5V16.5M3 1.875V5.625C3 7.5 5.25 7.5 5.25 7.5C5.25 7.5 7.5 7.5 7.5 5.625V1.875M12.75 7.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M15 4.5C15 6.15675 13.9927 7.5 12.75 7.5C11.5073 7.5 10.5 6.15675 10.5 4.5C10.5 2.84325 11.5073 1.5 12.75 1.5C13.9927 1.5 15 2.84325 15 4.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </mask>
+          <g mask="url(#mask0_204_3460)">
+            <path d="M0 0H18V18H0V0Z" fill="currentColor" />
+          </g>
+        </svg>
+        주문
       </a>
     </div>
 
-    <div class="relative w-[8.75rem] h-[2.215rem] text-label-s mt-3">
-      <a href="/" class="w-[4.9375rem] h-[2.125rem] bg-gray-400 text-white font-bold rounded-2xl text-center leading-[34px] inline-block relative pointer-events-none opacity-50">
-        <img src="/src/assets/icons/date.svg" alt="주문 아이콘" class="w-4 h-4 inline-block mr-1"> 예약
+    <!-- 두 번째 예약-주문 -->
+    <div class="flex justify-center text-label-s py-space-5 px-[5.625rem]">
+      <a href="#" class="flex flex-1 items-center justify-center gap-space-1 px-space-4 py-space-2 rounded-2xl bg-gray-100 text-primary-color">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.25 3H13.5V2.25C13.5 1.8375 13.1625 1.5 12.75 1.5C12.3375 1.5 12 1.8375 12 2.25V3H6V2.25C6 1.8375 5.6625 1.5 5.25 1.5C4.8375 1.5 4.5 1.8375 4.5 2.25V3H3.75C2.9175 3 2.2575 3.675 2.2575 4.5L2.25 15C2.25 15.3978 2.40804 15.7794 2.68934 16.0607C2.97064 16.342 3.35218 16.5 3.75 16.5H14.25C15.075 16.5 15.75 15.825 15.75 15V4.5C15.75 3.675 15.075 3 14.25 3ZM14.25 14.25C14.25 14.6625 13.9125 15 13.5 15H4.5C4.0875 15 3.75 14.6625 3.75 14.25V6.75H14.25V14.25ZM5.25 8.25H6.75V9.75H5.25V8.25ZM8.25 8.25H9.75V9.75H8.25V8.25ZM11.25 8.25H12.75V9.75H11.25V8.25Z" fill="currentColor" />
+        </svg>
+        예약
       </a>
-      <a href="/" class="w-[4.9375rem] h-[2.125rem] bg-blue-700 text-white font-bold rounded-2xl text-center leading-[34px] inline-block absolute left-[3.9375rem] cursor-pointer">
-      <img src="/src/assets/icons/spoon.svg" alt="예약 아이콘" class="w-4 h-4 inline-block mr-1"> 주문
-    </a>  
-    </div> -->
-    
-    
-
-
-
-    <!-- 예약 주문 버전2 -->
-    <!-- <div class="relative w-[140px] h-[34px] text-label-s">
-      <div id="group1" class="absolute inset-0 flex transition-opacity duration-300">
-        <button onclick="toggleButtons()" class="w-[79px] h-[34px] bg-blue-600 text-white font-bold rounded relative z-10">예약</button>
-        <button onclick="toggleButtons()" class="w-[79px] h-[34px] bg-gray-400 text-white font-bold rounded absolute left-[3.8125rem]">주문</button>
-      </div>
-      <div id="group2" class="absolute inset-0 flex opacity-0 transition-opacity duration-300">
-        <button onclick="toggleButtons()" class="w-[79px] h-[34px] bg-gray-400 text-white font-bold rounded">예약</button>
-        <button onclick="toggleButtons()" class="w-[79px] h-[34px] bg-blue-600 text-white font-bold rounded absolute left-[3.8125rem]">주문</button>
-      </div>
+      <a href="/" class="-ml-4 z-10 flex-1 flex items-center justify-center gap-space-1 px-space-4 py-space-2 rounded-2xl bg-primary-color text-white">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_204_3460" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="2" y="0" width="14" height="18">
+            <path d="M5.25 1.5V16.5M3 1.875V5.625C3 7.5 5.25 7.5 5.25 7.5C5.25 7.5 7.5 7.5 7.5 5.625V1.875M12.75 7.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M15 4.5C15 6.15675 13.9927 7.5 12.75 7.5C11.5073 7.5 10.5 6.15675 10.5 4.5C10.5 2.84325 11.5073 1.5 12.75 1.5C13.9927 1.5 15 2.84325 15 4.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </mask>
+          <g mask="url(#mask0_204_3460)">
+            <path d="M0 0H18V18H0V0Z" fill="currentColor" />
+          </g>
+        </svg>
+        주문
+      </a>
     </div>
-    <script>
-      function toggleButtons() {
-        document.getElementById('group1').classList.toggle('opacity-0');
-        document.getElementById('group2').classList.toggle('opacity-0');
-      }
-    </script> -->
-
-    <!-- 예약 주문 버전3 -->
-   <div class="relative w-[140px] h-[34px] flex text-label-s">
-  <div id="group1" class="absolute inset-0 flex transition-opacity duration-300">
-    <button onclick="location.href='#'; toggleButtons()" class="w-[4.9375rem] h-[2.125rem] bg-blue-600 text-white font-bold rounded-2xl flex items-center justify-center z-10">
-      <img src="/src/assets/icons/date.svg" alt="예약 아이콘" class="w-[1.125rem] h-[1.125rem]"> 예약
-    </button>
-    <button onclick="location.href='#'; toggleButtons()" class="w-[4.9375rem] h-[2.125rem] bg-gray-400 text-white font-bold rounded-2xl flex items-center justify-center ml-[-18px]">
-      <img src="/src/assets/icons/spoon.svg" alt="주문 아이콘" class="w-[1.125rem] h-[1.125rem]"> 주문
-    </button>
-  </div>
-  
-  <div id="group2" class="absolute inset-0 flex opacity-0 transition-opacity duration-300">
-    <button onclick="location.href='#'; toggleButtons()" class="w-[4.9375rem] h-[2.125rem] bg-gray-400 text-white font-bold rounded-2xl flex items-center justify-center">
-      <img src="/src/assets/icons/date.svg" alt="예약 아이콘" class="w-[1.125rem] h-[1.125rem] mr-1"> 예약
-    </button>
-    <button onclick="location.href='#'; toggleButtons()" class="w-[4.9375rem] h-[2.125rem] bg-blue-600 text-white font-bold rounded-2xl flex items-center justify-center ml-[-18px]">
-      <img src="/src/assets/icons/spoon.svg" alt="주문 아이콘" class="w-[1.125rem] h-[1.125rem] mr-1"> 주문
-    </button>
-  </div>
-</div>
-
-<script>
-  function toggleButtons() {
-    document.getElementById('group1').classList.toggle('opacity-0');
-    document.getElementById('group2').classList.toggle('opacity-0');
-  }
-</script>
-
-<!-- 버튼 왔다갔다 -->
-<!-- <label class="relative w-[140px] h-[34px] text-label-s inline-block cursor-pointer">
-  <input type="checkbox" class="sr-only peer">
-  <span class="absolute w-[79px] h-[34px] bg-gray-400 text-white font-bold rounded-md text-center leading-[34px] inline-block left-[61px] transition-all duration-300 peer-checked:left-0">
-    주문
-  </span>
-  <span class="absolute w-[79px] h-[34px] bg-blue-700 text-white font-bold rounded-md text-center leading-[34px] inline-block left-0 transition-all duration-300 peer-checked:left-[61px]">
-    예약
-  </span>
-</label> -->
-
-<!-- 위치 다른 버튼 -->
-<!-- <div class="relative w-[140px] h-[34px] space-y-6">
-  <div class="relative w-[140px] h-[34px]">
-    <label class="absolute top-0 left-0 w-[140px] h-[34px] cursor-pointer">
-      <input type="checkbox" class="sr-only peer">
-      <span class="absolute w-[79px] h-[34px] bg-blue-700 text-white font-bold rounded-md text-center leading-[34px] inline-block left-0 transition-all duration-300 peer-checked:left-[61px]">
-        예약
-      </span>
-      <span class="absolute w-[79px] h-[34px] bg-gray-400 text-white font-bold rounded-md text-center leading-[34px] inline-block left-[61px] transition-all duration-300 peer-checked:left-0">
-        주문
-      </span>
-    </label>
-
-    <label class="absolute top-0 left-0 w-[140px] h-[34px] cursor-pointer">
-      <input type="checkbox" class="sr-only peer">
-      <span class="absolute w-[79px] h-[34px] bg-gray-400 text-white font-bold rounded-md text-center leading-[34px] inline-block left-[61px] transition-all duration-300 peer-checked:left-0">
-        예약
-      </span>
-      <span class="absolute w-[79px] h-[34px] bg-blue-700 text-white font-bold rounded-md text-center leading-[34px] inline-block left-0 transition-all duration-300 peer-checked:left-[61px]">
-        주문
-      </span>
-    </label>
-  </div>
-
-  <div class="relative w-[140px] h-[34px]">
-    <label class="absolute top-0 left-0 w-[140px] h-[34px] cursor-pointer">
-      <input type="checkbox" class="sr-only peer">
-      <span class="absolute w-[79px] h-[34px] bg-gray-400 text-white font-bold rounded-md text-center leading-[34px] inline-block left-[61px] transition-all duration-300 peer-checked:left-0">
-        주문
-      </span>
-      <span class="absolute w-[79px] h-[34px] bg-blue-700 text-white font-bold rounded-md text-center leading-[34px] inline-block left-0 transition-all duration-300 peer-checked:left-[61px]">
-        예약
-      </span>
-    </label>
-
-    <label class="absolute top-0 left-0 w-[140px] h-[34px] cursor-pointer">
-      <input type="checkbox" class="sr-only peer">
-      <span class="absolute w-[79px] h-[34px] bg-blue-700 text-white font-bold rounded-md text-center leading-[34px] inline-block left-0 transition-all duration-300 peer-checked:left-[61px]">
-        주문
-      </span>
-      <span class="absolute w-[79px] h-[34px] bg-gray-400 text-white font-bold rounded-md text-center leading-[34px] inline-block left-[61px] transition-all duration-300 peer-checked:left-0">
-        예약
-      </span>
-    </label>
-  </div>
-</div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- 전체 - 뷰티 - 병의원 - 공연 전시  -->
     <div class="bg-primary-color text-white w-[5.25rem] h-[5.1875rem] text-phrase-s justify-items-center content-center rounded-xl">
@@ -161,62 +67,218 @@
 
     <!-- 예약 N회, 금액 -->
     <div class="w-80 h-20 px-space-9 py-space-4 text-label-m">
-      <p>LION님은 <span class="text-lightblue-400">33회</span> 예약하셨고, <span class="text-lightblue-400">76,000원</span> 결제하셨어요.</p>
+      <p>HOJEONG님은 <span class="text-lightblue-400">33회</span> 예약하셨고, <span class="text-lightblue-400">76,000원</span> 결제하셨어요.</p>
     </div>
 
-    <!-- 방문 상호명 및 1순위-->
-    <div class="w-[20rem] h-[2.875rem] relative flex flex-wrap justify-between px-space-6 items-center text-center">
-      <div class="text-label-s font-bold flex items-center w-[8.375rem] h-[1.375rem]">
-        <p class="bg-pink-200 text-gray-600 rounded-lg w-[1.375rem] h-[1.375rem] mr-space-2 flex items-center justify-center">1</p>
-        <span>미랑컬헤어 상동점</span>
-        <img src="/src/assets/icons/date-blue.svg" alt="date icon" />
-      </div>
-      <p class="text-label-s text-gray-600">12회</p>
-      <div class="absolute bottom-0 w-[17.125rem] h-0.5 bg-primary"></div>
-    </div>
+    <!-- 더보기 transition 추가 -->
+    <article class="bg-white flex justify-between gap-4 w-fit p-5">
+      <div class="flex flex-col gap-space-2 my-space-2 mx-space-5 items-start">
+        <!-- 방문 상호명 및 1순위-->
+        <div class="relative w-[20rem] h-[2.875rem] flex flex-wrap justify-between px-space-6 items-center text-center">
+          <div class="text-label-s font-bold flex items-center w-[8.375rem] h-[1.375rem]">
+            <p class="bg-pink-200 text-gray-600 rounded-lg w-[1.375rem] h-[1.375rem] mr-space-2 flex items-center justify-center">1</p>
+            <span>미랑컬헤어 상동점</span>
+            <img src="/src/assets/icons/date-blue.svg" alt="date icon" />
+          </div>
+          <p class="text-label-s text-gray-600">12회</p>
+          <div class="absolute bottom-0 w-[17.125rem] h-0.5 bg-primary"></div>
+        </div>
 
-    <!-- 방문 상호명 및 2순위 -->
-    <div class="w-[20rem] h-[2.875rem] flex flex-wrap justify-between px-space-6 items-center text-center content-end">
-      <div class="text-label-s font-bold flex items-center w-[8.375rem] h-[1.375rem] my-space-3">
-        <p class="bg-pink-200 text-gray-600 rounded-lg w-[1.375rem] h-[1.375rem] mr-space-2 flex items-center justify-center">2</p>
-        <span>미랑컬헤어 상동점</span>
-        <img src="/src/assets/icons/date-blue.svg" alt="date icon" />
-      </div>
-      <p class="text-label-s text-gray-600">12회</p>
-      <div class="relateiv w-[17.125rem] h-0.5 bg-lightblue-400">
-        <div class="absolute w-[12.0625rem] h-0.5 bg-primary"></div>
-      </div>
-    </div>
+        <!-- 방문 상호명 및 2순위 -->
+        <div class="relative w-[20rem] h-[2.875rem] flex flex-wrap justify-between px-space-6 items-center text-center content-end">
+          <div class="text-label-s font-bold flex items-center w-[8.375rem] h-[1.375rem] my-space-3">
+            <p class="bg-pink-200 text-gray-600 rounded-lg w-[1.375rem] h-[1.375rem] mr-space-2 flex items-center justify-center">2</p>
+            <span>미랑컬헤어 상동점</span>
+            <img src="/src/assets/icons/date-blue.svg" alt="date icon" />
+          </div>
+          <p class="text-label-s text-gray-600">12회</p>
+          <div class="w-[17.125rem] h-0.5 bg-lightblue-400"></div>
+          <div class="absolute bottom-0 w-[12.0625rem] h-0.5 bg-primary"></div>
+        </div>
 
-    <!-- 방문 상호명 및 3순위 -->
-    <div class="w-[20rem] h-[2.875rem] flex flex-wrap justify-between px-space-6 items-center text-center content-end">
-      <div class="text-label-s font-bold flex items-center w-[8.375rem] h-[1.375rem] my-space-3">
-        <p class="bg-pink-200 text-gray-600 rounded-lg w-[1.375rem] h-[1.375rem] mr-space-2 flex items-center justify-center">3</p>
-        <span>미랑컬헤어 상동점</span>
-        <img src="/src/assets/icons/date-blue.svg" alt="date icon" />
+        <!-- 방문 상호명 및 3순위 -->
+        <div class="relative w-[20rem] h-[2.875rem] flex flex-wrap justify-between px-space-6 items-center text-center content-end">
+          <div class="text-label-s font-bold flex items-center w-[8.375rem] h-[1.375rem] my-space-3">
+            <p class="bg-pink-200 text-gray-600 rounded-lg w-[1.375rem] h-[1.375rem] mr-space-2 flex items-center justify-center">3</p>
+            <span>미랑컬헤어 상동점</span>
+            <img src="/src/assets/icons/date-blue.svg" alt="date icon" />
+          </div>
+          <p class="text-label-s text-gray-600">8회</p>
+          <div class="w-[17.125rem] h-0.5 bg-lightblue-400"></div>
+          <div class="absolute bottom-0 w-[8.25rem] h-0.5 bg-primary"></div>
+        </div>
+        <!-- SVG 버튼 -->
+        <label for="toggle" class="flex flex-wrap justify-center items-center gap-[.9375rem] cursor-pointer">
+          <!-- 토글 체크박스 (숨김) -->
+          <input type="checkbox" id="toggle" class="hidden peer" />
+          <!-- 숨겨진 추가 키워드 -->
+          <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
+            <!-- 방문 상호명 및 4순위 -->
+            <div class="relative w-[20rem] h-[2.875rem] flex flex-wrap justify-between px-space-6 items-center text-center content-end">
+              <div class="text-label-s font-bold flex items-center w-[8.375rem] h-[1.375rem] my-space-3">
+                <p class="bg-pink-200 text-gray-600 rounded-lg w-[1.375rem] h-[1.375rem] mr-space-2 flex items-center justify-center">3</p>
+                <span>미랑컬헤어 상동점</span>
+                <img src="/src/assets/icons/date-blue.svg" alt="date icon" />
+              </div>
+              <p class="text-label-s text-gray-600">3회</p>
+              <div class="w-[17.125rem] h-0.5 bg-lightblue-400"></div>
+              <div class="absolute bottom-0 w-[6.25rem] h-0.5 bg-primary"></div>
+            </div>
+          </div>
+          <span class="text-phrase-s peer-checked:text-gray-500 peer-checked:hideen">더보기</span>
+          <!-- unchecked, checked -->
+          <svg class="transition-transform duration-300 peer-checked:text-gray-500 peer-checked:rotate-180" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.0001 12.7313C8.9001 12.7313 8.80335 12.7126 8.70985 12.6751C8.61585 12.6376 8.5376 12.5876 8.4751 12.5251L5.0251 9.0751C4.8876 8.9376 4.81885 8.7626 4.81885 8.5501C4.81885 8.3376 4.8876 8.1626 5.0251 8.0251C5.1626 7.8876 5.3376 7.81885 5.5501 7.81885C5.7626 7.81885 5.9376 7.8876 6.0751 8.0251L9.0001 10.9501L11.9251 8.0251C12.0626 7.8876 12.2376 7.81885 12.4501 7.81885C12.6626 7.81885 12.8376 7.8876 12.9751 8.0251C13.1126 8.1626 13.1813 8.3376 13.1813 8.5501C13.1813 8.7626 13.1126 8.9376 12.9751 9.0751L9.5251 12.5251C9.4501 12.6001 9.36885 12.6531 9.28135 12.6841C9.19385 12.7156 9.1001 12.7313 9.0001 12.7313Z" fill="currentColor" />
+          </svg>
+        </label>
       </div>
-      <p class="text-label-s text-gray-600">8회</p>
-      <div class="w-[17.125rem] h-0.5 bg-lightblue-400">
-        <div class="absolute w-[8.25rem] h-0.5 bg-primary"></div>
-      </div>
-    </div>
+    </article>
 
-    <!-- 더보기(임시 색 추가) -->
-    <div class="bg-gray-100 w-[20rem] h-[3.0625rem] flex items-center justify-center cursor-pointer">
-      <span class="text-phrase-s">더보기</span>
-      <img src="/src/assets/icons/down-b.svg" alt="더보기" />
-    </div>
-
-    <!-- 유디계산치과의원 (임시 색 추가)-->
-    <div class="bg-yellow-200 w-[17.875rem] h-[6.5625rem] text-phrase-s">
+    <!-- 유디계산치과의원 -->
+    <div class="w-[17.875rem] h-[6.5625rem] text-phrase-s">
       <a class="block pt-[.9375rem] pr-[13.125rem] pb-[1.375rem] pl-[1.125rem] underline">첫 번째 예약</a>
-      <p class="pl-[1.125rem] pr-[12.625rem] py-space-4">임플란트 상담</p>
+      <p class="pl-[1.125rem] pr-[12.625rem] py-space-4">치아교정 상담</p>
     </div>
 
-    <!-- 김민지 부원장 (임시 색 추가 ) -->
-    <div class="bg-gray-200 w-[17.9375rem] h-[3.375rem] px-space-3 py-space-2">
-      <p class="text-label-s flex justify-between">김민지 부원장<span>35,000원</span></p>
-      <p class="text-gray-600 text-phrase-s">컷</p>
+    <!-- 배지원 원장  -->
+    <div class="w-[17.9375rem] h-[3.375rem] px-space-3 py-space-2">
+      <p class="text-label-s flex justify-between">배지원 원장<span>150,000원</span></p>
+      <p class="text-gray-600 text-phrase-s">펌</p>
     </div>
+
+    <!--  뷰티 (빨간 하트) -->
+    <div class="bg-white p-space-4 w-[19.5625rem] h-[4.6875rem]">
+      <div class="flex justify-between items-center">
+        <div class="flex gap-space-2 items-center">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- 배경 원 -->
+            <circle cx="17" cy="17" r="17" fill="#FF9E9E" />
+            <!-- 가위 아이콘 -->
+            <g transform="translate(8, 8)">
+              <path
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.629 3.70881C13.914 3.3015 14.0256 2.79767 13.9393 2.3081C13.8529 1.81852 13.5757 1.38328 13.1685 1.09806L12.861 0.882812L9.00148 6.39531L5.14123 0.882812L4.83373 1.09806C4.42667 1.38339 4.14957 1.81869 4.06336 2.30826C3.97715 2.79783 4.08887 3.30159 4.37398 3.70881L7.62823 8.35656L6.27823 10.2841C5.52002 10.0414 4.70044 10.0746 3.96433 10.3777C3.22821 10.6809 2.62296 11.2345 2.25552 11.9407C1.88808 12.6469 1.78211 13.4603 1.95634 14.2371C2.13057 15.0139 2.57378 15.7041 3.20765 16.1857C3.84151 16.6674 4.62523 16.9094 5.42031 16.8691C6.21538 16.8289 6.97062 16.5088 7.55256 15.9656C8.13449 15.4223 8.50567 14.6909 8.60049 13.9005C8.69531 13.11 8.50767 12.3115 8.07073 11.6461L9.00073 10.3186L9.93073 11.6446C9.49344 12.3098 9.30535 13.1081 9.39971 13.8986C9.49407 14.689 9.86479 15.4207 10.4464 15.9642C11.028 16.5078 11.783 16.8283 12.578 16.8691C13.373 16.9099 14.1568 16.6683 14.791 16.1871C15.4252 15.706 15.8688 15.0161 16.0436 14.2395C16.2183 13.4628 16.113 12.6494 15.746 11.9429C15.3791 11.2365 14.7743 10.6825 14.0385 10.3788C13.3026 10.0751 12.4831 10.0413 11.7247 10.2833L10.3747 8.35656L13.629 3.70881ZM4.12498 13.5001C4.12498 13.3523 4.15408 13.206 4.21061 13.0695C4.26715 12.9331 4.35002 12.809 4.45448 12.7046C4.55895 12.6001 4.68297 12.5172 4.81946 12.4607C4.95595 12.4042 5.10224 12.3751 5.24998 12.3751C5.39772 12.3751 5.54401 12.4042 5.6805 12.4607C5.81699 12.5172 5.94101 12.6001 6.04547 12.7046C6.14994 12.809 6.23281 12.9331 6.28934 13.0695C6.34588 13.206 6.37498 13.3523 6.37498 13.5001C6.37498 13.7984 6.25645 14.0846 6.04547 14.2956C5.83449 14.5065 5.54835 14.6251 5.24998 14.6251C4.95161 14.6251 4.66546 14.5065 4.45448 14.2956C4.2435 14.0846 4.12498 13.7984 4.12498 13.5001ZM11.625 13.5001C11.625 13.2017 11.7435 12.9155 11.9545 12.7046C12.1655 12.4936 12.4516 12.3751 12.75 12.3751C13.0483 12.3751 13.3345 12.4936 13.5455 12.7046C13.7565 12.9155 13.875 13.2017 13.875 13.5001C13.875 13.7984 13.7565 14.0846 13.5455 14.2956C13.3345 14.5065 13.0483 14.6251 12.75 14.6251C12.4516 14.6251 12.1655 14.5065 11.9545 14.2956C11.7435 14.0846 11.625 13.7984 11.625 13.5001Z"
+                fill="white" />
+            </g>
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-label-m font-semibold">JW헤어</span>
+            <time datetime="2022-11-29 14:00" class="-my-0.5 block text-phrase-s text-gray-600">22.11.29 화 | 오후 2:00</time>
+          </div>
+        </div>
+        <div class="flex text-red">
+          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 16.5125L7.9125 15.5225C4.05 12.02 1.5 9.7025 1.5 6.875C1.5 4.5575 3.315 2.75 5.625 2.75C6.93 2.75 8.1825 3.3575 9 4.31C9.8175 3.3575 11.07 2.75 12.375 2.75C14.685 2.75 16.5 4.5575 16.5 6.875C16.5 9.7025 13.95 12.02 10.0875 15.5225L9 16.5125Z" fill="currentColor" />
+          </svg>
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.75 14C8.75 14.1989 8.82902 14.3897 8.96967 14.5303C9.11032 14.671 9.30109 14.75 9.5 14.75C9.69891 14.75 9.88968 14.671 10.0303 14.5303C10.171 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.171 13.6103 10.0303 13.4697C9.88968 13.329 9.69891 13.25 9.5 13.25C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14ZM8.75 9.5C8.75 9.69891 8.82902 9.88968 8.96967 10.0303C9.11032 10.171 9.30109 10.25 9.5 10.25C9.69891 10.25 9.88968 10.171 10.0303 10.0303C10.171 9.88968 10.25 9.69891 10.25 9.5C10.25 9.30109 10.171 9.11032 10.0303 8.96967C9.88968 8.82902 9.69891 8.75 9.5 8.75C9.30109 8.75 9.11032 8.82902 8.96967 8.96967C8.82902 9.11032 8.75 9.30109 8.75 9.5ZM8.75 5C8.75 5.19891 8.82902 5.38968 8.96967 5.53033C9.11032 5.67098 9.30109 5.75 9.5 5.75C9.69891 5.75 9.88968 5.67098 10.0303 5.53033C10.171 5.38968 10.25 5.19891 10.25 5C10.25 4.80109 10.171 4.61032 10.0303 4.46967C9.88968 4.32902 9.69891 4.25 9.5 4.25C9.30109 4.25 9.11032 4.32902 8.96967 4.46967C8.82902 4.61032 8.75 4.80109 8.75 5Z"
+              stroke="#A6A6A6"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- 병의원 (파란 하트) -->
+    <div class="bg-white p-space-4 w-[19.5625rem] h-[4.6875rem]">
+      <div class="flex justify-between items-center">
+        <div class="flex gap-space-2 items-center">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="34" rx="17" fill="#8DB0F9" />
+            <path d="M15.875 20.75H18.125V18.125H20.75V15.875H18.125V13.25H15.875V15.875H13.25V18.125H15.875V20.75ZM11.75 23.75C11.3375 23.75 10.9842 23.6033 10.6902 23.3097C10.3967 23.0157 10.25 22.6625 10.25 22.25V11.75C10.25 11.3375 10.3967 10.9842 10.6902 10.6902C10.9842 10.3967 11.3375 10.25 11.75 10.25H22.25C22.6625 10.25 23.0157 10.3967 23.3097 10.6902C23.6033 10.9842 23.75 11.3375 23.75 11.75V22.25C23.75 22.6625 23.6033 23.0157 23.3097 23.3097C23.0157 23.6033 22.6625 23.75 22.25 23.75H11.75Z" fill="white" />
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-label-m font-semibold">유디계산치과의원</span>
+            <time datetime="2022-11-29 14:00" class="-my-0.5 block text-phrase-s text-gray-600">22.11.29 화 | 오후 2:00</time>
+          </div>
+        </div>
+        <div class="flex text-primary">
+          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 16.5125L7.9125 15.5225C4.05 12.02 1.5 9.7025 1.5 6.875C1.5 4.5575 3.315 2.75 5.625 2.75C6.93 2.75 8.1825 3.3575 9 4.31C9.8175 3.3575 11.07 2.75 12.375 2.75C14.685 2.75 16.5 4.5575 16.5 6.875C16.5 9.7025 13.95 12.02 10.0875 15.5225L9 16.5125Z" fill="currentColor" />
+          </svg>
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.75 14C8.75 14.1989 8.82902 14.3897 8.96967 14.5303C9.11032 14.671 9.30109 14.75 9.5 14.75C9.69891 14.75 9.88968 14.671 10.0303 14.5303C10.171 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.171 13.6103 10.0303 13.4697C9.88968 13.329 9.69891 13.25 9.5 13.25C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14ZM8.75 9.5C8.75 9.69891 8.82902 9.88968 8.96967 10.0303C9.11032 10.171 9.30109 10.25 9.5 10.25C9.69891 10.25 9.88968 10.171 10.0303 10.0303C10.171 9.88968 10.25 9.69891 10.25 9.5C10.25 9.30109 10.171 9.11032 10.0303 8.96967C9.88968 8.82902 9.69891 8.75 9.5 8.75C9.30109 8.75 9.11032 8.82902 8.96967 8.96967C8.82902 9.11032 8.75 9.30109 8.75 9.5ZM8.75 5C8.75 5.19891 8.82902 5.38968 8.96967 5.53033C9.11032 5.67098 9.30109 5.75 9.5 5.75C9.69891 5.75 9.88968 5.67098 10.0303 5.53033C10.171 5.38968 10.25 5.19891 10.25 5C10.25 4.80109 10.171 4.61032 10.0303 4.46967C9.88968 4.32902 9.69891 4.25 9.5 4.25C9.30109 4.25 9.11032 4.32902 8.96967 4.46967C8.82902 4.61032 8.75 4.80109 8.75 5Z"
+              stroke="#A6A6A6"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- 주문 페이지 광고 (flex버전) -->
+    <div class="bg-gray-200 text-label-s font-semibold flex flex-col gap-space-3 text-center py-space-3 px-[.625rem]">
+      <p class="text-label-s"><span class="font-semibold text-label-m">"RE:8LACE" 예약</span> 지금 바로 이용해보세요.</p>
+      <div class="bg-white flex flex-wrap rounded-2xl overflow-hidden border border-gray-400">
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">RE:8LACE 주문</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">뷔페</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">공방•클래스</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">놀이공원</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">키즈카페</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">아쿠아리움</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">전시</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">공연</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">펜션</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">헤어샵</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">편의점 택배</a>
+        <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">편의점 배달</a>
+        <div class="w-full flex justify-evenly bg-gradient-to-r from-yellow-100 to-pink-100 border-t border-gray-400">
+          <div class="flex flex-col justify-center items-center">
+            <span class="text-label-m font-semibold">제63회 진해군항제</span>
+            <time datetime="2025-03-29/2025-04-06" class="text-gray-600 text-label-s">기간 : 2025.03.29.(토)~04.06.(일)</time>
+            <span class="text-label-s text-gray-600">장소 : 창원시 진해구 중원로터리 등 진해구 일원</span>
+          </div>
+          <img class="w-[8.0625rem]" src="/src/assets/images/cherry-blossoms-poster.png" alt="벚꽃 축제 포스터" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 광고 페이지 (grid 버전) -->
+    <article class="bg-gray-200 font-semibold px-[.625rem] py-space-3 flex flex-col gap-space-3 text-center">
+      <p class="text-label-s"><span class="text-label-m">"RE:8LACE" 예약</span> 지금 바로 이용해보세요.</p>
+      <div class="bg-white text-label-s grid grid-cols-3 text-center rounded-2xl overflow-hidden border border-gray-400">
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">RE:8LACE 주문</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">뷔페</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">공방•클래스</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">놀이공원</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">키즈카페</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">아쿠아리움</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">전시</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">공연</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">펜션</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">헤어샵</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">편의점 택배</a>
+        <a href="/" class="border border-gray-400 w-full h-full flex items-center justify-center py-space-2">편의점 배달</a>
+        <div class="col-span-full bg-gradient-to-r from-yellow-100 to-pink-100">
+          <div class="w-full flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center">
+              <span class="text-label-m">제63회 진해군항제</span>
+              <time datetime="2025-03-29/2025-04-06">2025.03.29.(토)~04.06.(일)</time>
+            </div>
+            <img class="w-[8.0625rem] object-cover" src="/src/assets/images/cherry-blossoms-poster.png" alt="벚꽃 축제 포스터" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 하단 개인정보처리방침 -->
+    <footer class="bg-gray-200 flex flex-col justify-center items-center text-center gap-[.625rem] pt-[1.125rem] pb-[6.9375rem] px-[1.0625rem]">
+      <div class="bg-white flex gap-[.375rem] px-space-2 py-[.125rem]">
+        <img src="/src/assets/icons/location-black.svg" alt="location-kr" />한국어
+        <img src="/src/assets/icons/down-b.svg" alt="down" />
+      </div>
+      <div class="text-gray-600 flex flex-col justify-center items-center">
+        <span class="text-black mb-[.1875rem]">전체 서비스 | 로그아웃</span>
+        <p>RE:8LACE 예약 고객센터 | 이용약관 | <span class="font-semibold">개인정보처리방침</span></p>
+        <p>RE:8LACE(주)는 통신판매의 당사자가 아니며, 상품의 정보 및 쿠폰 사용 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+        <p>(주) RE:8LACE 사업자정보</p>
+      </div>
+    </footer>
   </body>
 </html>
