@@ -125,6 +125,7 @@
   @apply flex items-center justify-center size-12;
 }
 
+/* visit 페이지 */
 @layer components {
   .keyword-style {
     @apply w-auto max-w-80 h-[2.4375rem] py-[.625rem] px-[1.125rem] bg-primary-color flex flex-col flex-wrap content-center justify-center rounded-sm;
@@ -134,6 +135,7 @@
   }
 }
 
+/* login, setting, follow 페이지 */
 @layer components {
   .default-card {
     @apply w-[90px] h-[92px] flex flex-col items-center justify-between p-3 rounded-md border transition bg-tertiary-color border-tertiary-color;
