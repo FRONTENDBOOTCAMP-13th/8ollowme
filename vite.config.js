@@ -23,6 +23,7 @@ export default defineConfig({
         review: 'src/components/review/review.html',
         reviewChoice: 'src/pages/review/review-choice.html',
         themeEnroll: 'src/pages/review/theme-enroll.html',
+        map: 'src/pages/map/map.html',
       },
     },
   },
