@@ -9,7 +9,7 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <div class="flex flex-col items-center max-w-[599px] mx-auto min-h-screen relative pb-[62px]">
+    <div class="flex flex-col items-center max-w-[599px] mx-auto min-h-screen pb-[62px]">
       <!--          section: status bar          -->
       <div class="inline-flex w-full px-space-4 py-space-2">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@
             <svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 9L6 15H3V12L9 6L11.1518 3.84825L11.1525 3.8475C11.4487 3.55125 11.5972 3.40275 11.7682 3.34725C11.9189 3.29831 12.0811 3.29831 12.2318 3.34725C12.4028 3.40275 12.5505 3.55125 12.8467 3.84675L14.1517 5.15175C14.4487 5.44875 14.5973 5.59725 14.6528 5.76825C14.7017 5.91888 14.7017 6.08113 14.6528 6.23175C14.5973 6.40275 14.4487 6.55125 14.1517 6.84825L12 9.00075L9 6.00075" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <span>리뷰작성</span>
+            <span>피드작성</span>
           </button>
           <!-- 리뷰 버튼 -->
           <button class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white grow-1 cursor-pointer hover:bg-hover-color">
@@ -84,7 +84,7 @@
                 stroke-linejoin="round" />
             </svg>
 
-            <span>text</span>
+            <span>리뷰작성</span>
           </button>
         </div>
       </div>
@@ -92,127 +92,83 @@
       <div class="inline-flex bg-primary-color gap-space-4 font-bold text-white w-full">
         <a href="/" class="py-space-1 px-space-4 flex-auto flex items-center justify-center hover:text-hover-color">피드 </a>
         <a href="/" class="flex-auto flex items-center justify-center py-space-1 px-space-4 hover:text-hover-color">방문</a>
-        <a href="/src/pages/review/review.html" class="flex-auto flex items-center justify-center py-space-1 px-space-4 border-b-2 border-current text-hover-color hover:text-hover-color">리뷰</a>
-        <a href="/" class="flex-auto flex items-center justify-center py-space-1 px-space-4 hover:text-hover-color">예약·주문</a>
+        <a href="/src/pages/review/review.html" class="flex-auto flex items-center justify-center py-space-1 px-space-4 hover:text-hover-color">리뷰</a>
+        <a href="/" class="flex-auto flex items-center justify-center py-space-1 px-space-4 border-b-2 border-current text-hover-color hover:text-hover-color">예약·주문</a>
       </div>
-      <!--          section: theme          -->
-      <section class="grid grid-cols-2 gap-3 w-full px-1.5 pt-2.5 pb-8 bg-gray-100">
-        <div class="col-span-2 p-1 flex gap-1 items-center text-label-m font-semibold">
-          <span>테마</span>
-          <span class="text-contents-contentSecondary">1</span>
-        </div>
-        <div class="flex flex-col justify-between overflow-hidden min-w-[148px] bg-(image:--cheeze-cake) bg-no-repeat bg-cover bg-center rounded-xl p-[9px] relative aspect-[4/5] cursor-pointer">
-          <div class="w-full h-full card-gradient absolute inset-0"></div>
-          <button class="px-1 flex items-center justify-center bg-white/70 text-label-s font-bold text-gray-600 rounded-[4px] mb-[38px] z-10 w-fit">임시저장</button>
-          <div class="z-10 mb-5">
-            <p class="text-phrase-m font-semibold">연남/합정 데이트</p>
-            <div class="flex items-center gap-[3px] text-phrase-s leading-[1.6]">
-              <span>장소 2</span>
-              <div class="icon-box-12">
-                <img src="../../assets/icons/eye-black.svg" alt="" class="icon" />
-              </div>
-              <span>7</span>
-            </div>
-          </div>
-          <div class="flex z-10 gap-0.5">
-            <div class="rounded-[4px] bg-(image:--berry-cake) bg-cover bg-center w-1/3 aspect-square flex items-center justify-center text-label-s"></div>
-            <div class="rounded-[4px] bg-(image:--latte) bg-cover bg-center w-1/3 aspect-square flex items-center justify-center text-label-s"></div>
-          </div>
-        </div>
-        <a href="theme-enroll.html" class="flex flex-col bg-white min-w-[148px] relative aspect-[4/5] rounded-xl justify-center items-center gap-3.5 hover:bg-gray-50 cursor-pointer">
-          <div class="w-11.5 h-11.5 rounded-full flex items-center justify-center bg-hover-color">
-            <img src="../../assets/icons/plus.svg" alt="" class="" />
-          </div>
-          <p class="text-center text-label-s text-gray-600">내 리뷰만 모아 <br />테마만들기</p>
+
+      <div class="flex justify-center text-label-s py-space-5 w-2/3">
+        <a href="#" class="flex flex-1 items-center justify-center gap-space-1 px-space-4 py-space-2 rounded-2xl bg-gray-100 text-primary-color">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.25 3H13.5V2.25C13.5 1.8375 13.1625 1.5 12.75 1.5C12.3375 1.5 12 1.8375 12 2.25V3H6V2.25C6 1.8375 5.6625 1.5 5.25 1.5C4.8375 1.5 4.5 1.8375 4.5 2.25V3H3.75C2.9175 3 2.2575 3.675 2.2575 4.5L2.25 15C2.25 15.3978 2.40804 15.7794 2.68934 16.0607C2.97064 16.342 3.35218 16.5 3.75 16.5H14.25C15.075 16.5 15.75 15.825 15.75 15V4.5C15.75 3.675 15.075 3 14.25 3ZM14.25 14.25C14.25 14.6625 13.9125 15 13.5 15H4.5C4.0875 15 3.75 14.6625 3.75 14.25V6.75H14.25V14.25ZM5.25 8.25H6.75V9.75H5.25V8.25ZM8.25 8.25H9.75V9.75H8.25V8.25ZM11.25 8.25H12.75V9.75H11.25V8.25Z" fill="currentColor" />
+          </svg>
+          예약
         </a>
+        <a href="/" class="-ml-4 z-10 flex-1 flex items-center justify-center gap-space-1 px-space-4 py-space-2 rounded-2xl bg-primary-color text-white">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_204_3460" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="2" y="0" width="14" height="18">
+              <path d="M5.25 1.5V16.5M3 1.875V5.625C3 7.5 5.25 7.5 5.25 7.5C5.25 7.5 7.5 7.5 7.5 5.625V1.875M12.75 7.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15 4.5C15 6.15675 13.9927 7.5 12.75 7.5C11.5073 7.5 10.5 6.15675 10.5 4.5C10.5 2.84325 11.5073 1.5 12.75 1.5C13.9927 1.5 15 2.84325 15 4.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </mask>
+            <g mask="url(#mask0_204_3460)">
+              <path d="M0 0H18V18H0V0Z" fill="currentColor" />
+            </g>
+          </svg>
+          주문
+        </a>
+      </div>
+
+      <div class="bg-gray-100 text-label-s font-semibold flex flex-col gap-space-3 text-center py-space-3 px-[.625rem] flex-1">
+        <p class="text-label-s"><span class="font-semibold text-label-m">"RE:8LACE" 예약</span> 지금 바로 이용해보세요.</p>
+        <div class="bg-white flex flex-wrap rounded-2xl overflow-hidden border border-gray-400 flex-1">
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">RE:8LACE 주문</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">뷔페</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">공방•클래스</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">놀이공원</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">키즈카페</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">아쿠아리움</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">전시</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">공연</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">펜션</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">헤어샵</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">편의점 택배</a>
+          <a href="#" class="w-1/3 flex items-center justify-center border border-gray-400 py-space-2">편의점 배달</a>
+          <div class="w-full flex justify-evenly bg-gradient-to-r from-yellow-100 to-pink-100 border-t border-gray-400">
+            <div class="flex flex-col justify-center items-center w-[60%] p-1">
+              <span class="text-label-m font-semibold">제63회 진해군항제</span>
+              <time datetime="2025-03-29/2025-04-06" class="text-gray-600 text-label-s">기간 : 2025.03.29.(토)~04.06.(일)</time>
+              <span class="text-label-s text-gray-600">장소 : 창원시 진해구 중원로터리 등 진해구 일원</span>
+            </div>
+            <img class="object-cover aspect-2/1 w-[40%] [object-position:center_30%]" src="/src/assets/images/cherry-blossoms-poster.png" alt="벚꽃 축제 포스터" />
+          </div>
+        </div>
+      </div>
+
+      <section class="flex py-3.5 px-6.5 justify-between items-center bg-white w-full text-label-s font-semibold">
+        <div class="flex gap-1 items-center">
+          <div class="icon-box-14">
+            <img src="/src/assets/icons/robot-gray.svg" alt="로봇 이미지" class="icon" />
+          </div>
+          <span class="text-contents-contentSecondary">예약/주문 스마트봇</span>
+        </div>
+        <button class="flex gap-1 py-1 px-3 rounded-[20px] bg-secondary-color hover:bg-hover-color items-center cursor-pointer">
+          <div class="icon-box-16">
+            <img src="/src/assets/icons/bell.svg" alt="종 아이콘" />
+          </div>
+          <span class="text-white">예약 소식 받기</span>
+        </button>
       </section>
-      <!--          section: review          -->
-      <section class="w-full flex flex-col">
-        <nav class="flex items-center justify-between p-3 min-w-[320px] bg-white">
-          <ul class="flex gap-2 items-center justify-center px-3 py-1">
-            <li class="flex items-center justify-center cursor-pointer">
-              <div class="icon-box-s mr-2">
-                <img src="../../assets/icons/hambuger-gray.svg" alt="" class="" />
-              </div>
-              <span class="text-phrase-s font-semibold text-contents-contentTertiary">전체</span>
-            </li>
-            <li class="flex items-center justify-center cursor-pointer">
-              <div class="icon-box-s mr-2">
-                <img src="../../assets/icons/picture-black.svg" alt="" class="icon" />
-              </div>
-              <span class="text-phrase-s font-semibold">사진</span>
-            </li>
-          </ul>
-          <select name="custom-select" id="custom-select" class="text-phrase-s font-semibold text-center appearance-none text-contents-contentSecondary rounded-[10px] pl-1 pr-1 py-1 border border-white hover:border-hover-color hover:text-gray-800 focus:bg-primary-color focus:outline-none focus:text-white">
-            <option value="">최신순</option>
-            <option value="">조회수순</option>
-          </select>
-        </nav>
-        <div class="grid grid-cols-2 gap-y-space-2 gap-x-[6px] px-4 py-2.5">
-          <figure class="min-w-[141px] aspect-square relative bg-(image:--coffee) bg-center bg-cover text-white rounded-[3px] col-span-1">
-            <input type="checkbox" id="omelas" class="peer hidden" />
-            <label for="omelas" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-(image:--bookmark) bg-cover peer-checked:bg-(image:--bookmark-pink)"> </label>
-            <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
-              <p class="">인천광역시 미추홀구</p>
-              <p class="text-phrase-m truncate">오멜라스</p>
-            </div>
-          </figure>
-          <figure class="min-w-[141px] aspect-square relative bg-(image:--futatsu) bg-center bg-cover text-white rounded-[3px] col-span-1">
-            <input type="checkbox" id="futatsu" class="peer hidden" />
-            <label for="futatsu" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-(image:--bookmark) bg-cover peer-checked:bg-(image:--bookmark-pink)"> </label>
-            <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
-              <p class="">서울시 마포구</p>
-              <p class="text-phrase-m truncate">후타츠 홍대</p>
-            </div>
-          </figure>
-          <figure class="min-w-[141px] aspect-square relative bg-(image:--giraffe) bg-center bg-cover text-white rounded-[3px] col-span-1">
-            <input type="checkbox" id="giraffe" class="peer hidden" />
-            <label for="giraffe" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-(image:--bookmark) bg-cover peer-checked:bg-(image:--bookmark-pink)"> </label>
-            <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
-              <p class="">서울시 응암동</p>
-              <p class="text-phrase-m truncate">기린 작업실</p>
-            </div>
-          </figure>
-          <figure class="min-w-[141px] aspect-square relative bg-(image:--mapo-gopchang) bg-center bg-cover text-white rounded-[3px] col-span-1">
-            <input type="checkbox" id="mapo-gopchang" class="peer hidden" />
-            <label for="mapo-gopchang" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-(image:--bookmark) bg-cover peer-checked:bg-(image:--bookmark-pink)"> </label>
-            <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
-              <p class="">서울시 서교동</p>
-              <p class="text-phrase-m truncate">마포곱창 타운</p>
-            </div>
-          </figure>
-          <figure class="min-w-[141px] aspect-square relative bg-(image:--new-order) bg-center bg-cover text-white rounded-[3px] col-span-1">
-            <input type="checkbox" id="new-order" class="peer hidden" />
-            <label for="new-order" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-(image:--bookmark) bg-cover peer-checked:bg-(image:--bookmark-pink)"> </label>
-            <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
-              <p class="">서울시 연남동</p>
-              <p class="text-phrase-m truncate">뉴오더클럽</p>
-            </div>
-          </figure>
-          <figure class="min-w-[141px] aspect-square relative bg-(image:--korak) bg-center bg-cover text-white rounded-[3px] col-span-1">
-            <input type="checkbox" id="korak" class="peer hidden" />
-            <label for="korak" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-(image:--bookmark) bg-cover peer-checked:bg-(image:--bookmark-pink)"> </label>
-            <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
-              <p class="">서울시 망원동</p>
-              <p class="text-phrase-m truncate">코락</p>
-            </div>
-          </figure>
-          <figure class="min-w-[141px] aspect-square relative bg-(image:--sea-love) bg-center bg-cover text-white rounded-[3px] col-span-1">
-            <input type="checkbox" id="sea-love" class="peer hidden" />
-            <label for="sea-love" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-(image:--bookmark) bg-cover peer-checked:bg-(image:--bookmark-pink)"> </label>
-            <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
-              <p class="">서울시 동교동</p>
-              <p class="text-phrase-m truncate">바다회사랑회</p>
-            </div>
-          </figure>
-          <figure class="min-w-[141px] aspect-square relative bg-(image:--samjjusam) bg-center bg-cover text-white rounded-[3px] col-span-1">
-            <input type="checkbox" id="samjjusam" class="peer hidden" />
-            <label for="samjjusam" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-(image:--bookmark) bg-cover peer-checked:bg-(image:--bookmark-pink)"> </label>
-            <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
-              <p class="">서울시 서교동</p>
-              <p class="text-phrase-m truncate">삼쭈삼 홍대본점</p>
-            </div>
-          </figure>
+
+      <!-- 하단 개인정보처리방침 -->
+      <section class="bg-gray-200 flex flex-col justify-center items-center text-center gap-[.625rem] pt-[1.125rem] pb-[6.9375rem] px-[1.0625rem]">
+        <div class="bg-white flex gap-[.375rem] px-space-2 py-[.125rem]">
+          <img src="/src/assets/icons/location-black.svg" alt="location-kr" />한국어
+          <img src="/src/assets/icons/down-b.svg" alt="down" />
+        </div>
+        <div class="text-gray-600 flex flex-col justify-center items-center">
+          <span class="text-black mb-[.1875rem]">전체 서비스 | 로그아웃</span>
+          <p>RE:8LACE 예약 고객센터 | 이용약관 | <span class="font-semibold">개인정보처리방침</span></p>
+          <p>RE:8LACE(주)는 통신판매의 당사자가 아니며, 상품의 정보 및 쿠폰 사용 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+          <p>(주) RE:8LACE 사업자정보</p>
         </div>
       </section>
 
