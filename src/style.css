@@ -257,3 +257,15 @@
     }
   }
 }
+
+@layer components {
+  .invisible {
+    @apply absolute left-0 w-full z-10;
+    top: -100px;
+  }
+
+  &.show {
+    @apply fixed;
+    top: 30px;
+  }
+}
