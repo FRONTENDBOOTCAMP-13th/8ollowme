@@ -58,26 +58,87 @@ if (map) {
         anchor: new naver.maps.Point(10, 32),
       },
     });
-    document.getElementById('back-button').addEventListener('click', function () {
-      map.setCenter(new naver.maps.LatLng(latitude, longitude));
-      map.setZoom(15);
-    });
+    const backButton = document.getElementById('back-button');
+    if (backButton) {
+      backButton.addEventListener('click', function () {
+        map.setCenter(new naver.maps.LatLng(latitude, longitude));
+        map.setZoom(15);
+      });
+    }
 
-    document.getElementById('zoom-in-button').addEventListener('click', function () {
-      map.setZoom(map.getZoom() + 1);
-    });
+    const zoomInButton = document.getElementById('zoom-in-button');
+    if (zoomInButton) {
+      zoomInButton.addEventListener('click', function () {
+        map.setZoom(map.getZoom() + 1);
+      });
+    }
 
-    document.getElementById('zoom-out-button').addEventListener('click', function () {
-      map.setZoom(map.getZoom() - 1);
-    });
+    const zoomOutButton = document.getElementById('zoom-out-button');
+    if (zoomOutButton) {
+      zoomOutButton.addEventListener('click', function () {
+        map.setZoom(map.getZoom() - 1);
+      });
+    }
 
-    document.getElementById('location-button').addEventListener('click', function () {
-      const currentType = map.getMapTypeId();
-      map.setMapTypeId(currentType === naver.maps.MapTypeId.SATELLITE ? naver.maps.MapTypeId.NORMAL : naver.maps.MapTypeId.SATELLITE);
-    });
+    const locationButton = document.getElementById('location-button');
+    if (locationButton) {
+      locationButton.addEventListener('click', function () {
+        const currentType = map.getMapTypeId();
+        map.setMapTypeId(currentType === naver.maps.MapTypeId.SATELLITE ? naver.maps.MapTypeId.NORMAL : naver.maps.MapTypeId.SATELLITE);
+      });
+    }
   }
 }
 
+// if (document.body.classList.contains('sakura-container')) {
+//   new Sakura('body', {
+//     colors: [
+//       {
+//         gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+//         gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+//         gradientColorDegree: 120,
+//       },
+//       {
+//         gradientColorStart: 'rgba(255,189,189)',
+//         gradientColorEnd: 'rgba(227,170,181)',
+//         gradientColorDegree: 120,
+//       },
+//       {
+//         gradientColorStart: 'rgba(212,152,163)',
+//         gradientColorEnd: 'rgba(242,185,196)',
+//         gradientColorDegree: 120,
+//       },
+//     ],
+//     delay: 200,
+//   });
+// }
+
+const sakuraContainer = document.querySelector('.sakura-container');
+
+if (sakuraContainer) {
+  new Sakura('.sakura-container', {
+    // 문자열로 전달
+    colors: [
+      {
+        gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+        gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+        gradientColorDegree: 120,
+      },
+      {
+        gradientColorStart: 'rgba(255,189,189)',
+        gradientColorEnd: 'rgba(227,170,181)',
+        gradientColorDegree: 120,
+      },
+      {
+        gradientColorStart: 'rgba(212,152,163)',
+        gradientColorEnd: 'rgba(242,185,196)',
+        gradientColorDegree: 120,
+      },
+    ],
+    delay: 200,
+    lifeTime: 10000,
+  });
+}
 document.addEventListener('DOMContentLoaded', function () {
   const checkbox = document.getElementById('music-toggle');
   const icon = document.getElementById('music-icon');
