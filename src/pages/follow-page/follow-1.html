@@ -10,10 +10,10 @@
     <script type="module" src="/src/main.js"></script>
   </head>
 
-  <body class="bg-white flex justify-center items-center overflow-auto">
-    <div class="shadow-2xl shadow-secondary-color flex flex-col items-center w-[20rem] sm:w-[37.5rem]">
-      <!-- 탑바 -->
-      <div class="fixed inline-flex w-[20rem] sm:w-[37.5rem] px-space-4 py-space-2 bg-white top-0 z-10">
+  <body class="bg-white flex justify-center overflow-auto">
+    <div class="flex flex-col max-w-[599px] w-full min-h-screen shadow-2xl shadow-secondary-color">
+      <!-- top-bar -->
+      <div class="fixed inline-flex w-full max-w-[599px] px-space-4 py-space-2 bg-white top-0 z-10">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M5.04688 18.1562C7.49219 18.1562 9.28125 16.7734 9.26562 14.8594C9.28125 13.4375 8.375 12.4141 6.78125 12.2031V12.1094C8.01562 11.8516 8.85938 10.9375 8.84375 9.67188C8.85938 7.9375 7.375 6.53125 5.07812 6.53125C2.86719 6.53125 1.14062 7.83594 1.09375 9.73438H3.04688C3.08594 8.78125 4 8.1875 5.0625 8.1875C6.16406 8.1875 6.88281 8.82812 6.875 9.78125C6.88281 10.7656 6.04688 11.4375 4.84375 11.4375H3.82812V13H4.84375C6.3125 13.0078 7.1875 13.7344 7.1875 14.75C7.1875 15.7578 6.28906 16.4453 5.04688 16.4375C3.86719 16.4453 2.96094 15.8438 2.90625 14.9375H0.859375C0.90625 16.8438 2.63281 18.1562 5.04688 18.1562ZM12.2969 16.5938C12.9453 16.5938 13.5 16.0469 13.5 15.375C13.5 14.7188 12.9453 14.1797 12.2969 14.1719C11.625 14.1797 11.0703 14.7188 11.0781 15.375C11.0703 16.0469 11.625 16.5938 12.2969 16.5938ZM11.0781 9.3125C11.0703 9.98438 11.625 10.5312 12.2969 10.5312C12.9453 10.5312 13.5 9.98438 13.5 9.3125C13.5 8.65625 12.9453 8.11719 12.2969 8.10938C11.625 8.11719 11.0703 8.65625 11.0781 9.3125ZM15.4062 18H23.2656V16.2969H18.2344V16.2188L20.25 14.2188C22.4766 12.1172 23.0859 11.0859 23.0938 9.8125C23.0859 7.91406 21.5312 6.53125 19.2188 6.53125C16.9609 6.53125 15.3516 7.92188 15.3594 10.0625H17.2969C17.2891 8.91406 18.0391 8.1875 19.2031 8.1875C20.3047 8.1875 21.1406 8.85156 21.1406 9.90625C21.1406 10.8594 20.5469 11.5312 19.4062 12.6719L15.4062 16.5312V18ZM29.1562 18.1562C31.6562 18.1562 33.4453 16.8125 33.4531 14.9688C33.4453 13.5312 32.3672 12.3594 31.0156 12.1406V12.0781C32.1875 11.8281 33.0156 10.8047 33.0156 9.5625C33.0156 7.8125 31.375 6.53125 29.1562 6.53125C26.9219 6.53125 25.2891 7.8125 25.2812 9.5625C25.2891 10.7969 26.0938 11.8281 27.2812 12.0781V12.1406C25.9219 12.3594 24.8516 13.5312 24.8594 14.9688C24.8516 16.8125 26.6328 18.1562 29.1562 18.1562ZM26.9531 14.7812C26.9453 13.7109 27.8828 12.9297 29.1562 12.9375C30.4297 12.9297 31.3516 13.7188 31.3594 14.7812C31.3516 15.8281 30.4844 16.5469 29.1562 16.5469C27.8125 16.5469 26.9453 15.8281 26.9531 14.7812ZM27.2656 9.75C27.2734 8.78906 28.0234 8.125 29.1562 8.125C30.2656 8.125 31.0312 8.78906 31.0312 9.75C31.0312 10.7422 30.2422 11.4219 29.1562 11.4219C28.0547 11.4219 27.2734 10.7422 27.2656 9.75Z"
@@ -38,8 +38,9 @@
         <a href="/" class="text-phrase-m block py-space-1 px-space-3 sm:px-space-8 bg-transparent">리뷰</a>
         <a href="/" class="text-phrase-m block py-space-1 px-space-3 sm:px-space-8 bg-transparent">예약·주문</a>
       </div>
+
       <!-- 지역바 -->
-      <div class="whitespace-nowrap overflow-x-auto w-[20rem] justify-center sm:w-[37.5rem] h-space-13 py-space-2 flex gap-space-1 relative text-text-default">
+      <div class="whitespace-nowrap overflow-x-auto justify-center w-full h-space-13 py-space-2 flex gap-space-1 relative text-text-default">
         <button type="button" class="w-[54px] text-label-s rounded-sm bg-white font-bold">전체</button>
         <button type="button" class="w-[54px] text-label-s rounded-sm bg-white font-bold">팔로잉</button>
         <button type="button" class="w-[54px] text-label-s rounded-sm bg-white font-bold">홍익대</button>
@@ -50,24 +51,54 @@
             <path d="M3.75 7.44225C3.75 11.0813 6.933 14.0903 8.34225 15.2438C8.54475 15.4088 8.646 15.4928 8.79675 15.5348C8.91375 15.5678 9.08625 15.5678 9.20325 15.5348C9.354 15.4928 9.45525 15.4095 9.65775 15.2438C11.067 14.0903 14.25 11.0813 14.25 7.44225C14.2493 6.75903 14.1131 6.08273 13.8492 5.45254C13.5853 4.82235 13.1989 4.2508 12.7125 3.771C11.7233 2.79528 10.3894 2.24878 9 2.25C7.61058 2.24878 6.27667 2.79528 5.2875 3.771C4.80106 4.25077 4.41468 4.82232 4.15076 5.45251C3.88683 6.08271 3.75062 6.75902 3.75 7.44225Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M7.5 6.75C7.5 7.14782 7.65804 7.52936 7.93934 7.81066C8.22064 8.09196 8.60218 8.25 9 8.25C9.39782 8.25 9.77936 8.09196 10.0607 7.81066C10.342 7.52936 10.5 7.14782 10.5 6.75C10.5 6.35218 10.342 5.97064 10.0607 5.68934C9.77936 5.40804 9.39782 5.25 9 5.25C8.60218 5.25 8.22064 5.40804 7.93934 5.68934C7.65804 5.97064 7.5 6.35218 7.5 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          <span class="text-label-s self-center text-current align-top ml-1">현위치</span>
+          <span class="text-label-s self-center text-current align-top mx-space-1">현위치</span>
         </div>
       </div>
-      <!--선택바 -->
-      <div class="w-full flex whitespace-nowrap sm:justify-center overflow-x-auto gap-x-2 gap-y-1 p-space-2">
-        <button class="text-white bg-tertiary-color border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">한식</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">아이와 함께</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">양식</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">문화예술</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">일식</button>
-        <button class="border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s">중식</button>
+
+      <!-- 카테고리 -->
+      <div class="w-full flex sm:justify-center whitespace-nowrap overflow-x-auto gap-x-2 gap-y-1 p-space-2">
+        <!-- 버튼 1 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 한식 </span>
+        </label>
+
+        <!-- 버튼 2 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 아이와 함께 </span>
+        </label>
+
+        <!-- 버튼 3 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 양식 </span>
+        </label>
+
+        <!-- 버튼 4 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 문화예술 </span>
+        </label>
+
+        <!-- 버튼 5 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 일식 </span>
+        </label>
+
+        <!-- 버튼 6 -->
+        <label class="cursor-pointer">
+          <input type="checkbox" class="peer hidden" />
+          <span class="peer-checked:bg-tertiary-color peer-checked:text-white border-[1px] border-tertiary-color rounded-4xl px-space-3 py-space-2 text-phrase-s block"> 중식 </span>
+        </label>
       </div>
 
       <!-- 맘에 드는 리뷰 팔로우? -->
       <div class="w-full mb-space-6 mt-space-6 flex flex-col items-center text-center">
         <div class="relative flex items-center justify-center w-[54px] h-[54px]">
           <!-- 큰 원 -->
-          <div class="w-[46px] h-[46px] bg-primary-color text-white flex items-center justify-center rounded-full text-xs">img</div>
+          <div class="w-[46px] h-[46px] bg-primary-color text-white flex items-center justify-center rounded-full text-phrase-s">img</div>
           <!-- 체크 아이콘 (작은 원) -->
           <div class="absolute bottom-0 right-0 w-[18px] h-[18px] bg-primary-color text-white flex items-center justify-center rounded-full border border-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -75,16 +106,15 @@
             </svg>
           </div>
         </div>
-        <h2 class="text-label-m font-bold">맘에 드는 리뷰어 팔로우해볼까요?</h2>
-        <p class="text-phrase-s text-gray-600">여기서 최신 리뷰를 모아볼 수 있어요</p>
+        <h2 class="text-label-m sm:text-label-l font-bold">맘에 드는 리뷰어 팔로우해볼까요?</h2>
+        <p class="text-phrase-s sm:text-phrase-m text-gray-600">여기서 최신 리뷰를 모아볼 수 있어요</p>
       </div>
       <!-- 찐 리뷰어 -->
       <div class="bg-gray-100 w-full pl-space-4 h-[48px]">
         <h2 class="mt-space-4 font-bold text-label-m"><span class="text-secondary-color">홍익대</span> 주변 찐 리뷰어 만나봐요</h2>
       </div>
-
       <!-- 리뷰 모달 -->
-      <div class="w-full h-[272px] px-space-4 bg-gray-100 overflow-auto">
+      <div class="mb-[50%] w-full h-[272px] px-space-4 bg-gray-100 overflow-auto">
         <div class="flex overflow-x-auto space-x-space-4">
           <!-- 모달 1 -->
           <a href="/src/pages/follow-page/follow-3.html">
@@ -269,6 +299,7 @@
           </a>
         </div>
       </div>
+
       <!-- 하단 내비게이션 -->
       <footer class="pb-space-2 flex justify-center text-phrase-s sticky bottom-0 w-full bg-white whitespace-nowrap">
         <button class="inline-flex flex-col py-space-2 px-space-3 flex-1 cursor-pointer">
