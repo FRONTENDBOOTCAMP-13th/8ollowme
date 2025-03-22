@@ -103,6 +103,9 @@
 .icon-box-14 {
   @apply flex items-center justify-center size-3.5;
 }
+.icon-box-16 {
+  @apply flex items-center justify-center size-4;
+}
 .icon-box-18 {
   @apply flex items-center justify-center size-4.5;
 }
