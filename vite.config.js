@@ -22,6 +22,7 @@ export default defineConfig({
         visitpage: 'src/pages/visit.html',
         visitbakerypage: 'src/pages/visit-bakery.html',
         reviewguidelines: 'src/components/visit/review-w-guidelines.html',
+        reviewguidelinesbakery: 'src/components/visit/review-w-g-bakery.html',
         coupon: 'src/components/coupon/coupon.html',
         review: 'src/components/review/review.html',
         reviewChoice: 'src/pages/review/review-choice.html',
