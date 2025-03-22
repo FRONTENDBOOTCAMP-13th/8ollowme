@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Re:8lace - visit bakery page</title>
+    <title>Re:8lace - visit page</title>
     <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <script type="module" src="/src/main.js"></script>
-    <script type="module" src="/src/components/visit/photo.js"></script>
+    <script type="module" src="/src/js/photo.js"></script>
   </head>
-  <body>
-    <section class="w-80 sm:w-[28.125rem] lg:w-[37.5rem] mx-auto">
+  <body class="min-h-screen">
+    <section class="w-full max-w-[600px] mx-auto min-h-screen pb-[60px]">
       <!-- top bar -->
       <div class="flex px-space-4 py-space-2">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,20 +30,20 @@
         </svg>
       </div>
 
-      <!-- 비건베이커리 구떼 -->
+      <!-- 미랑컬헤어 상동점 -->
       <article class="bg-white p-space-4">
         <div class="flex justify-between items-end">
-          <span class="text-label-s font-semibold">비건베이커리 구떼</span>
+          <span class="text-label-s font-semibold">미랑컬헤어 상동점</span>
           <img src="/src/assets/icons/close.svg" alt="닫기" />
         </div>
-        <time datetime="2023-1-18" class="-my-0.5 block text-phrase-s text-gray-600">2023.2.8 (수) 1번째 방문</time>
-        <p class="text-phrase-s text-gray-500">파운드 외 2• 12,300원</p>
+        <time datetime="2023-1-18" class="-my-0.5 block text-phrase-s text-gray-600">2023.1.18 (수) 9번째 방문</time>
+        <p class="text-phrase-s text-gray-500">인봉 실장</p>
       </article>
 
       <!-- '이런 곳 좋아요!' -->
       <article class="bg-white py-space-10 px-[4.625rem] flex flex-col flex-nowrap items-center text-center">
         <p class="text-label-m font-semibold">이 곳이 마음에 든다면,</p>
-        <p class="text-phrase-s text-gray-500 my-space-2 whitespace-nowrap">'좋아요' 누르고 취향이 비슷한 사람을 <br />추천받으세요.</p>
+        <p class="text-phrase-s text-gray-600 my-space-2 whitespace-nowrap">'좋아요' 누르고 취향이 비슷한 사람을 <br />추천받으세요.</p>
         <div class="keyword-style w-[8.0625rem] px-space-5 justify-center">
           <p>❤️️</p>
           <span class="text-label-s text-white font-semibold whitespace-nowrap">이런 곳 좋아요!</span>
@@ -51,29 +51,29 @@
       </article>
 
       <!-- 어떤 점이 좋았나요? -->
-      <article class="bg-gray-50 py-space-6 px-[3.8125rem] flex flex-col items-center text-center">
+      <article class="bg-gray-100 py-space-6 px-[3.8125rem] flex flex-col items-center text-center">
         <p class="font-semibold text-label-m mb-space-2 whitespace-nowrap">어떤 점이 좋았나요? (1개~5개)</p>
         <p class="text-label-s text-gray-500 whitespace-nowrap">이 장소에 어울리는 키워드를 골라주세요.</p>
       </article>
 
       <!-- keyword list -->
-      <article class="bg-gray-50 flex justify-between overflow-x-auto gap-4 w-full p-5 scrollbar-custom">
-        <div class="flex flex-col gap-space-2 my-space-2 mx-space-5 items-start">
+      <article class="bg-gray-100 flex justify-between overflow-x-auto w-full gap-4 p-5 scrollbar-custom">
+        <div class="flex flex-col gap-space-2 my-space-2 items-start">
           <div class="keyword-style">
-            <p>💚</p>
-            <span class="text-style">메뉴 구성이 알차요</span>
+            <p>💆‍♂️</p>
+            <span class="text-style">원하는 스타일로 잘해줘요</span>
           </div>
           <div class="keyword-style bg-white">
-            <p>☕</p>
-            <span class="text-style text-gray-600">커피가 맛있어요</span>
+            <p>🤲</p>
+            <span class="text-style text-gray-600">손이 빨라요</span>
           </div>
           <div class="keyword-style">
-            <p>🍞</p>
-            <span class="text-style">빵이 맛있어요</span>
+            <p>😎</p>
+            <span class="text-style">트렌디해요</span>
           </div>
           <div class="keyword-style bg-white">
-            <p>🌿</p>
-            <span class="text-style text-gray-600">건강한 맛이에요</span>
+            <p>✨</p>
+            <span class="text-style text-gray-600">스타일 추천을 잘해줘요</span>
           </div>
           <!-- SVG 버튼 -->
           <label for="toggle" class="place-items-center cursor-pointer">
@@ -82,20 +82,16 @@
             <!-- 숨겨진 추가 키워드 -->
             <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
               <div class="keyword-style bg-white">
-                <p>🧑‍🍳</p>
-                <span class="text-style text-gray-600">특별한 메뉴가 있어요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>🌿</p>
-                <span class="text-style text-gray-600">재료가 신선해요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>🍚</p>
-                <span class="text-style text-gray-600">양이 많아요</span>
-              </div>
-              <div class="keyword-style bg-white">
                 <p>💰</p>
                 <span class="text-style text-gray-600">비싼 만큼 가치있어요</span>
+              </div>
+              <div class="keyword-style bg-white">
+                <p>✂️</p>
+                <span class="text-style text-gray-600">커트 실력이 좋아요</span>
+              </div>
+              <div class="keyword-style bg-white">
+                <p>🔍</p>
+                <span class="text-style text-gray-600">모발 상태를 꼼꼼히 체크해줘요</span>
               </div>
             </div>
             <!-- unchecked, checked -->
@@ -120,22 +116,22 @@
           </label>
         </div>
         <!-- 2열 -->
-        <div class="flex flex-col gap-space-2 my-space-2 mx-space-5 items-start">
+        <div class="flex flex-col gap-space-2 my-space-2 items-start">
           <div class="keyword-style bg-white">
-            <p>💐</p>
-            <span class="text-style text-gray-600">특별한 날 가기 좋아요</span>
+            <p>🛋️</p>
+            <span class="text-style text-gray-600">인테리어가 멋져요</span>
           </div>
           <div class="keyword-style">
-            <p>🛋️</p>
-            <span class="text-style">인테리어가 멋져요</span>
+            <p>🕰️</p>
+            <span class="text-style">예약하기 편리해요</span>
           </div>
           <div class="keyword-style bg-white">
-            <p>👥</p>
-            <span class="text-style text-gray-600">단체모임 하기 좋아요</span>
+            <p>🚻</p>
+            <span class="text-style text-gray-600">화장실이 깨끗해요</span>
           </div>
           <div class="keyword-style bg-white">
-            <p>🖼️</p>
-            <span class="text-style text-gray-600">뷰가 좋아요</span>
+            <p>🅿️</p>
+            <span class="text-style text-gray-600">주차하기 편해요</span>
           </div>
           <!-- SVG 버튼 -->
           <label for="toggle-col-2" class="place-items-center cursor-pointer">
@@ -143,17 +139,17 @@
             <input type="checkbox" id="toggle-col-2" class="hidden peer" />
             <!-- 숨겨진 추가 키워드 -->
             <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
-              <div class="keyword-style">
+              <div class="keyword-style bg-white">
+                <p>💐</p>
+                <span class="text-style text-gray-600">특별한 날 가기 좋아요</span>
+              </div>
+              <div class="keyword-style bg-white">
                 <p>📸</p>
-                <span class="text-style">사진이 잘 나와요</span>
+                <span class="text-style text-gray-600">사진이 잘 나와요</span>
               </div>
               <div class="keyword-style bg-white">
-                <p>🚻</p>
-                <span class="text-style text-gray-600">화장실이 깨끗해요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>🅿️</p>
-                <span class="text-style text-gray-600">주차하기 편해요</span>
+                <p>🎶</p>
+                <span class="text-style text-gray-600">음악이 좋아요</span>
               </div>
             </div>
             <!-- unchecked, checked -->
@@ -178,22 +174,22 @@
           </label>
         </div>
         <!-- 3열 -->
-        <div class="flex flex-col gap-space-2 my-space-2 mx-space-5 items-start">
-          <div class="keyword-style bg-white">
+        <div class="flex flex-col gap-space-2 my-space-2 items-start">
+          <div class="keyword-style">
             <p>💖</p>
-            <span class="text-style text-gray-600">친절해요</span>
+            <span class="text-style">친절해요</span>
           </div>
           <div class="keyword-style bg-white">
-            <p>🎵</p>
-            <span class="text-style text-gray-600">음악이 좋아요</span>
+            <p>🌹</p>
+            <span class="text-style text-gray-600">고급스러워요</span>
           </div>
           <div class="keyword-style bg-white">
-            <p>💻</p>
-            <span class="text-style text-gray-600">집중하기 좋아요</span>
+            <p>🍵</p>
+            <span class="text-style text-gray-600">서비스가 만족스러워요</span>
           </div>
           <div class="keyword-style bg-white">
             <p>😌</p>
-            <span class="text-style text-gray-600">차분한 분위기에요</span>
+            <span class="text-style text-gray-600">편안한 분위기에요</span>
           </div>
           <!-- SVG 버튼 -->
           <label for="toggle-col-3" class="place-items-center cursor-pointer">
@@ -201,9 +197,9 @@
             <input type="checkbox" id="toggle-col-3" class="hidden peer" />
             <!-- 숨겨진 추가 키워드 -->
             <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
-              <div class="keyword-style">
+              <div class="keyword-style bg-white">
                 <p>🐶</p>
-                <span class="text-style">반려동물과 가기 좋아요</span>
+                <span class="text-style text-gray-600">반려동물과 가기 좋아요</span>
               </div>
               <div class="keyword-style bg-white">
                 <p>🗣️</p>
@@ -243,16 +239,16 @@
         <button type="button" class="cursor-pointer text-label-s border font-semibold h-[2.625rem] py-space-3 px-space-3 rounded-sm flex flex-col flex-wrap content-center gap-space-1 show-dialog">
           <img src="/src/assets/icons/photo-b.svg" alt="사진 추가하기" />
           사진추가
-          <span class="text-gray-500">최대 20장</span>
+          <span class="text-gray-600">최대 20장</span>
         </button>
-        <div class="bg-gray-50 text-phrase-s py-6 px-3 w-full h-full rounded-lg">
+        <div class="bg-gray-50 text-phrase-s py-6 px-3 w-full h-[6.8125rem] rounded-lg">
           <p class="text-gray-500">리뷰 작성하기</p>
-          <p class="text-gray-600">빵 종류가 다양해서 골라먹는 재미가 있어요~😋<br />앞으로도 자주 이용할 것 같아요! <br />다들 꼭 와보세요~ 맛집입니당🫶</p>
-          <p class="text-right">64<span class="text-gray-500">/400</span></p>
+          <p class="text-gray-600">머리를 예쁘게 해주셔서 정말 기뻐요!<br />다음에 또 올게요~💖</p>
+          <p class="text-right">30<span class="text-gray-500">/400</span></p>
         </div>
         <div class="text-label-s w-full h-[2.625rem] flex items-center justify-between">
           <a href="/src/components/visit/review-w-guidelines.html" class="underline">리뷰 작성 유의사항</a>
-          <button type="submit" class="cursor-pointer bg-primary-color w-[6.125rem] h-[2.625rem] text-white font-semibold rounded-sm">등록하기</button>
+          <button type="submit" class="cursor-pointer bg-primary-color w-[6.125rem] h-[2.625rem] text-white font-semibold rounded-sm"><a href="/src/pages/"></a>등록하기</button>
         </div>
 
         <!-- 모달 창 -->
@@ -271,27 +267,27 @@
       </article>
 
       <!-- 하단바 -->
-      <footer class="bottom-0 sticky bg-white pb-space-2 flex w-full justify-between px-[1.0625rem] text-phrase-s font-sans">
-        <button class="inline-flex flex-col py-space-2 px-space-3">
+      <footer class="max-w-[600px] w-full bottom-0 fixed bg-white pb-space-2 flex text-phrase-s font-sans">
+        <button class="inline-flex flex-col py-space-2 px-space-3 flex-auto">
           <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.75 7.44225C3.75 11.0813 6.933 14.0903 8.34225 15.2438C8.54475 15.4088 8.646 15.4928 8.79675 15.5348C8.91375 15.5678 9.08625 15.5678 9.20325 15.5348C9.354 15.4928 9.45525 15.4095 9.65775 15.2438C11.067 14.0903 14.25 11.0813 14.25 7.44225C14.2493 6.75903 14.1131 6.08273 13.8492 5.45254C13.5853 4.82235 13.1989 4.2508 12.7125 3.771C11.7233 2.79528 10.3894 2.24878 9 2.25C7.61058 2.24878 6.27667 2.79528 5.2875 3.771C4.80106 4.25077 4.41468 4.82232 4.15076 5.45251C3.88683 6.08271 3.75062 6.75902 3.75 7.44225Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M7.5 6.75C7.5 7.14782 7.65804 7.52936 7.93934 7.81066C8.22064 8.09196 8.60218 8.25 9 8.25C9.39782 8.25 9.77936 8.09196 10.0607 7.81066C10.342 7.52936 10.5 7.14782 10.5 6.75C10.5 6.35218 10.342 5.97064 10.0607 5.68934C9.77936 5.40804 9.39782 5.25 9 5.25C8.60218 5.25 8.22064 5.40804 7.93934 5.68934C7.65804 5.97064 7.5 6.35218 7.5 6.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <div>지도</div>
         </button>
-        <button class="inline-flex flex-col py-space-2 px-space-3">
+        <button class="inline-flex flex-col py-space-2 px-space-3 flex-auto">
           <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.5 5.4V12.5137C4.5 13.5345 4.5 14.0452 4.653 14.3572C4.79142 14.6396 5.01504 14.8712 5.29228 15.0195C5.56951 15.1678 5.88634 15.2253 6.198 15.1838C6.543 15.1388 6.9675 14.8553 7.8165 14.289L7.81875 14.2875C8.1555 14.0625 8.3235 13.9507 8.49975 13.8885C8.8232 13.7742 9.17606 13.7742 9.4995 13.8885C9.67575 13.9507 9.8445 14.0633 10.1827 14.289C11.0325 14.8553 11.4578 15.138 11.8028 15.1838C12.1143 15.2251 12.431 15.1676 12.708 15.0193C12.9851 14.871 13.2086 14.6394 13.347 14.3572C13.5 14.0452 13.5 13.5345 13.5 12.5137V5.39775C13.5 4.55925 13.5 4.13925 13.3365 3.819C13.1925 3.53669 12.9627 3.30722 12.6802 3.1635C12.36 3 11.94 3 11.1 3H6.9C6.06 3 5.64 3 5.319 3.1635C5.03674 3.30727 4.80727 3.53674 4.6635 3.819C4.5 4.14 4.5 4.56 4.5 5.4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <div>저장</div>
         </button>
-        <button class="inline-flex flex-col py-space-2 px-space-3">
+        <button class="inline-flex flex-col py-space-2 px-space-3 flex-auto">
           <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.25 4.5V15.75M11.25 4.5L15.75 2.25V13.5L11.25 15.75M11.25 4.5L6.75 2.25M11.25 15.75L6.75 13.5M6.75 2.25L2.25 4.5V15.75L6.75 13.5M6.75 2.25V13.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <div>대중교통</div>
         </button>
-        <button class="inline-flex flex-col py-space-2 px-space-3">
+        <button class="inline-flex flex-col py-space-2 px-space-3 flex-auto">
           <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.25 8.25H3.03375M3.03375 8.25H14.9662M3.03375 8.25C3.04275 8.211 3.0525 8.1735 3.06375 8.13525C3.10391 8.01565 3.1515 7.89867 3.20625 7.785L4.3665 5.175C4.59525 4.65975 4.71 4.401 4.8915 4.212C5.052 4.04475 5.2485 3.91725 5.466 3.8385C5.71275 3.75 5.99475 3.75 6.5595 3.75H11.4405C12.0045 3.75 12.288 3.75 12.534 3.8385C12.7515 3.91725 12.948 4.04475 13.1077 4.212C13.2892 4.401 13.404 4.659 13.6328 5.17425L14.7975 7.794C14.8717 7.96125 14.91 8.04675 14.9363 8.13525C14.9475 8.17275 14.9572 8.211 14.9662 8.25M3.03375 8.25C3.02435 8.29315 3.01685 8.33669 3.01125 8.3805C3 8.475 3 8.5695 3 8.76V12.75M14.9662 8.25H15.75M14.9662 8.25C14.976 8.2935 14.9827 8.337 14.988 8.3805C15 8.4735 15 8.568 15 8.7555V12.75M3 12.75H6M3 12.75V13.5C3 13.8978 3.15804 14.2794 3.43934 14.5607C3.72064 14.842 4.10218 15 4.5 15C4.89782 15 5.27936 14.842 5.56066 14.5607C5.84196 14.2794 6 13.8978 6 13.5V12.75M15 12.75H12M15 12.75V13.5C15 13.8978 14.842 14.2794 14.5607 14.5607C14.2794 14.842 13.8978 15 13.5 15C13.1022 15 12.7206 14.842 12.4393 14.5607C12.158 14.2794 12 13.8978 12 13.5V12.75M12 12.75H6"
@@ -302,7 +298,7 @@
           </svg>
           <div>내비게이션</div>
         </button>
-        <button class="inline-flex flex-col justify-center pb-space-2 px-space-3">
+        <a class="inline-flex flex-col pb-space-2 items-center px-space-3 flex-auto">
           <svg class="mb-space-1" width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="32" height="2" fill="#171F31" />
           </svg>
@@ -315,7 +311,7 @@
               stroke-linejoin="round" />
           </svg>
           <div>MY</div>
-        </button>
+        </a>
       </footer>
     </section>
   </body>
