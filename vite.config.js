@@ -26,6 +26,7 @@ export default defineConfig({
         review: 'src/components/review/review.html',
         reviewChoice: 'src/pages/review/review-choice.html',
         themeEnroll: 'src/pages/review/theme-enroll.html',
+        map: 'src/pages/map/map.html',
         loginPage1: '/src/pages/login-page/login-page-1',
         loginPage2: '/src/pages/login-page/login-page-2',
         loginPage3: '/src/pages/login-page/login-page-3',
