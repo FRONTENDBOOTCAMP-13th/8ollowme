@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page-2</title>
+    <link rel="icon" href="/assets/favicon.svg" />
+    <link rel="preload" as="font" href="/public/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="bg-primary-color flex justify-center items-center h-screen">
+    <div class="flex flex-col items-center gap-space-2">
+      <!-- 로고 및 제목 -->
+      <div class="flex flex-col items-center">
+        <img src="/src/assets/icon/Re_8lace.png" alt="re8lace 로고" class="block h-[100px] w-[100px]" />
+        <h1 class="text-white text-head-l font-bold mb-space-10">RE: 8LACE</h1>
+      </div>
+
+      <!-- 로그인 텍스트 -->
+      <h2 class="text-white text-head-xl font-bold mb-4 self-start">로그인</h2>
+
+      <form action="/src/pages/setting-page/setting-1.html" method="POST" class="w-full max-w-[300px]">
+        <!-- 아이디 -->
+        <div class="mb-4">
+          <input type="text" placeholder="아이디를 입력해주세요" class="text-text-default w-full min-w-[251px] h-[43px] px-4 border border-text-default rounded-md bg-transparent focus:outline-none focus:ring-1" />
+        </div>
+
+        <!-- 비밀번호 -->
+        <div class="mb-4">
+          <input type="password" placeholder="비밀번호를 입력해주세요" class="text-text-default w-full min-w-[251px] h-[43px] px-4 border border-text-default rounded-md bg-transparent focus:outline-none focus:ring-1" />
+        </div>
+        <!-- 아이디, 비밀번호 찾기 -->
+        <div class="flex justify-between w-full mb-space-10 text-text-default text-sm">
+          <a href="#" class="hover:underline">아이디 찾기</a>
+          <a href="#" class="hover:underline">비밀번호 찾기</a>
+        </div>
+
+        <!-- 로그인 버튼 -->
+        <button class="block w-[251px] h-[43px] bg-secondary-color text-text-default rounded-md font-semibold hover:bg-hover-color transition mb-4">로그인</button>
+      </form>
+      <!-- 회원가입 -->
+      <a href="/src/pages/login-page/login-page-3.html" class="w-[251px] h-[41px] bg-white border border-white text-text-default rounded-md font-semibold flex items-center justify-center hover:bg-hover-color hover:border-hover-color transition">회원가입</a>
+    </div>
+  </body>
+</html>
