@@ -20,6 +20,7 @@
     "vite": "^6.2.1"
   },
   "dependencies": {
+    "openai": "^4.89.0",
     "swiper": "^11.2.6"
   }
 }
