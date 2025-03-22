@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Re:8lace - reserve page</title>
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/js/1.js"></script>
+  </head>
+  <body>
+    <section class="flex flex-col items-center max-w-[600px] mx-auto min-h-screen pb-[60px]">
+      <!-- 상단 바 -->
+      <div class="inline-flex w-full px-space-4 py-space-2">
+        <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.04688 18.1562C7.49219 18.1562 9.28125 16.7734 9.26562 14.8594C9.28125 13.4375 8.375 12.4141 6.78125 12.2031V12.1094C8.01562 11.8516 8.85938 10.9375 8.84375 9.67188C8.85938 7.9375 7.375 6.53125 5.07812 6.53125C2.86719 6.53125 1.14062 7.83594 1.09375 9.73438H3.04688C3.08594 8.78125 4 8.1875 5.0625 8.1875C6.16406 8.1875 6.88281 8.82812 6.875 9.78125C6.88281 10.7656 6.04688 11.4375 4.84375 11.4375H3.82812V13H4.84375C6.3125 13.0078 7.1875 13.7344 7.1875 14.75C7.1875 15.7578 6.28906 16.4453 5.04688 16.4375C3.86719 16.4453 2.96094 15.8438 2.90625 14.9375H0.859375C0.90625 16.8438 2.63281 18.1562 5.04688 18.1562ZM12.2969 16.5938C12.9453 16.5938 13.5 16.0469 13.5 15.375C13.5 14.7188 12.9453 14.1797 12.2969 14.1719C11.625 14.1797 11.0703 14.7188 11.0781 15.375C11.0703 16.0469 11.625 16.5938 12.2969 16.5938ZM11.0781 9.3125C11.0703 9.98438 11.625 10.5312 12.2969 10.5312C12.9453 10.5312 13.5 9.98438 13.5 9.3125C13.5 8.65625 12.9453 8.11719 12.2969 8.10938C11.625 8.11719 11.0703 8.65625 11.0781 9.3125ZM15.4062 18H23.2656V16.2969H18.2344V16.2188L20.25 14.2188C22.4766 12.1172 23.0859 11.0859 23.0938 9.8125C23.0859 7.91406 21.5312 6.53125 19.2188 6.53125C16.9609 6.53125 15.3516 7.92188 15.3594 10.0625H17.2969C17.2891 8.91406 18.0391 8.1875 19.2031 8.1875C20.3047 8.1875 21.1406 8.85156 21.1406 9.90625C21.1406 10.8594 20.5469 11.5312 19.4062 12.6719L15.4062 16.5312V18ZM29.1562 18.1562C31.6562 18.1562 33.4453 16.8125 33.4531 14.9688C33.4453 13.5312 32.3672 12.3594 31.0156 12.1406V12.0781C32.1875 11.8281 33.0156 10.8047 33.0156 9.5625C33.0156 7.8125 31.375 6.53125 29.1562 6.53125C26.9219 6.53125 25.2891 7.8125 25.2812 9.5625C25.2891 10.7969 26.0938 11.8281 27.2812 12.0781V12.1406C25.9219 12.3594 24.8516 13.5312 24.8594 14.9688C24.8516 16.8125 26.6328 18.1562 29.1562 18.1562ZM26.9531 14.7812C26.9453 13.7109 27.8828 12.9297 29.1562 12.9375C30.4297 12.9297 31.3516 13.7188 31.3594 14.7812C31.3516 15.8281 30.4844 16.5469 29.1562 16.5469C27.8125 16.5469 26.9453 15.8281 26.9531 14.7812ZM27.2656 9.75C27.2734 8.78906 28.0234 8.125 29.1562 8.125C30.2656 8.125 31.0312 8.78906 31.0312 9.75C31.0312 10.7422 30.2422 11.4219 29.1562 11.4219C28.0547 11.4219 27.2734 10.7422 27.2656 9.75Z"
+            fill="currentColor" />
+          <path d="M48.2026 7.70371L44.73 17.0837C44.5106 17.6764 43.8789 17.9809 43.3195 17.7633C43.1809 17.7084 43.0553 17.6255 42.9504 17.5196C42.8455 17.4138 42.7636 17.2875 42.7099 17.1485L41.6091 14.366C41.4023 13.8318 40.9922 13.4014 40.4687 13.169L37.8192 12.0134C37.268 11.7725 37.0171 11.1045 37.2581 10.5212C37.315 10.3804 37.3994 10.2522 37.5062 10.1442C37.6131 10.0361 37.7403 9.95035 37.8805 9.89179L46.8148 6.24596C47.3789 6.01554 48.0048 6.30487 48.2119 6.89287C48.3035 7.15304 48.2994 7.44121 48.2026 7.70371Z" fill="currentColor" />
+        </svg>
+        <svg class="ml-auto" width="65" height="20" viewBox="0 0 65 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.7854 16H27.0601V14.7106H23.3092V7.5135H21.7854V16ZM26.814 8.79117H29.4396V16H30.9634V8.79117H33.5774V7.5135H26.814V8.79117ZM34.773 16H40.3173V14.7106H36.2968V12.3897H40.0008V11.1121H36.2968V8.79117H40.2939V7.5135H34.773V16Z" fill="currentColor" />
+          <path d="M59.0898 7.78125H47.0352C46.0492 7.78125 45.25 8.46061 45.25 9.29863V13.7014C45.25 14.5394 46.0492 15.2188 47.0352 15.2188H59.0898C60.0758 15.2188 60.875 14.5394 60.875 13.7014V9.29863C60.875 8.46061 60.0758 7.78125 59.0898 7.78125Z" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="square" />
+          <path d="M53.2187 9.60498H47.5034C47.4171 9.60498 47.3472 9.66444 47.3472 9.73779V13.2616C47.3472 13.335 47.4171 13.3945 47.5034 13.3945H53.2187C53.3049 13.3945 53.3749 13.335 53.3749 13.2616V9.73779C53.3749 9.66444 53.3049 9.60498 53.2187 9.60498Z" fill="currentColor" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="square" />
+          <path d="M62.75 10.2605V12.7394" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" />
+          <path
+            d="M14.6667 6.66675C15.1727 6.66675 15.5833 7.03841 15.5833 7.49591V15.8376C15.5833 16.2959 15.1727 16.6667 14.6667 16.6667C14.1607 16.6667 13.75 16.2951 13.75 15.8376V7.49591C13.75 7.03758 14.1607 6.66675 14.6667 6.66675ZM11 9.16675C11.2431 9.16675 11.4763 9.25455 11.6482 9.41083C11.8201 9.56711 11.9167 9.77907 11.9167 10.0001V15.8334C11.9167 16.0544 11.8201 16.2664 11.6482 16.4227C11.4763 16.579 11.2431 16.6667 11 16.6667C10.7569 16.6667 10.5237 16.579 10.3518 16.4227C10.1799 16.2664 10.0833 16.0544 10.0833 15.8334V10.0001C10.0833 9.77907 10.1799 9.56711 10.3518 9.41083C10.5237 9.25455 10.7569 9.16675 11 9.16675ZM7.33333 11.6667C7.83933 11.6667 8.25 12.0376 8.25 12.4951V15.8384C8.25 16.2959 7.83933 16.6667 7.33333 16.6667C6.82733 16.6667 6.41667 16.2959 6.41667 15.8384V12.4951C6.41703 12.386 6.44102 12.278 6.48729 12.1773C6.53355 12.0766 6.60117 11.9852 6.68629 11.9083C6.77141 11.8314 6.87236 11.7705 6.98338 11.729C7.0944 11.6876 7.21332 11.6664 7.33333 11.6667ZM3.66667 14.1667C4.17267 14.1667 4.58333 14.5334 4.58333 14.9867V15.8468C4.58237 15.9553 4.5579 16.0626 4.51132 16.1626C4.46473 16.2626 4.39694 16.3532 4.31182 16.4293C4.2267 16.5055 4.12591 16.5656 4.01522 16.6064C3.90452 16.6471 3.78608 16.6676 3.66667 16.6667C3.16067 16.6667 2.75 16.3001 2.75 15.8468V14.9867C2.75096 14.8782 2.77543 14.7709 2.82202 14.6709C2.8686 14.5709 2.93639 14.4803 3.02151 14.4042C3.10664 14.328 3.20742 14.2679 3.31812 14.2271C3.42881 14.1864 3.54725 14.1659 3.66667 14.1667Z"
+            fill="currentColor" />
+        </svg>
+      </div>
+      <!-- 프로필 -->
+      <div class="bg-primary-color p-space-5 pt-space-3 w-full">
+        <div class="flex">
+          <a href="/src/pages/coupon/coupon.html" type="button" class="block box-border border-2 rounded-md px-space-1 text-phrase-s relative text-white ml-auto">
+            쿠폰
+            <div class="absolute w-[1.125rem] aspect-square left-[25px] bottom-[8px] text-black bg-white rounded-[50%] text-center">1</div>
+          </a>
+        </div>
+        <div class="flex gap-space-4 items-center">
+          <div class="relative bg-secondary-color border-4 rounded-[50%] text-label-s text-center pt-space-2 text-white border-current aspect-square w-[46px]">
+            img
+            <svg class="box-content inline w-space-3 aspect-square p-space-1 absolute top-[20px] left-[30px] text-black bg-white rounded-[50%]" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 9L6 15H3V12L9 6L11.1518 3.84825L11.1525 3.8475C11.4487 3.55125 11.5972 3.40275 11.7682 3.34725C11.9189 3.29831 12.0811 3.29831 12.2318 3.34725C12.4028 3.40275 12.5505 3.55125 12.8467 3.84675L14.1517 5.15175C14.4487 5.44875 14.5973 5.59725 14.6528 5.76825C14.7017 5.91888 14.7017 6.08113 14.6528 6.23175C14.5973 6.40275 14.4487 6.55125 14.1517 6.84825L12 9.00075L9 6.00075" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="text-white inline-block">
+            <span class="text-label-m font-bold">HOJEONG</span>
+            <button type="button">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.75 6L9 3.75M9 3.75L11.25 6M9 3.75V7.5V11.25M5.25 7.49994C4.551 7.49994 4.2015 7.49994 3.92625 7.61394C3.74414 7.68933 3.57866 7.79986 3.43929 7.93924C3.29992 8.07861 3.18938 8.24408 3.114 8.42619C3 8.70144 3 9.05094 3 9.74994V13.3499C3 14.1899 3 14.6099 3.1635 14.9309C3.30731 15.2132 3.53677 15.4426 3.819 15.5864C4.13925 15.7499 4.55925 15.7499 5.39775 15.7499H12.603C13.4415 15.7499 13.8608 15.7499 14.181 15.5864C14.463 15.4424 14.6925 15.2129 14.8365 14.9309C15 14.6099 15 14.1907 15 13.3522V9.74994C15 9.05094 15 8.70144 14.886 8.42619C14.8106 8.24408 14.7001 8.07861 14.5607 7.93924C14.4213 7.79986 14.2559 7.68933 14.0737 7.61394C13.7985 7.49994 13.449 7.49994 12.75 7.49994" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <table class="text-center">
+              <tr class="text-phrase-s">
+                <td class="border-r-[1px] pr-space-3">리뷰</td>
+                <td class="border-r-[1px] px-space-3">사진</td>
+                <td class="border-r-[1px] px-space-3">팔로잉</td>
+                <td class="pl-space-4">팔로워</td>
+              </tr>
+              <tr class="text-label-s">
+                <td class="border-r-[1px] pr-space-3">17</td>
+                <td class="border-r-[1px] px-space-3">19</td>
+                <td class="border-r-[1px] px-space-3">0</td>
+                <td class="pl-space-4">2</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-space-2 flex gap-space-1">
+          <button class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white grow-1 cursor-pointer hover:bg-hover-color">
+            <svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 9L6 15H3V12L9 6L11.1518 3.84825L11.1525 3.8475C11.4487 3.55125 11.5972 3.40275 11.7682 3.34725C11.9189 3.29831 12.0811 3.29831 12.2318 3.34725C12.4028 3.40275 12.5505 3.55125 12.8467 3.84675L14.1517 5.15175C14.4487 5.44875 14.5973 5.59725 14.6528 5.76825C14.7017 5.91888 14.7017 6.08113 14.6528 6.23175C14.5973 6.40275 14.4487 6.55125 14.1517 6.84825L12 9.00075L9 6.00075" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>피드작성</span>
+          </button>
+          <button class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white grow-1 cursor-pointer hover:bg-hover-color">
+            <svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.25 7.49991L8.25001 10.4999L6.75001 8.99991M9.93451 2.59416L10.8503 3.37416C11.0813 3.57066 11.3678 3.68916 11.6693 3.71391L12.8693 3.80991C13.2103 3.83714 13.5306 3.98494 13.7726 4.22682C14.0146 4.4687 14.1626 4.78885 14.19 5.12991L14.2853 6.32991C14.31 6.63216 14.4293 6.91941 14.6258 7.14966L15.4058 8.06466C15.6281 8.32528 15.7502 8.65661 15.7502 8.99916C15.7502 9.34171 15.6281 9.67304 15.4058 9.93366L14.6258 10.8494C14.4293 11.0804 14.31 11.3669 14.286 11.6692L14.19 12.8692C14.1628 13.2102 14.015 13.5305 13.7731 13.7725C13.5312 14.0145 13.2111 14.1625 12.87 14.1899L11.67 14.2859C11.3679 14.3098 11.081 14.4285 10.8503 14.6249L9.93451 15.4049C9.67383 15.6271 9.34252 15.7491 9.00001 15.7491C8.6575 15.7491 8.3262 15.6271 8.06551 15.4049L7.15051 14.6249C6.91954 14.4283 6.63239 14.3097 6.33001 14.2859L5.13001 14.1899C4.78883 14.1625 4.46859 14.0144 4.22669 13.7722C3.9848 13.53 3.83708 13.2096 3.81001 12.8684L3.71401 11.6692C3.68972 11.3672 3.57084 11.0806 3.37426 10.8502L2.59426 9.93366C2.37236 9.67315 2.25049 9.34212 2.25049 8.99991C2.25049 8.6577 2.37236 8.32667 2.59426 8.06616L3.37426 7.14966C3.57151 6.91866 3.68926 6.63216 3.71326 6.32991L3.80926 5.13066C3.83686 4.78933 3.98508 4.46898 4.22736 4.22698C4.46964 3.98497 4.79016 3.83712 5.13151 3.80991L6.33001 3.71466C6.63221 3.69053 6.91909 3.57163 7.14976 3.37491L8.06551 2.59491C8.3262 2.37275 8.6575 2.25073 9.00001 2.25073C9.34252 2.25073 9.67383 2.372 9.93451 2.59416Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            <span>리뷰작성</span>
+          </button>
+        </div>
+      </div>
+      <!-- 상단 navigation -->
+      <div class="inline-flex bg-primary-color gap-space-4 font-bold text-white w-full">
+        <a href="/" class="py-space-1 px-space-4 flex-auto flex items-center justify-center hover:text-hover-color">피드 </a>
+        <a href="/" class="flex-auto flex items-center justify-center py-space-1 px-space-4 hover:text-hover-color">방문</a>
+        <a href="/src/pages/review/review.html" class="flex-auto flex items-center justify-center py-space-1 px-space-4 hover:text-hover-color">리뷰</a>
+        <a href="/" class="flex-auto flex items-center justify-center py-space-1 px-space-4 border-b-2 border-current text-hover-color hover:text-hover-color">예약·주문</a>
+      </div>
+
+      <!-- 예약 활성화 -->
+      <div class="flex justify-center text-label-s py-space-5 w-2/3">
+        <a href="/" class="z-10 flex-1 flex items-center justify-center gap-space-1 px-space-4 py-space-2 rounded-2xl bg-primary-color text-white">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.25 3H13.5V2.25C13.5 1.8375 13.1625 1.5 12.75 1.5C12.3375 1.5 12 1.8375 12 2.25V3H6V2.25C6 1.8375 5.6625 1.5 5.25 1.5C4.8375 1.5 4.5 1.8375 4.5 2.25V3H3.75C2.9175 3 2.2575 3.675 2.2575 4.5L2.25 15C2.25 15.3978 2.40804 15.7794 2.68934 16.0607C2.97064 16.342 3.35218 16.5 3.75 16.5H14.25C15.075 16.5 15.75 15.825 15.75 15V4.5C15.75 3.675 15.075 3 14.25 3ZM14.25 14.25C14.25 14.6625 13.9125 15 13.5 15H4.5C4.0875 15 3.75 14.6625 3.75 14.25V6.75H14.25V14.25ZM5.25 8.25H6.75V9.75H5.25V8.25ZM8.25 8.25H9.75V9.75H8.25V8.25ZM11.25 8.25H12.75V9.75H11.25V8.25Z" fill="currentColor" />
+          </svg>
+          예약
+        </a>
+        <a href="/src/pages/order/order.html" class="-ml-4 flex-1 flex items-center justify-center gap-space-1 px-space-4 py-space-2 rounded-2xl bg-gray-100 text-primary-color">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_204_3460" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="2" y="0" width="14" height="18">
+              <path d="M5.25 1.5V16.5M3 1.875V5.625C3 7.5 5.25 7.5 5.25 7.5C5.25 7.5 7.5 7.5 7.5 5.625V1.875M12.75 7.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15 4.5C15 6.15675 13.9927 7.5 12.75 7.5C11.5073 7.5 10.5 6.15675 10.5 4.5C10.5 2.84325 11.5073 1.5 12.75 1.5C13.9927 1.5 15 2.84325 15 4.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </mask>
+            <g mask="url(#mask0_204_3460)">
+              <path d="M0 0H18V18H0V0Z" fill="currentColor" />
+            </g>
+          </svg>
+          주문
+        </a>
+      </div>
+
+      <!-- 전체 - 뷰티 - 병의원 - 공연/전시 -->
+      <article class="flex justify-between overflow-x-auto gap-space-1 py-space-4 scrollbar-custom">
+        <div class="flex items-center">
+          <button data-tab="all" class="tab-button shrink-0 py-space-5 px-[30px] bg-primary-color flex flex-col items-center text-phrase-s rounded-xl text-white">
+            <img src="/src/assets/icons/app-b.svg" alt="전체" class="w-6 h-6" />
+            전체
+          </button>
+          <button data-tab="beauty" class="tab-button shrink-0 py-space-5 px-[30px] flex flex-col items-center bg-gray-100 text-phrase-s rounded-xl text-gray-800">
+            <img src="/src/assets/icons/cut.svg" alt="뷰티" class="w-6 h-6" />
+            뷰티
+          </button>
+          <button data-tab="hospital" class="tab-button shrink-0 py-space-5 px-[30px] flex flex-col items-center bg-gray-100 text-phrase-s rounded-xl text-gray-800">
+            <img src="/src/assets/icons/hospital.svg" alt="병의원" class="w-6 h-6" />
+            병의원
+          </button>
+          <button data-tab="ticket" class="tab-button shrink-0 py-space-5 px-[30px] flex flex-col items-center bg-gray-100 text-phrase-s rounded-xl text-gray-800">
+            <img src="/src/assets/icons/ticket.svg" alt="공연/전시" class="w-6 h-6" />
+            공연/전시
+          </button>
+        </div>
+      </article>
+
+      <!-- 전체 콘텐츠 -->
+      <section id="content-all" class="w-full flex flex-col items-center">
+        <!-- 예약 N회, 금액 -->
+        <div class="px-space-9 py-space-4 text-label-m">
+          <p>HOJEONG님은 <span class="text-lightblue-400">22회</span> 예약하셨고, <span class="text-lightblue-400">682,300원</span> 결제하셨어요.</p>
+        </div>
+
+        <!-- 더보기 transition 추가 -->
+        <article class="flex w-full justify-center">
+          <div class="flex flex-col gap-space-2 my-space-3 mx-space-6 w-full">
+            <div class="flex flex-col gap-space-3 justify-center">
+              <div class="flex justify-between items-center text-center">
+                <div class="text-label-s font-bold flex items-center gap-space-2">
+                  <span class="bg-pink-200 text-gray-600 rounded-lg w-[22px] h-[22px] flex justify-center items-center">1</span>
+                  <span class="text-label-s">JW헤어</span>
+                  <img class="w-[18px] h-[18px]" src="/src/assets/icons/date-blue.svg" alt="date icon" />
+                </div>
+                <span class="text-label-s text-gray-600">12회</span>
+              </div>
+              <div class="w-full h-0.5 bg-primary"></div>
+            </div>
+
+            <div class="flex flex-col gap-space-3 justify-center">
+              <div class="flex justify-between items-center text-center">
+                <div class="text-label-s font-bold flex items-center gap-space-2">
+                  <span class="bg-pink-200 text-gray-600 rounded-lg w-[22px] h-[22px] flex justify-center items-center">2</span>
+                  <span class="text-label-s">탱샵 네일아트 주안점</span>
+                  <img class="w-[18px] h-[18px]" src="/src/assets/icons/date-blue.svg" alt="date icon" />
+                </div>
+                <span class="text-label-s text-gray-600">5회</span>
+              </div>
+              <div class="flex">
+                <div class="w-full h-0.5 bg-primary"></div>
+                <div class="w-1/2 h-0.5 bg-lightblue-400"></div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-space-3 justify-center">
+              <div class="flex justify-between items-center text-center">
+                <div class="text-label-s font-bold flex items-center gap-space-2">
+                  <span class="bg-pink-200 text-gray-600 rounded-lg w-[22px] h-[22px] flex justify-center items-center">3</span>
+                  <span class="text-label-s">리움미술관</span>
+                  <img class="w-[18px] h-[18px]" src="/src/assets/icons/date-blue.svg" alt="date icon" />
+                </div>
+                <span class="text-label-s text-gray-600">2회</span>
+              </div>
+              <div class="flex">
+                <div class="w-2/3 h-0.5 bg-primary"></div>
+                <div class="w-full h-0.5 bg-lightblue-400"></div>
+              </div>
+            </div>
+
+            <label for="toggle" class="flex flex-wrap justify-center items-center gap-[15px] cursor-pointer w-full">
+              <!-- 토글 체크박스 (숨김) -->
+              <input type="checkbox" id="toggle" class="sr-only peer" />
+              <!-- 숨겨진 추가 키워드 -->
+              <div class="flex flex-col gap-space-2 w-full max-h-0 overflow-hidden peer-checked:max-h-full">
+                <!-- 방문 상호명 및 4순위 -->
+                <div class="flex flex-col gap-space-3 w-full">
+                  <div class="flex justify-between items-center text-center">
+                    <div class="text-label-s font-bold flex items-center gap-space-2">
+                      <span class="bg-pink-200 text-gray-600 rounded-lg w-[22px] h-[22px] flex justify-center items-center">4</span>
+                      <span class="text-label-s">온야드</span>
+                      <img class="w-[18px] h-[18px]" src="/src/assets/icons/date-blue.svg" alt="date icon" />
+                    </div>
+                    <span class="text-label-s text-gray-600">1회</span>
+                  </div>
+                  <div class="flex">
+                    <div class="w-1/4 h-0.5 bg-primary"></div>
+                    <div class="w-full h-0.5 bg-lightblue-400"></div>
+                  </div>
+                </div>
+                <!-- 방문 상호명 및 5순위-->
+                <div class="flex flex-col gap-space-3 w-full">
+                  <div class="flex justify-between items-center text-center">
+                    <div class="text-label-s font-bold flex items-center gap-space-2">
+                      <span class="bg-pink-200 text-gray-600 rounded-lg w-[22px] h-[22px] flex justify-center items-center">5</span>
+                      <span class="text-label-s">비건베이커리 구떼</span>
+                      <img class="w-[18px] h-[18px]" src="/src/assets/icons/date-blue.svg" alt="date icon" />
+                    </div>
+                    <span class="text-label-s text-gray-600">1회</span>
+                  </div>
+                  <div class="flex">
+                    <div class="w-1/4 h-0.5 bg-primary"></div>
+                    <div class="w-full h-0.5 bg-lightblue-400"></div>
+                  </div>
+                </div>
+                <!-- 방문 상호명 및 6순위-->
+                <div class="flex flex-col gap-space-3 w-full">
+                  <div class="flex justify-between items-center text-center">
+                    <div class="text-label-s font-bold flex items-center gap-space-2">
+                      <span class="bg-pink-200 text-gray-600 rounded-lg w-[22px] h-[22px] flex justify-center items-center">6</span>
+                      <span class="text-label-s">유디계산치과의원</span>
+                      <img class="w-[18px] h-[18px]" src="/src/assets/icons/date-blue.svg" alt="date icon" />
+                    </div>
+                    <span class="text-label-s text-gray-600">1회</span>
+                  </div>
+                  <div class="flex">
+                    <div class="w-1/4 h-0.5 bg-primary"></div>
+                    <div class="w-full h-0.5 bg-lightblue-400"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="text-phrase-s peer-checked:text-gray-500 peer-checked:hideen">더보기</span>
+              <svg class="transition-transform duration-300 peer-checked:text-gray-500 peer-checked:rotate-180" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.0001 12.7313C8.9001 12.7313 8.80335 12.7126 8.70985 12.6751C8.61585 12.6376 8.5376 12.5876 8.4751 12.5251L5.0251 9.0751C4.8876 8.9376 4.81885 8.7626 4.81885 8.5501C4.81885 8.3376 4.8876 8.1626 5.0251 8.0251C5.1626 7.8876 5.3376 7.81885 5.5501 7.81885C5.7626 7.81885 5.9376 7.8876 6.0751 8.0251L9.0001 10.9501L11.9251 8.0251C12.0626 7.8876 12.2376 7.81885 12.4501 7.81885C12.6626 7.81885 12.8376 7.8876 12.9751 8.0251C13.1126 8.1626 13.1813 8.3376 13.1813 8.5501C13.1813 8.7626 13.1126 8.9376 12.9751 9.0751L9.5251 12.5251C9.4501 12.6001 9.36885 12.6531 9.28135 12.6841C9.19385 12.7156 9.1001 12.7313 9.0001 12.7313Z" fill="currentColor" />
+              </svg>
+            </label>
+          </div>
+        </article>
+        <!-- 더보기 아래 type select-->
+        <div class="w-full bg-gray-100 flex gap-space-3 pl-space-5 pr-[61px] pt-space-3 pb-[37px] overflow-x-auto whitespace-nowrap">
+          <a href="#" class="text-gray-600 bg-white rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">방문 <span class="font-semibold text-black">22</span></a>
+          <a href="#" class="text-gray-600 bg-white rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">예약취소 <span class="font-semibold text-black">6</span></a>
+          <a href="#" class="text-gray-600 bg-white rounded-4xl px-space-3 py-space-2 text-phrase-s flex-shrink-0">기간선택</a>
+        </div>
+      </section>
+
+      <!-- 뷰티 콘텐츠 -->
+      <div id="content-beauty" class="hidden w-full bg-gray-100 p-space-4">
+        <!--  JW헤어 (빨간 하트) -->
+        <div class="bg-white p-space-4 rounded-lg">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-space-2 items-center">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 배경 원 -->
+                <circle cx="17" cy="17" r="17" fill="#FF9E9E" />
+                <!-- 가위 아이콘 -->
+                <g transform="translate(8, 8)">
+                  <path
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.629 3.70881C13.914 3.3015 14.0256 2.79767 13.9393 2.3081C13.8529 1.81852 13.5757 1.38328 13.1685 1.09806L12.861 0.882812L9.00148 6.39531L5.14123 0.882812L4.83373 1.09806C4.42667 1.38339 4.14957 1.81869 4.06336 2.30826C3.97715 2.79783 4.08887 3.30159 4.37398 3.70881L7.62823 8.35656L6.27823 10.2841C5.52002 10.0414 4.70044 10.0746 3.96433 10.3777C3.22821 10.6809 2.62296 11.2345 2.25552 11.9407C1.88808 12.6469 1.78211 13.4603 1.95634 14.2371C2.13057 15.0139 2.57378 15.7041 3.20765 16.1857C3.84151 16.6674 4.62523 16.9094 5.42031 16.8691C6.21538 16.8289 6.97062 16.5088 7.55256 15.9656C8.13449 15.4223 8.50567 14.6909 8.60049 13.9005C8.69531 13.11 8.50767 12.3115 8.07073 11.6461L9.00073 10.3186L9.93073 11.6446C9.49344 12.3098 9.30535 13.1081 9.39971 13.8986C9.49407 14.689 9.86479 15.4207 10.4464 15.9642C11.028 16.5078 11.783 16.8283 12.578 16.8691C13.373 16.9099 14.1568 16.6683 14.791 16.1871C15.4252 15.706 15.8688 15.0161 16.0436 14.2395C16.2183 13.4628 16.113 12.6494 15.746 11.9429C15.3791 11.2365 14.7743 10.6825 14.0385 10.3788C13.3026 10.0751 12.4831 10.0413 11.7247 10.2833L10.3747 8.35656L13.629 3.70881ZM4.12498 13.5001C4.12498 13.3523 4.15408 13.206 4.21061 13.0695C4.26715 12.9331 4.35002 12.809 4.45448 12.7046C4.55895 12.6001 4.68297 12.5172 4.81946 12.4607C4.95595 12.4042 5.10224 12.3751 5.24998 12.3751C5.39772 12.3751 5.54401 12.4042 5.6805 12.4607C5.81699 12.5172 5.94101 12.6001 6.04547 12.7046C6.14994 12.809 6.23281 12.9331 6.28934 13.0695C6.34588 13.206 6.37498 13.3523 6.37498 13.5001C6.37498 13.7984 6.25645 14.0846 6.04547 14.2956C5.83449 14.5065 5.54835 14.6251 5.24998 14.6251C4.95161 14.6251 4.66546 14.5065 4.45448 14.2956C4.2435 14.0846 4.12498 13.7984 4.12498 13.5001ZM11.625 13.5001C11.625 13.2017 11.7435 12.9155 11.9545 12.7046C12.1655 12.4936 12.4516 12.3751 12.75 12.3751C13.0483 12.3751 13.3345 12.4936 13.5455 12.7046C13.7565 12.9155 13.875 13.2017 13.875 13.5001C13.875 13.7984 13.7565 14.0846 13.5455 14.2956C13.3345 14.5065 13.0483 14.6251 12.75 14.6251C12.4516 14.6251 12.1655 14.5065 11.9545 14.2956C11.7435 14.0846 11.625 13.7984 11.625 13.5001Z"
+                    fill="white" />
+                </g>
+              </svg>
+              <div class="flex flex-col">
+                <span class="text-label-m font-semibold">JW헤어</span>
+                <time datetime="2022-11-29 14:00" class="-my-0.5 block text-phrase-s text-gray-600">25.3.15 토 | 오후 2:00</time>
+              </div>
+            </div>
+            <div class="flex text-red">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.5125L7.9125 15.5225C4.05 12.02 1.5 9.7025 1.5 6.875C1.5 4.5575 3.315 2.75 5.625 2.75C6.93 2.75 8.1825 3.3575 9 4.31C9.8175 3.3575 11.07 2.75 12.375 2.75C14.685 2.75 16.5 4.5575 16.5 6.875C16.5 9.7025 13.95 12.02 10.0875 15.5225L9 16.5125Z" fill="currentColor" />
+              </svg>
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.75 14C8.75 14.1989 8.82902 14.3897 8.96967 14.5303C9.11032 14.671 9.30109 14.75 9.5 14.75C9.69891 14.75 9.88968 14.671 10.0303 14.5303C10.171 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.171 13.6103 10.0303 13.4697C9.88968 13.329 9.69891 13.25 9.5 13.25C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14ZM8.75 9.5C8.75 9.69891 8.82902 9.88968 8.96967 10.0303C9.11032 10.171 9.30109 10.25 9.5 10.25C9.69891 10.25 9.88968 10.171 10.0303 10.0303C10.171 9.88968 10.25 9.69891 10.25 9.5C10.25 9.30109 10.171 9.11032 10.0303 8.96967C9.88968 8.82902 9.69891 8.75 9.5 8.75C9.30109 8.75 9.11032 8.82902 8.96967 8.96967C8.82902 9.11032 8.75 9.30109 8.75 9.5ZM8.75 5C8.75 5.19891 8.82902 5.38968 8.96967 5.53033C9.11032 5.67098 9.30109 5.75 9.5 5.75C9.69891 5.75 9.88968 5.67098 10.0303 5.53033C10.171 5.38968 10.25 5.19891 10.25 5C10.25 4.80109 10.171 4.61032 10.0303 4.46967C9.88968 4.32902 9.69891 4.25 9.5 4.25C9.30109 4.25 9.11032 4.32902 8.96967 4.46967C8.82902 4.61032 8.75 4.80109 8.75 5Z"
+                  stroke="#A6A6A6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="mb-space-4 bg-white p-space-2 text-phrase-s rounded-lg">
+          <a class="font-bold underline">
+            아홉 번째 예약
+            <img class="float-right w-[57px] h-[57px] rounded-sm" src="/src/assets/images/silver-yard.png" alt="리뷰 사진" />
+          </a>
+          <div class="bg-white my-space-2">
+            <div class="text-phrase-s">
+              <p class="mb-space-1 truncate">
+                머리 너무 예뻐요~ 시술 과정도 친절하게 설명해주시고, 두피 손상 최소화하면서 작업해주셔서 좋았습니다. <br />
+                시술 시간도 예상보다 빨리 끝나서 좋았습니다. 서비스도 끝판왕인 완전 최애 미용실~💇‍♀️😄💛 다음에도 또 방문할 거예요!
+              </p>
+              <p class="bg-gray-100 rounded-md px-space-2 py-[2px] inline-block">💚 원하는 스타일로 잘해줘요</p>
+              <p class="bg-gray-100 rounded-md px-space-2 py-[2px] inline-block">✨+2</p>
+            </div>
+          </div>
+          <!-- 배지원 원장  -->
+          <div class="bg-white border-t border-gray-600 border-dashed">
+            <p class="text-label-s flex justify-between">배지원 원장<span>150,000원</span></p>
+            <p class="text-gray-400 text-phrase-s">옴브레 염색</p>
+          </div>
+        </div>
+        <!--  온야드 (빨간 하트) -->
+        <div class="bg-white p-space-4 rounded-lg">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-space-2 items-center">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 배경 원 -->
+                <circle cx="17" cy="17" r="17" fill="#FF9E9E" />
+                <!-- 가위 아이콘 -->
+                <g transform="translate(8, 8)">
+                  <path
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.629 3.70881C13.914 3.3015 14.0256 2.79767 13.9393 2.3081C13.8529 1.81852 13.5757 1.38328 13.1685 1.09806L12.861 0.882812L9.00148 6.39531L5.14123 0.882812L4.83373 1.09806C4.42667 1.38339 4.14957 1.81869 4.06336 2.30826C3.97715 2.79783 4.08887 3.30159 4.37398 3.70881L7.62823 8.35656L6.27823 10.2841C5.52002 10.0414 4.70044 10.0746 3.96433 10.3777C3.22821 10.6809 2.62296 11.2345 2.25552 11.9407C1.88808 12.6469 1.78211 13.4603 1.95634 14.2371C2.13057 15.0139 2.57378 15.7041 3.20765 16.1857C3.84151 16.6674 4.62523 16.9094 5.42031 16.8691C6.21538 16.8289 6.97062 16.5088 7.55256 15.9656C8.13449 15.4223 8.50567 14.6909 8.60049 13.9005C8.69531 13.11 8.50767 12.3115 8.07073 11.6461L9.00073 10.3186L9.93073 11.6446C9.49344 12.3098 9.30535 13.1081 9.39971 13.8986C9.49407 14.689 9.86479 15.4207 10.4464 15.9642C11.028 16.5078 11.783 16.8283 12.578 16.8691C13.373 16.9099 14.1568 16.6683 14.791 16.1871C15.4252 15.706 15.8688 15.0161 16.0436 14.2395C16.2183 13.4628 16.113 12.6494 15.746 11.9429C15.3791 11.2365 14.7743 10.6825 14.0385 10.3788C13.3026 10.0751 12.4831 10.0413 11.7247 10.2833L10.3747 8.35656L13.629 3.70881ZM4.12498 13.5001C4.12498 13.3523 4.15408 13.206 4.21061 13.0695C4.26715 12.9331 4.35002 12.809 4.45448 12.7046C4.55895 12.6001 4.68297 12.5172 4.81946 12.4607C4.95595 12.4042 5.10224 12.3751 5.24998 12.3751C5.39772 12.3751 5.54401 12.4042 5.6805 12.4607C5.81699 12.5172 5.94101 12.6001 6.04547 12.7046C6.14994 12.809 6.23281 12.9331 6.28934 13.0695C6.34588 13.206 6.37498 13.3523 6.37498 13.5001C6.37498 13.7984 6.25645 14.0846 6.04547 14.2956C5.83449 14.5065 5.54835 14.6251 5.24998 14.6251C4.95161 14.6251 4.66546 14.5065 4.45448 14.2956C4.2435 14.0846 4.12498 13.7984 4.12498 13.5001ZM11.625 13.5001C11.625 13.2017 11.7435 12.9155 11.9545 12.7046C12.1655 12.4936 12.4516 12.3751 12.75 12.3751C13.0483 12.3751 13.3345 12.4936 13.5455 12.7046C13.7565 12.9155 13.875 13.2017 13.875 13.5001C13.875 13.7984 13.7565 14.0846 13.5455 14.2956C13.3345 14.5065 13.0483 14.6251 12.75 14.6251C12.4516 14.6251 12.1655 14.5065 11.9545 14.2956C11.7435 14.0846 11.625 13.7984 11.625 13.5001Z"
+                    fill="white" />
+                </g>
+              </svg>
+              <div class="flex flex-col">
+                <span class="text-label-m font-semibold">온야드</span>
+                <time datetime="2022-11-29 14:00" class="-my-0.5 block text-phrase-s text-gray-600">25.1.18 토 | 오후 5:30</time>
+              </div>
+            </div>
+            <div class="flex text-red">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.5125L7.9125 15.5225C4.05 12.02 1.5 9.7025 1.5 6.875C1.5 4.5575 3.315 2.75 5.625 2.75C6.93 2.75 8.1825 3.3575 9 4.31C9.8175 3.3575 11.07 2.75 12.375 2.75C14.685 2.75 16.5 4.5575 16.5 6.875C16.5 9.7025 13.95 12.02 10.0875 15.5225L9 16.5125Z" fill="currentColor" />
+              </svg>
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.75 14C8.75 14.1989 8.82902 14.3897 8.96967 14.5303C9.11032 14.671 9.30109 14.75 9.5 14.75C9.69891 14.75 9.88968 14.671 10.0303 14.5303C10.171 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.171 13.6103 10.0303 13.4697C9.88968 13.329 9.69891 13.25 9.5 13.25C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14ZM8.75 9.5C8.75 9.69891 8.82902 9.88968 8.96967 10.0303C9.11032 10.171 9.30109 10.25 9.5 10.25C9.69891 10.25 9.88968 10.171 10.0303 10.0303C10.171 9.88968 10.25 9.69891 10.25 9.5C10.25 9.30109 10.171 9.11032 10.0303 8.96967C9.88968 8.82902 9.69891 8.75 9.5 8.75C9.30109 8.75 9.11032 8.82902 8.96967 8.96967C8.82902 9.11032 8.75 9.30109 8.75 9.5ZM8.75 5C8.75 5.19891 8.82902 5.38968 8.96967 5.53033C9.11032 5.67098 9.30109 5.75 9.5 5.75C9.69891 5.75 9.88968 5.67098 10.0303 5.53033C10.171 5.38968 10.25 5.19891 10.25 5C10.25 4.80109 10.171 4.61032 10.0303 4.46967C9.88968 4.32902 9.69891 4.25 9.5 4.25C9.30109 4.25 9.11032 4.32902 8.96967 4.46967C8.82902 4.61032 8.75 4.80109 8.75 5Z"
+                  stroke="#A6A6A6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="mb-space-4 bg-white p-space-2 text-phrase-s rounded-lg">
+          <a class="font-bold underline">
+            첫 번째 예약
+            <img class="float-right w-[57px] h-[57px] rounded-sm" src="/src/assets/images/silver-yard.png" alt="리뷰 사진" />
+          </a>
+          <div class="bg-white my-space-2">
+            <div class="text-phrase-s">
+              <p class="mb-space-1 truncate">뭘해도 사진에 머리가 안담겨요ㅠㅠㅠ<br />진짜 너무 예뻐요 제가 원하던 머리에요!</p>
+              <p class="bg-gray-100 rounded-md px-space-2 py-[2px] inline-block">💚 원하는 스타일로 잘해줘요</p>
+              <p class="bg-gray-100 rounded-md px-space-2 py-[2px] inline-block">✨+2</p>
+            </div>
+          </div>
+          <div class="bg-white border-t border-gray-600 border-dashed">
+            <p class="text-label-s flex justify-between">김민지 부원장<span>120,000원</span></p>
+            <p class="text-gray-400 text-phrase-s">레이어드 c컬 펌</p>
+          </div>
+        </div>
+        <!--  네일아트 (빨간 하트) -->
+        <div class="bg-white p-space-4 rounded-lg">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-space-2 items-center">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 배경 원 -->
+                <circle cx="17" cy="17" r="17" fill="#FF9E9E" />
+                <!-- 가위 아이콘 -->
+                <g transform="translate(8, 8)">
+                  <path
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.629 3.70881C13.914 3.3015 14.0256 2.79767 13.9393 2.3081C13.8529 1.81852 13.5757 1.38328 13.1685 1.09806L12.861 0.882812L9.00148 6.39531L5.14123 0.882812L4.83373 1.09806C4.42667 1.38339 4.14957 1.81869 4.06336 2.30826C3.97715 2.79783 4.08887 3.30159 4.37398 3.70881L7.62823 8.35656L6.27823 10.2841C5.52002 10.0414 4.70044 10.0746 3.96433 10.3777C3.22821 10.6809 2.62296 11.2345 2.25552 11.9407C1.88808 12.6469 1.78211 13.4603 1.95634 14.2371C2.13057 15.0139 2.57378 15.7041 3.20765 16.1857C3.84151 16.6674 4.62523 16.9094 5.42031 16.8691C6.21538 16.8289 6.97062 16.5088 7.55256 15.9656C8.13449 15.4223 8.50567 14.6909 8.60049 13.9005C8.69531 13.11 8.50767 12.3115 8.07073 11.6461L9.00073 10.3186L9.93073 11.6446C9.49344 12.3098 9.30535 13.1081 9.39971 13.8986C9.49407 14.689 9.86479 15.4207 10.4464 15.9642C11.028 16.5078 11.783 16.8283 12.578 16.8691C13.373 16.9099 14.1568 16.6683 14.791 16.1871C15.4252 15.706 15.8688 15.0161 16.0436 14.2395C16.2183 13.4628 16.113 12.6494 15.746 11.9429C15.3791 11.2365 14.7743 10.6825 14.0385 10.3788C13.3026 10.0751 12.4831 10.0413 11.7247 10.2833L10.3747 8.35656L13.629 3.70881ZM4.12498 13.5001C4.12498 13.3523 4.15408 13.206 4.21061 13.0695C4.26715 12.9331 4.35002 12.809 4.45448 12.7046C4.55895 12.6001 4.68297 12.5172 4.81946 12.4607C4.95595 12.4042 5.10224 12.3751 5.24998 12.3751C5.39772 12.3751 5.54401 12.4042 5.6805 12.4607C5.81699 12.5172 5.94101 12.6001 6.04547 12.7046C6.14994 12.809 6.23281 12.9331 6.28934 13.0695C6.34588 13.206 6.37498 13.3523 6.37498 13.5001C6.37498 13.7984 6.25645 14.0846 6.04547 14.2956C5.83449 14.5065 5.54835 14.6251 5.24998 14.6251C4.95161 14.6251 4.66546 14.5065 4.45448 14.2956C4.2435 14.0846 4.12498 13.7984 4.12498 13.5001ZM11.625 13.5001C11.625 13.2017 11.7435 12.9155 11.9545 12.7046C12.1655 12.4936 12.4516 12.3751 12.75 12.3751C13.0483 12.3751 13.3345 12.4936 13.5455 12.7046C13.7565 12.9155 13.875 13.2017 13.875 13.5001C13.875 13.7984 13.7565 14.0846 13.5455 14.2956C13.3345 14.5065 13.0483 14.6251 12.75 14.6251C12.4516 14.6251 12.1655 14.5065 11.9545 14.2956C11.7435 14.0846 11.625 13.7984 11.625 13.5001Z"
+                    fill="white" />
+                </g>
+              </svg>
+              <div class="flex flex-col">
+                <span class="text-label-m font-semibold">탱샵 네일아트 주안점</span>
+                <time datetime="2022-11-29 14:00" class="-my-0.5 block text-phrase-s text-gray-600">25.1.2 목 | 오전 11:00</time>
+              </div>
+            </div>
+            <div class="flex text-red">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.5125L7.9125 15.5225C4.05 12.02 1.5 9.7025 1.5 6.875C1.5 4.5575 3.315 2.75 5.625 2.75C6.93 2.75 8.1825 3.3575 9 4.31C9.8175 3.3575 11.07 2.75 12.375 2.75C14.685 2.75 16.5 4.5575 16.5 6.875C16.5 9.7025 13.95 12.02 10.0875 15.5225L9 16.5125Z" fill="currentColor" />
+              </svg>
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.75 14C8.75 14.1989 8.82902 14.3897 8.96967 14.5303C9.11032 14.671 9.30109 14.75 9.5 14.75C9.69891 14.75 9.88968 14.671 10.0303 14.5303C10.171 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.171 13.6103 10.0303 13.4697C9.88968 13.329 9.69891 13.25 9.5 13.25C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14ZM8.75 9.5C8.75 9.69891 8.82902 9.88968 8.96967 10.0303C9.11032 10.171 9.30109 10.25 9.5 10.25C9.69891 10.25 9.88968 10.171 10.0303 10.0303C10.171 9.88968 10.25 9.69891 10.25 9.5C10.25 9.30109 10.171 9.11032 10.0303 8.96967C9.88968 8.82902 9.69891 8.75 9.5 8.75C9.30109 8.75 9.11032 8.82902 8.96967 8.96967C8.82902 9.11032 8.75 9.30109 8.75 9.5ZM8.75 5C8.75 5.19891 8.82902 5.38968 8.96967 5.53033C9.11032 5.67098 9.30109 5.75 9.5 5.75C9.69891 5.75 9.88968 5.67098 10.0303 5.53033C10.171 5.38968 10.25 5.19891 10.25 5C10.25 4.80109 10.171 4.61032 10.0303 4.46967C9.88968 4.32902 9.69891 4.25 9.5 4.25C9.30109 4.25 9.11032 4.32902 8.96967 4.46967C8.82902 4.61032 8.75 4.80109 8.75 5Z"
+                  stroke="#A6A6A6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="mb-space-4 bg-white rounded-lg p-space-2 text-phrase-s">
+          <a class="font-bold underline">
+            세 번째 예약
+            <img class="float-right w-[57px] h-[57px] rounded-sm" src="/src/assets/images/nail.jpg" alt="네일아트 사진" />
+          </a>
+          <div class="bg-white my-space-2">
+            <div class="text-phrase-s">
+              <p class="mb-space-1 truncate">오늘 너무 오래 고민했는데 기다려주셔서 감사했어요ㅠㅠ<br />제 손에 어울릴만한 디자인으로 추천해주셨는데 너무 찰떡이에요!💛 <br />늘 갈 때마다 느끼는 점이지만 정말 꼼꼼하고 깔끔해요. <br />가격도 합리적이고 서비스도 좋아서 이 맛에 단골합니당~😄😄</p>
+              <p class="bg-gray-100 rounded-md px-space-2 py-[2px] inline-block">💅 솜씨가 좋아요</p>
+              <p class="bg-gray-100 rounded-md px-space-2 py-[2px] inline-block">💚+3</p>
+            </div>
+          </div>
+          <div class="bg-white border-t border-gray-600 border-dashed">
+            <p class="text-label-s flex justify-between">예진 디자이너<span>40,000원</span></p>
+            <p class="text-gray-400 text-phrase-s">젤네일</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 병의원 콘텐츠-->
+      <div id="content-hospital" class="hidden w-full bg-gray-100 p-space-4">
+        <!-- 유디치과 (파란 하트) -->
+        <div class="bg-white p-space-4 rounded-lg">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-space-2 items-center">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="34" height="34" rx="17" fill="#8DB0F9" />
+                <path d="M15.875 20.75H18.125V18.125H20.75V15.875H18.125V13.25H15.875V15.875H13.25V18.125H15.875V20.75ZM11.75 23.75C11.3375 23.75 10.9842 23.6033 10.6902 23.3097C10.3967 23.0157 10.25 22.6625 10.25 22.25V11.75C10.25 11.3375 10.3967 10.9842 10.6902 10.6902C10.9842 10.3967 11.3375 10.25 11.75 10.25H22.25C22.6625 10.25 23.0157 10.3967 23.3097 10.6902C23.6033 10.9842 23.75 11.3375 23.75 11.75V22.25C23.75 22.6625 23.6033 23.0157 23.3097 23.3097C23.0157 23.6033 22.6625 23.75 22.25 23.75H11.75Z" fill="white" />
+              </svg>
+              <div class="flex flex-col">
+                <span class="text-label-m font-semibold">유디계산치과의원</span>
+                <time datetime="2022-11-29 14:00" class="-my-0.5 block text-phrase-s text-gray-600">25.1.3 월 | 오전 10:00</time>
+              </div>
+            </div>
+            <div class="flex text-primary">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.5125L7.9125 15.5225C4.05 12.02 1.5 9.7025 1.5 6.875C1.5 4.5575 3.315 2.75 5.625 2.75C6.93 2.75 8.1825 3.3575 9 4.31C9.8175 3.3575 11.07 2.75 12.375 2.75C14.685 2.75 16.5 4.5575 16.5 6.875C16.5 9.7025 13.95 12.02 10.0875 15.5225L9 16.5125Z" fill="currentColor" />
+              </svg>
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.75 14C8.75 14.1989 8.82902 14.3897 8.96967 14.5303C9.11032 14.671 9.30109 14.75 9.5 14.75C9.69891 14.75 9.88968 14.671 10.0303 14.5303C10.171 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.171 13.6103 10.0303 13.4697C9.88968 13.329 9.69891 13.25 9.5 13.25C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14ZM8.75 9.5C8.75 9.69891 8.82902 9.88968 8.96967 10.0303C9.11032 10.171 9.30109 10.25 9.5 10.25C9.69891 10.25 9.88968 10.171 10.0303 10.0303C10.171 9.88968 10.25 9.69891 10.25 9.5C10.25 9.30109 10.171 9.11032 10.0303 8.96967C9.88968 8.82902 9.69891 8.75 9.5 8.75C9.30109 8.75 9.11032 8.82902 8.96967 8.96967C8.82902 9.11032 8.75 9.30109 8.75 9.5ZM8.75 5C8.75 5.19891 8.82902 5.38968 8.96967 5.53033C9.11032 5.67098 9.30109 5.75 9.5 5.75C9.69891 5.75 9.88968 5.67098 10.0303 5.53033C10.171 5.38968 10.25 5.19891 10.25 5C10.25 4.80109 10.171 4.61032 10.0303 4.46967C9.88968 4.32902 9.69891 4.25 9.5 4.25C9.30109 4.25 9.11032 4.32902 8.96967 4.46967C8.82902 4.61032 8.75 4.80109 8.75 5Z"
+                  stroke="#A6A6A6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white text-phrase-s font-semibold rounded-lg mb-space-4">
+          <a class="block pt-[.9375rem] pr-[13.125rem] pb-[1.375rem] pl-[1.125rem] underline">첫 번째 예약</a>
+          <p class="pl-[1.125rem] pr-[12.625rem] py-space-4 border-t border-gray-600 border-dashed">치아교정 상담</p>
+        </div>
+
+        <!-- 유디치과 취소 (파란 하트) -->
+        <div class="bg-white p-space-4 rounded-lg">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-space-2 items-center">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="34" height="34" rx="17" fill="#8DB0F9" />
+                <path d="M15.875 20.75H18.125V18.125H20.75V15.875H18.125V13.25H15.875V15.875H13.25V18.125H15.875V20.75ZM11.75 23.75C11.3375 23.75 10.9842 23.6033 10.6902 23.3097C10.3967 23.0157 10.25 22.6625 10.25 22.25V11.75C10.25 11.3375 10.3967 10.9842 10.6902 10.6902C10.9842 10.3967 11.3375 10.25 11.75 10.25H22.25C22.6625 10.25 23.0157 10.3967 23.3097 10.6902C23.6033 10.9842 23.75 11.3375 23.75 11.75V22.25C23.75 22.6625 23.6033 23.0157 23.3097 23.3097C23.0157 23.6033 22.6625 23.75 22.25 23.75H11.75Z" fill="white" />
+              </svg>
+              <div class="flex flex-col">
+                <span class="text-label-m font-semibold">유디계산치과의원</span>
+                <time datetime="2022-11-29 14:00" class="-my-0.5 block text-phrase-s text-gray-600">24.12.10 화 | 오후 3:00</time>
+              </div>
+            </div>
+            <div class="flex text-primary">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.5125L7.9125 15.5225C4.05 12.02 1.5 9.7025 1.5 6.875C1.5 4.5575 3.315 2.75 5.625 2.75C6.93 2.75 8.1825 3.3575 9 4.31C9.8175 3.3575 11.07 2.75 12.375 2.75C14.685 2.75 16.5 4.5575 16.5 6.875C16.5 9.7025 13.95 12.02 10.0875 15.5225L9 16.5125Z" fill="currentColor" />
+              </svg>
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.75 14C8.75 14.1989 8.82902 14.3897 8.96967 14.5303C9.11032 14.671 9.30109 14.75 9.5 14.75C9.69891 14.75 9.88968 14.671 10.0303 14.5303C10.171 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.171 13.6103 10.0303 13.4697C9.88968 13.329 9.69891 13.25 9.5 13.25C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14ZM8.75 9.5C8.75 9.69891 8.82902 9.88968 8.96967 10.0303C9.11032 10.171 9.30109 10.25 9.5 10.25C9.69891 10.25 9.88968 10.171 10.0303 10.0303C10.171 9.88968 10.25 9.69891 10.25 9.5C10.25 9.30109 10.171 9.11032 10.0303 8.96967C9.88968 8.82902 9.69891 8.75 9.5 8.75C9.30109 8.75 9.11032 8.82902 8.96967 8.96967C8.82902 9.11032 8.75 9.30109 8.75 9.5ZM8.75 5C8.75 5.19891 8.82902 5.38968 8.96967 5.53033C9.11032 5.67098 9.30109 5.75 9.5 5.75C9.69891 5.75 9.88968 5.67098 10.0303 5.53033C10.171 5.38968 10.25 5.19891 10.25 5C10.25 4.80109 10.171 4.61032 10.0303 4.46967C9.88968 4.32902 9.69891 4.25 9.5 4.25C9.30109 4.25 9.11032 4.32902 8.96967 4.46967C8.82902 4.61032 8.75 4.80109 8.75 5Z"
+                  stroke="#A6A6A6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- 예약 취소 -->
+        <div class="bg-white text-phrase-s font-semibold rounded-lg mb-space-4">
+          <a class="block pt-[.9375rem] pr-[13.125rem] pb-[1.375rem] pl-[1.125rem] underline text-gray-800">예약 취소</a>
+          <p class="pl-[1.125rem] pr-[12.625rem] py-space-4 border-t border-gray-600 border-dashed">치아교정 상담</p>
+        </div>
+        <!-- 박내과 (파란 하트) -->
+        <div class="bg-white p-space-4 rounded-lg">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-space-2 items-center">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="34" height="34" rx="17" fill="#8DB0F9" />
+                <path d="M15.875 20.75H18.125V18.125H20.75V15.875H18.125V13.25H15.875V15.875H13.25V18.125H15.875V20.75ZM11.75 23.75C11.3375 23.75 10.9842 23.6033 10.6902 23.3097C10.3967 23.0157 10.25 22.6625 10.25 22.25V11.75C10.25 11.3375 10.3967 10.9842 10.6902 10.6902C10.9842 10.3967 11.3375 10.25 11.75 10.25H22.25C22.6625 10.25 23.0157 10.3967 23.3097 10.6902C23.6033 10.9842 23.75 11.3375 23.75 11.75V22.25C23.75 22.6625 23.6033 23.0157 23.3097 23.3097C23.0157 23.6033 22.6625 23.75 22.25 23.75H11.75Z" fill="white" />
+              </svg>
+              <div class="flex flex-col">
+                <span class="text-label-m font-semibold">박내과</span>
+                <time datetime="2022-11-29 14:00" class="-my-0.5 block text-phrase-s text-gray-600">25.2.26 수 | 오후 2:00</time>
+              </div>
+            </div>
+            <div class="flex text-primary">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.5125L7.9125 15.5225C4.05 12.02 1.5 9.7025 1.5 6.875C1.5 4.5575 3.315 2.75 5.625 2.75C6.93 2.75 8.1825 3.3575 9 4.31C9.8175 3.3575 11.07 2.75 12.375 2.75C14.685 2.75 16.5 4.5575 16.5 6.875C16.5 9.7025 13.95 12.02 10.0875 15.5225L9 16.5125Z" fill="currentColor" />
+              </svg>
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.75 14C8.75 14.1989 8.82902 14.3897 8.96967 14.5303C9.11032 14.671 9.30109 14.75 9.5 14.75C9.69891 14.75 9.88968 14.671 10.0303 14.5303C10.171 14.3897 10.25 14.1989 10.25 14C10.25 13.8011 10.171 13.6103 10.0303 13.4697C9.88968 13.329 9.69891 13.25 9.5 13.25C9.30109 13.25 9.11032 13.329 8.96967 13.4697C8.82902 13.6103 8.75 13.8011 8.75 14ZM8.75 9.5C8.75 9.69891 8.82902 9.88968 8.96967 10.0303C9.11032 10.171 9.30109 10.25 9.5 10.25C9.69891 10.25 9.88968 10.171 10.0303 10.0303C10.171 9.88968 10.25 9.69891 10.25 9.5C10.25 9.30109 10.171 9.11032 10.0303 8.96967C9.88968 8.82902 9.69891 8.75 9.5 8.75C9.30109 8.75 9.11032 8.82902 8.96967 8.96967C8.82902 9.11032 8.75 9.30109 8.75 9.5ZM8.75 5C8.75 5.19891 8.82902 5.38968 8.96967 5.53033C9.11032 5.67098 9.30109 5.75 9.5 5.75C9.69891 5.75 9.88968 5.67098 10.0303 5.53033C10.171 5.38968 10.25 5.19891 10.25 5C10.25 4.80109 10.171 4.61032 10.0303 4.46967C9.88968 4.32902 9.69891 4.25 9.5 4.25C9.30109 4.25 9.11032 4.32902 8.96967 4.46967C8.82902 4.61032 8.75 4.80109 8.75 5Z"
+                  stroke="#A6A6A6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- 예약 취소 -->
+        <div class="bg-white text-phrase-s font-semibold rounded-lg mb-space-4">
+          <a class="block pt-[.9375rem] pr-[13.125rem] pb-[1.375rem] pl-[1.125rem] underline text-gray-800">예약 취소</a>
+          <p class="pl-[1.125rem] pr-[12.625rem] py-space-4 border-t border-gray-600 border-dashed">치아교정 상담</p>
+        </div>
+      </div>
+
+      <!-- 공연/전시 콘텐츠 -->
+      <div id="content-ticket" class="hidden">
+        <div class="content-item">
+          <h3>겨울 특별 전시회</h3>
+          <p>국립중앙박물관 겨울 특별전 개최 안내</p>
+        </div>
+        <div class="content-item">
+          <h3>뮤지컬 타이타닉 티켓 오픈</h3>
+          <p>12월 공연 예매 시작, 얼리버드 할인 진행 중</p>
+        </div>
+        <div class="content-item">
+          <h3>연말 콘서트 특별 할인</h3>
+          <p>인기 아티스트 연말 콘서트 그룹 할인 진행</p>
+        </div>
+      </div>
+
+      <!-- 하단바 -->
+      <footer class="max-w-[600px] w-full bottom-0 fixed bg-white pb-space-2 flex text-phrase-s">
+        <a href="/" class="inline-flex flex-col py-space-2 px-space-3 flex-auto items-center">
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.75 7.44225C3.75 11.0813 6.933 14.0903 8.34225 15.2438C8.54475 15.4088 8.646 15.4928 8.79675 15.5348C8.91375 15.5678 9.08625 15.5678 9.20325 15.5348C9.354 15.4928 9.45525 15.4095 9.65775 15.2438C11.067 14.0903 14.25 11.0813 14.25 7.44225C14.2493 6.75903 14.1131 6.08273 13.8492 5.45254C13.5853 4.82235 13.1989 4.2508 12.7125 3.771C11.7233 2.79528 10.3894 2.24878 9 2.25C7.61058 2.24878 6.27667 2.79528 5.2875 3.771C4.80106 4.25077 4.41468 4.82232 4.15076 5.45251C3.88683 6.08271 3.75062 6.75902 3.75 7.44225Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7.5 6.75C7.5 7.14782 7.65804 7.52936 7.93934 7.81066C8.22064 8.09196 8.60218 8.25 9 8.25C9.39782 8.25 9.77936 8.09196 10.0607 7.81066C10.342 7.52936 10.5 7.14782 10.5 6.75C10.5 6.35218 10.342 5.97064 10.0607 5.68934C9.77936 5.40804 9.39782 5.25 9 5.25C8.60218 5.25 8.22064 5.40804 7.93934 5.68934C7.65804 5.97064 7.5 6.35218 7.5 6.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div>지도</div>
+        </a>
+        <a href="/" class="inline-flex flex-col py-space-2 px-space-3 flex-auto items-center">
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 5.4V12.5137C4.5 13.5345 4.5 14.0452 4.653 14.3572C4.79142 14.6396 5.01504 14.8712 5.29228 15.0195C5.56951 15.1678 5.88634 15.2253 6.198 15.1838C6.543 15.1388 6.9675 14.8553 7.8165 14.289L7.81875 14.2875C8.1555 14.0625 8.3235 13.9507 8.49975 13.8885C8.8232 13.7742 9.17606 13.7742 9.4995 13.8885C9.67575 13.9507 9.8445 14.0633 10.1827 14.289C11.0325 14.8553 11.4578 15.138 11.8028 15.1838C12.1143 15.2251 12.431 15.1676 12.708 15.0193C12.9851 14.871 13.2086 14.6394 13.347 14.3572C13.5 14.0452 13.5 13.5345 13.5 12.5137V5.39775C13.5 4.55925 13.5 4.13925 13.3365 3.819C13.1925 3.53669 12.9627 3.30722 12.6802 3.1635C12.36 3 11.94 3 11.1 3H6.9C6.06 3 5.64 3 5.319 3.1635C5.03674 3.30727 4.80727 3.53674 4.6635 3.819C4.5 4.14 4.5 4.56 4.5 5.4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div>저장</div>
+        </a>
+        <a href="/" class="inline-flex flex-col py-space-2 px-space-3 flex-auto items-center">
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.25 4.5V15.75M11.25 4.5L15.75 2.25V13.5L11.25 15.75M11.25 4.5L6.75 2.25M11.25 15.75L6.75 13.5M6.75 2.25L2.25 4.5V15.75L6.75 13.5M6.75 2.25V13.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div>대중교통</div>
+        </a>
+        <a href="/" class="inline-flex flex-col py-space-2 px-space-3 flex-auto items-center">
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.25 8.25H3.03375M3.03375 8.25H14.9662M3.03375 8.25C3.04275 8.211 3.0525 8.1735 3.06375 8.13525C3.10391 8.01565 3.1515 7.89867 3.20625 7.785L4.3665 5.175C4.59525 4.65975 4.71 4.401 4.8915 4.212C5.052 4.04475 5.2485 3.91725 5.466 3.8385C5.71275 3.75 5.99475 3.75 6.5595 3.75H11.4405C12.0045 3.75 12.288 3.75 12.534 3.8385C12.7515 3.91725 12.948 4.04475 13.1077 4.212C13.2892 4.401 13.404 4.659 13.6328 5.17425L14.7975 7.794C14.8717 7.96125 14.91 8.04675 14.9363 8.13525C14.9475 8.17275 14.9572 8.211 14.9662 8.25M3.03375 8.25C3.02435 8.29315 3.01685 8.33669 3.01125 8.3805C3 8.475 3 8.5695 3 8.76V12.75M14.9662 8.25H15.75M14.9662 8.25C14.976 8.2935 14.9827 8.337 14.988 8.3805C15 8.4735 15 8.568 15 8.7555V12.75M3 12.75H6M3 12.75V13.5C3 13.8978 3.15804 14.2794 3.43934 14.5607C3.72064 14.842 4.10218 15 4.5 15C4.89782 15 5.27936 14.842 5.56066 14.5607C5.84196 14.2794 6 13.8978 6 13.5V12.75M15 12.75H12M15 12.75V13.5C15 13.8978 14.842 14.2794 14.5607 14.5607C14.2794 14.842 13.8978 15 13.5 15C13.1022 15 12.7206 14.842 12.4393 14.5607C12.158 14.2794 12 13.8978 12 13.5V12.75M12 12.75H6"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <div>내비게이션</div>
+        </a>
+        <a class="inline-flex flex-col pb-space-2 items-center px-space-3 flex-auto">
+          <svg class="mb-space-1" width="32" height="2" viewBox="0 0 32 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="2" fill="#171F31" />
+          </svg>
+          <svg class="self-center" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.9127 14.499C12.4208 13.948 11.8179 13.5073 11.1435 13.2059C10.4692 12.9044 9.73866 12.7491 9 12.75C7.44525 12.75 6.04875 13.425 5.08725 14.499M9 15.75C8.11358 15.75 7.23583 15.5754 6.41689 15.2362C5.59794 14.897 4.85382 14.3998 4.22703 13.773C3.60023 13.1462 3.10303 12.4021 2.76381 11.5831C2.42459 10.7642 2.25 9.88642 2.25 9C2.25 8.11358 2.42459 7.23583 2.76381 6.41689C3.10303 5.59794 3.60023 4.85382 4.22703 4.22703C4.85382 3.60023 5.59794 3.10303 6.41689 2.76381C7.23583 2.42459 8.11358 2.25 9 2.25C10.7902 2.25 12.5071 2.96116 13.773 4.22703C15.0388 5.4929 15.75 7.20979 15.75 9C15.75 10.7902 15.0388 12.5071 13.773 13.773C12.5071 15.0388 10.7902 15.75 9 15.75ZM9 10.5C8.70453 10.5 8.41194 10.4418 8.13896 10.3287C7.86598 10.2157 7.61794 10.0499 7.40901 9.84099C7.20008 9.63206 7.03434 9.38402 6.92127 9.11104C6.8082 8.83806 6.75 8.54547 6.75 8.25C6.75 7.95453 6.8082 7.66194 6.92127 7.38896C7.03434 7.11598 7.20008 6.86794 7.40901 6.65901C7.61794 6.45008 7.86598 6.28434 8.13896 6.17127C8.41194 6.0582 8.70453 6 9 6C9.59674 6 10.169 6.23705 10.591 6.65901C11.0129 7.08097 11.25 7.65326 11.25 8.25C11.25 8.84674 11.0129 9.41903 10.591 9.84099C10.169 10.2629 9.59674 10.5 9 10.5Z"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <div>MY</div>
+        </a>
+      </footer>
+    </section>
+  </body>
+</html>
