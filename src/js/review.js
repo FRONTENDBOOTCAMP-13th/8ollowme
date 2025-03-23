@@ -1,5 +1,6 @@
+import Sakura from '../utils/sakura/sakura.js';
+import '../utils/sakura/sakura.css';
 const NAVER_CLIENT_ID = import.meta.env.VITE_NAVER_MAP_CLIENT_ID;
-
 const imageUpload = document.getElementById('imageUpload');
 const parent = document.getElementById('parent');
 const map = document.getElementById('map');
