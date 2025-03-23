@@ -308,3 +308,5 @@ Sakura.prototype.stop = function () {
     }, this.settings.delay + 50);
   }
 };
+
+export default Sakura;
