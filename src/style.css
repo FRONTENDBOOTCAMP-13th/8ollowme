@@ -134,10 +134,10 @@
 /* visit 페이지 */
 @layer components {
   .keyword-style {
-    @apply max-w-full h-[2.4375rem] py-[.625rem] px-[1.125rem] bg-primary-color flex flex-col flex-wrap content-center justify-center rounded-sm;
+    @apply max-w-full h-[2.4375rem] py-[.625rem] px-[1.125rem] flex flex-col flex-wrap content-center justify-center rounded-sm;
   }
   .text-style {
-    @apply text-label-s text-white font-semibold whitespace-nowrap;
+    @apply text-label-s font-semibold whitespace-nowrap;
   }
 }
 

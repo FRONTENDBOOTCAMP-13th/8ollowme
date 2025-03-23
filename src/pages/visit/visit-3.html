@@ -10,7 +10,7 @@
     <script type="module" src="/src/js/photo.js"></script>
   </head>
   <body class="min-h-screen">
-    <section class="w-full max-w-[600px] mx-auto min-h-screen pb-[60px]">
+    <section class="w-full max-w-[599px] mx-auto min-h-screen pb-[62px] shadow-2xl shadow-secondary-color">
       <!-- top bar -->
       <div class="flex px-space-4 py-space-2">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,20 +34,23 @@
       <article class="bg-white p-space-4">
         <div class="flex justify-between items-end">
           <span class="text-label-s font-semibold">비건베이커리 구떼</span>
-          <img src="/src/assets/icons/close.svg" alt="닫기" />
+          <a href="/src/pages/visit/visit-1.html"><img src="/src/assets/icons/close.svg" alt="닫기" /></a>
         </div>
-        <time datetime="2023-1-18" class="-my-0.5 block text-phrase-s text-gray-600">2023.2.8 (수) 1번째 방문</time>
+        <time datetime="2023-1-18" class="-my-0.5 block text-phrase-s text-gray-600">2025.2.7 (금) 1번째 방문</time>
         <p class="text-phrase-s text-gray-500">파운드 외 2• 12,300원</p>
       </article>
 
       <!-- '이런 곳 좋아요!' -->
       <article class="bg-white py-space-10 px-[4.625rem] flex flex-col flex-nowrap items-center text-center">
         <p class="text-label-m font-semibold">이 곳이 마음에 든다면,</p>
-        <p class="text-phrase-s text-gray-500 my-space-2 whitespace-nowrap">'좋아요' 누르고 취향이 비슷한 사람을 <br />추천받으세요.</p>
-        <div class="keyword-style w-[8.0625rem] px-space-5 justify-center">
-          <p>❤️️</p>
-          <span class="text-label-s text-white font-semibold whitespace-nowrap">이런 곳 좋아요!</span>
-        </div>
+        <p class="text-phrase-s text-gray-600 my-space-2 whitespace-nowrap">'좋아요' 누르고 취향이 비슷한 사람을 <br />추천받으세요.</p>
+        <input type="checkbox" id="keyword" class="peer hidden" />
+        <label for="keyword" class="cursor-pointer text-black bg-gray-100 peer-checked:bg-primary-color peer-checked:text-white rounded-sm">
+          <div class="max-w-full h-[2.4375rem] py-[.625rem] flex flex-col flex-wrap content-center w-[8.0625rem] px-space-5 justify-center">
+            <p>❤️️</p>
+            <span class="text-label-s font-semibold whitespace-nowrap">이런 곳 좋아요!</span>
+          </div>
+        </label>
       </article>
 
       <!-- 어떤 점이 좋았나요? -->
@@ -59,44 +62,74 @@
       <!-- keyword list -->
       <article class="bg-gray-100 flex justify-between overflow-x-auto gap-4 w-full p-5 scrollbar-custom">
         <div class="flex flex-col gap-space-2 my-space-2 items-start">
-          <div class="keyword-style">
-            <p>💚</p>
-            <span class="text-style">메뉴 구성이 알차요</span>
-          </div>
-          <div class="keyword-style bg-white">
-            <p>☕</p>
-            <span class="text-style text-gray-600">커피가 맛있어요</span>
-          </div>
-          <div class="keyword-style">
-            <p>🍞</p>
-            <span class="text-style">빵이 맛있어요</span>
-          </div>
-          <div class="keyword-style bg-white">
-            <p>🌿</p>
-            <span class="text-style text-gray-600">건강한 맛이에요</span>
-          </div>
+          <input type="checkbox" id="key1-1" class="peer/key1-1 hidden" />
+          <label for="key1-1" class="cursor-pointer bg-white text-gray-600 peer-checked/key1-1:bg-primary-color peer-checked/key1-1:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>💚</p>
+              <span class="text-style">메뉴 구성이 알차요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key1-2" class="peer/key1-2 hidden" />
+          <label for="key1-2" class="cursor-pointer bg-white text-gray-600 peer-checked/key1-2:bg-primary-color peer-checked/key1-2:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>☕</p>
+              <span class="text-style text-gray-600">커피가 맛있어요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key1-3" class="peer/key1-3 hidden" />
+          <label for="key1-3" class="cursor-pointer bg-white text-gray-600 peer-checked/key1-3:bg-primary-color peer-checked/key1-3:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>🍞</p>
+              <span class="text-style">빵이 맛있어요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key1-4" class="peer/key1-4 hidden" />
+          <label for="key1-4" class="cursor-pointer bg-white text-gray-600 peer-checked/key1-4:bg-primary-color peer-checked/key1-4:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>🌿</p>
+              <span class="text-style text-gray-600">건강한 맛이에요</span>
+            </div>
+          </label>
           <!-- SVG 버튼 -->
           <label for="toggle" class="place-items-center cursor-pointer">
             <!-- 토글 체크박스 (숨김) -->
             <input type="checkbox" id="toggle" class="hidden peer" />
             <!-- 숨겨진 추가 키워드 -->
             <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
-              <div class="keyword-style bg-white">
-                <p>🧑‍🍳</p>
-                <span class="text-style text-gray-600">특별한 메뉴가 있어요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>🌿</p>
-                <span class="text-style text-gray-600">재료가 신선해요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>🍚</p>
-                <span class="text-style text-gray-600">양이 많아요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>💰</p>
-                <span class="text-style text-gray-600">비싼 만큼 가치있어요</span>
-              </div>
+              <input type="checkbox" id="key1-5" class="peer/key1-5 hidden" />
+              <label for="key1-5" class="cursor-pointer bg-white text-gray-600 peer-checked/key1-5:bg-primary-color peer-checked/key1-5:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>🧑‍🍳</p>
+                  <span class="text-style text-gray-600">특별한 메뉴가 있어요</span>
+                </div>
+              </label>
+
+              <input type="checkbox" id="key1-6" class="peer/key1-6 hidden" />
+              <label for="key1-6" class="cursor-pointer bg-white text-gray-600 peer-checked/key1-6:bg-primary-color peer-checked/key1-6:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>🌿</p>
+                  <span class="text-style text-gray-600">재료가 신선해요</span>
+                </div>
+              </label>
+
+              <input type="checkbox" id="key1-7" class="peer/key1-7 hidden" />
+              <label for="key1-7" class="cursor-pointer bg-white text-gray-600 peer-checked/key1-7:bg-primary-color peer-checked/key1-7:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>🍚</p>
+                  <span class="text-style text-gray-600">양이 많아요</span>
+                </div>
+              </label>
+
+              <input type="checkbox" id="key1-8" class="peer/key1-8 hidden" />
+              <label for="key1-8" class="cursor-pointer bg-white text-gray-600 peer-checked/key1-8:bg-primary-color peer-checked/key1-8:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>💰</p>
+                  <span class="text-style text-gray-600">비싼 만큼 가치있어요</span>
+                </div>
+              </label>
             </div>
             <!-- unchecked, checked -->
             <svg class="bottom-0 sticky fill-current text-gray-700 transition-transform duration-300 peer-checked:text-gray-500 peer-checked:rotate-180" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,40 +154,66 @@
         </div>
         <!-- 2열 -->
         <div class="flex flex-col gap-space-2 my-space-2 items-start">
-          <div class="keyword-style bg-white">
-            <p>💐</p>
-            <span class="text-style text-gray-600">특별한 날 가기 좋아요</span>
-          </div>
-          <div class="keyword-style">
-            <p>🛋️</p>
-            <span class="text-style">인테리어가 멋져요</span>
-          </div>
-          <div class="keyword-style bg-white">
-            <p>👥</p>
-            <span class="text-style text-gray-600">단체모임 하기 좋아요</span>
-          </div>
-          <div class="keyword-style bg-white">
-            <p>🖼️</p>
-            <span class="text-style text-gray-600">뷰가 좋아요</span>
-          </div>
+          <input type="checkbox" id="key2-1" class="peer/key2-1 hidden" />
+          <label for="key2-1" class="cursor-pointer bg-white text-gray-600 peer-checked/key2-1:bg-primary-color peer-checked/key2-1:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>💐</p>
+              <span class="text-style">특별한 날 가기 좋아요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key2-2" class="peer/key2-2 hidden" />
+          <label for="key2-2" class="cursor-pointer bg-white text-gray-600 peer-checked/key2-2:bg-primary-color peer-checked/key2-2:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>🛋️</p>
+              <span class="text-style">인테리어가 멋져요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key2-3" class="peer/key2-3 hidden" />
+          <label for="key2-3" class="cursor-pointer bg-white text-gray-600 peer-checked/key2-3:bg-primary-color peer-checked/key2-3:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>👥</p>
+              <span class="text-style">단체모임 하기 좋아요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key2-4" class="peer/key2-4 hidden" />
+          <label for="key2-4" class="cursor-pointer bg-white text-gray-600 peer-checked/key2-4:bg-primary-color peer-checked/key2-4:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>🖼️</p>
+              <span class="text-style">뷰가 좋아요</span>
+            </div>
+          </label>
           <!-- SVG 버튼 -->
           <label for="toggle-col-2" class="place-items-center cursor-pointer">
             <!-- 토글 체크박스 (숨김) -->
             <input type="checkbox" id="toggle-col-2" class="hidden peer" />
             <!-- 숨겨진 추가 키워드 -->
             <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
-              <div class="keyword-style">
-                <p>📸</p>
-                <span class="text-style">사진이 잘 나와요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>🚻</p>
-                <span class="text-style text-gray-600">화장실이 깨끗해요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>🅿️</p>
-                <span class="text-style text-gray-600">주차하기 편해요</span>
-              </div>
+              <input type="checkbox" id="key2-5" class="peer/key2-5 hidden" />
+              <label for="key2-5" class="cursor-pointer bg-white text-gray-600 peer-checked/key2-5:bg-primary-color peer-checked/key2-5:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>📸</p>
+                  <span class="text-style">사진이 잘 나와요</span>
+                </div>
+              </label>
+
+              <input type="checkbox" id="key2-6" class="peer/key2-6 hidden" />
+              <label for="key2-6" class="cursor-pointer bg-white text-gray-600 peer-checked/key2-6:bg-primary-color peer-checked/key2-6:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>🚻</p>
+                  <span class="text-style">화장실이 깨끗해요</span>
+                </div>
+              </label>
+
+              <input type="checkbox" id="key2-7" class="peer/key2-7 hidden" />
+              <label for="key2-7" class="cursor-pointer bg-white text-gray-600 peer-checked/key2-7:bg-primary-color peer-checked/key2-7:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>🅿️</p>
+                  <span class="text-style">주차하기 편해요</span>
+                </div>
+              </label>
             </div>
             <!-- unchecked, checked -->
             <svg class="bottom-0 sticky fill-current text-gray-700 transition-transform duration-300 peer-checked:text-gray-500 peer-checked:rotate-180" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,40 +238,66 @@
         </div>
         <!-- 3열 -->
         <div class="flex flex-col gap-space-2 my-space-2 items-start">
-          <div class="keyword-style bg-white">
-            <p>💖</p>
-            <span class="text-style text-gray-600">친절해요</span>
-          </div>
-          <div class="keyword-style bg-white">
-            <p>🎵</p>
-            <span class="text-style text-gray-600">음악이 좋아요</span>
-          </div>
-          <div class="keyword-style bg-white">
-            <p>💻</p>
-            <span class="text-style text-gray-600">집중하기 좋아요</span>
-          </div>
-          <div class="keyword-style bg-white">
-            <p>😌</p>
-            <span class="text-style text-gray-600">차분한 분위기에요</span>
-          </div>
+          <input type="checkbox" id="key3-1" class="peer/key3-1 hidden" />
+          <label for="key3-1" class="cursor-pointer bg-white text-gray-600 peer-checked/key3-1:bg-primary-color peer-checked/key3-1:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>💖</p>
+              <span class="text-style">친절해요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key3-2" class="peer/key3-2 hidden" />
+          <label for="key3-2" class="cursor-pointer bg-white text-gray-600 peer-checked/key3-2:bg-primary-color peer-checked/key3-2:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>🎵</p>
+              <span class="text-style">음악이 좋아요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key3-3" class="peer/key3-3 hidden" />
+          <label for="key3-3" class="cursor-pointer bg-white text-gray-600 peer-checked/key3-3:bg-primary-color peer-checked/key3-3:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>💻</p>
+              <span class="text-style">집중하기 좋아요</span>
+            </div>
+          </label>
+
+          <input type="checkbox" id="key3-4" class="peer/key3-4 hidden" />
+          <label for="key3-4" class="cursor-pointer bg-white text-gray-600 peer-checked/key3-4:bg-primary-color peer-checked/key3-4:text-white rounded-sm">
+            <div class="keyword-style">
+              <p>😌</p>
+              <span class="text-style">차분한 분위기에요</span>
+            </div>
+          </label>
           <!-- SVG 버튼 -->
           <label for="toggle-col-3" class="place-items-center cursor-pointer">
             <!-- 토글 체크박스 (숨김) -->
             <input type="checkbox" id="toggle-col-3" class="hidden peer" />
             <!-- 숨겨진 추가 키워드 -->
             <div class="flex flex-col gap-space-2 items-start w-full max-h-0 overflow-hidden peer-checked:max-h-full">
-              <div class="keyword-style">
-                <p>🐶</p>
-                <span class="text-style">반려동물과 가기 좋아요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>🗣️</p>
-                <span class="text-style text-gray-600">대화하기 좋아요</span>
-              </div>
-              <div class="keyword-style bg-white">
-                <p>😥</p>
-                <span class="text-style text-gray-600">선택할 키워드가 없어요</span>
-              </div>
+              <input type="checkbox" id="key3-5" class="peer/key3-5 hidden" />
+              <label for="key3-5" class="cursor-pointer bg-white text-gray-600 peer-checked/key3-5:bg-primary-color peer-checked/key3-5:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>🐶</p>
+                  <span class="text-style">반려동물과 가기 좋아요</span>
+                </div>
+              </label>
+
+              <input type="checkbox" id="key3-6" class="peer/key3-6 hidden" />
+              <label for="key3-6" class="cursor-pointer bg-white text-gray-600 peer-checked/key3-6:bg-primary-color peer-checked/key3-6:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>🗣️</p>
+                  <span class="text-style">대화하기 좋아요</span>
+                </div>
+              </label>
+
+              <input type="checkbox" id="key3-7" class="peer/key3-7 hidden" />
+              <label for="key3-7" class="cursor-pointer bg-white text-gray-600 peer-checked/key3-7:bg-primary-color peer-checked/key3-7:text-white rounded-sm">
+                <div class="keyword-style">
+                  <p>😥</p>
+                  <span class="text-style">선택할 키워드가 없어요</span>
+                </div>
+              </label>
             </div>
             <!-- unchecked, checked -->
             <svg class="bottom-0 sticky fill-current text-gray-700 transition-transform duration-300 peer-checked:text-gray-500 peer-checked:rotate-180" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -245,14 +330,14 @@
           사진추가
           <span class="text-gray-500">최대 20장</span>
         </button>
-        <div class="bg-gray-50 text-phrase-s py-6 px-3 w-full h-full rounded-lg">
+        <div class="bg-gray-100 text-phrase-s py-6 px-3 w-full h-full rounded-lg">
           <p class="text-gray-500">리뷰 작성하기</p>
           <p class="text-gray-600">빵 종류가 다양해서 골라먹는 재미가 있어요~😋<br />앞으로도 자주 이용할 것 같아요! <br />다들 꼭 와보세요~ 맛집입니당🫶</p>
           <p class="text-right">64<span class="text-gray-500">/400</span></p>
         </div>
         <div class="text-label-s w-full h-[2.625rem] flex items-center justify-between">
           <a href="/src/components/visit/review-w-guidelines.html" class="underline">리뷰 작성 유의사항</a>
-          <button type="submit" class="cursor-pointer bg-primary-color w-[6.125rem] h-[2.625rem] text-white font-semibold rounded-sm">등록하기</button>
+          <a href="/src/pages/visit/visit-1.html" type="submit" class="cursor-pointer flex justify-center items-center bg-primary-color w-[6.125rem] h-[2.625rem] text-white font-semibold rounded-sm">등록하기</a>
         </div>
 
         <!-- 모달 창 -->
