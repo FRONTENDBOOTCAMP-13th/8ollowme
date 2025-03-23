@@ -10,8 +10,8 @@
     <script type="module" src="/src/main.js"></script>
   </head>
 
-  <body class="bg-white flex justify-center items-center overflow-auto">
-    <div class="flex flex-col items-center max-w-[599px] w-full min-h-screen shadow-2xl shadow-secondary-color">
+  <body class="flex justify-center items-center min-h-screen overflow-auto">
+    <div class="flex flex-col justify-center items-center max-w-[599px] w-full shadow-2xl shadow-secondary-color">
       <!-- top-bar -->
       <div class="fixed inline-flex w-full max-w-[599px] px-space-4 py-space-2 bg-white top-0 z-10">
         <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,49 @@
           <div class="flex items-center justify-between p-space-2">
             <div class="flex items-center gap-2">
               <!-- 프로필 이미지 -->
-              <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-xs text-white">img</div>
+              <div class="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden"><img src="/src/assets/profile/hojeong_profile.png" alt="호정 프로필 이미지" class="w-full h-full object-cover" /></div>
+
+              <div>
+                <p class="text-sm font-bold">HOJEONG</p>
+                <p class="text-xs text-gray-500">사진리뷰 23</p>
+              </div>
+            </div>
+            <!-- 팔로우 버튼 -->
+            <button class="bg-primary-color text-white text-xs px-3 py-1 rounded-full">팔로우</button>
+          </div>
+          <!-- 지역/카테고리 버튼 -->
+          <div class="flex whitespace-nowrap overflow-x-auto px-space-2 gap-x-2 gap-y-1">
+            <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">📌 홍익대</button>
+            <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">📌 홍대입구역</button>
+            <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">🍚 한정식</button>
+            <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">🍚 한식</button>
+            <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">☕ 카페/디저트</button>
+            <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">☕ 카페/디저트</button>
+          </div>
+          <div class="flex overflow-x-auto whitespace-nowrap gap-space-1 p-2">
+            <div class="w-[105px] h-[120px] shrink-0">
+              <img src="/src/assets/food/reviewFood1.png" alt="음식 사진" class="w-full h-full object-cover" />
+            </div>
+            <div class="w-[105px] h-[120px] shrink-0">
+              <img src="/src/assets/food/reviewFood2.png" alt="음식 사진" class="w-full h-full object-cover" />
+            </div>
+            <div class="w-[105px] h-[120px] shrink-0">
+              <img src="/src/assets/food/reviewFood3.png" alt="음식 사진" class="w-full h-full object-cover" />
+            </div>
+            <div class="w-[105px] h-[120px] shrink-0">
+              <img src="/src/assets/food/reviewFood4.png" alt="음식 사진" class="w-full h-full object-cover" />
+            </div>
+            <div class="w-[105px] h-[120px] shrink-0">
+              <img src="/src/assets/food/reviewFood1.png" alt="음식 사진" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+        <!-- 추천리뷰어 창 -->
+        <div class="mb-space-2 h-[228px] bg-gray-100">
+          <div class="flex items-center justify-between p-space-2">
+            <div class="flex items-center gap-2">
+              <!-- 프로필 이미지 -->
+              <div class="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden"><img src="/src/assets/profile/woomin-profile.jpg" alt="우민 프로필 이미지" class="w-full h-full object-cover" /></div>
               <div>
                 <p class="text-sm font-bold">WOOMIN</p>
                 <p class="text-xs text-gray-500">사진리뷰 23</p>
@@ -101,18 +143,17 @@
           <div class="flex items-center justify-between p-space-2">
             <div class="flex items-center gap-2">
               <!-- 프로필 이미지 -->
-              <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-xs text-white">img</div>
+              <div class="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden"><img src="/src/assets/profile/hansol_profile.png" alt="한솔 프로필 이미지" class="w-full h-full object-cover" /></div>
               <div>
-                <p class="text-sm font-bold">HOJEONG</p>
+                <p class="text-sm font-bold">HANSOL</p>
                 <p class="text-xs text-gray-500">사진리뷰 23</p>
               </div>
             </div>
             <!-- 팔로우 버튼 -->
             <button class="bg-primary-color text-white text-xs px-3 py-1 rounded-full">팔로우</button>
           </div>
-
           <!-- 지역/카테고리 버튼 -->
-          <div class="flex whitespace-nowrap overflow-x-auto gap-x-2 gap-y-1">
+          <div class="flex whitespace-nowrap overflow-x-auto px-space-2 gap-x-2 gap-y-1">
             <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">📌 홍익대</button>
             <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">📌 홍대입구역</button>
             <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">🍚 한정식</button>
@@ -139,11 +180,11 @@
           </div>
         </div>
         <!-- 추천리뷰어 창 -->
-        <div class="h-[228px] bg-gray-100">
+        <div class="mb-space-2 h-[228px] bg-gray-100">
           <div class="flex items-center justify-between p-space-2">
             <div class="flex items-center gap-2">
               <!-- 프로필 이미지 -->
-              <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-xs text-white">img</div>
+              <div class="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden"><img src="/src/assets/profile/dowool_profile.png" alt="도울 프로필 이미지" class="w-full h-full object-cover" /></div>
               <div>
                 <p class="text-sm font-bold">DOWOOL</p>
                 <p class="text-xs text-gray-500">사진리뷰 23</p>
@@ -152,9 +193,8 @@
             <!-- 팔로우 버튼 -->
             <button class="bg-primary-color text-white text-xs px-3 py-1 rounded-full">팔로우</button>
           </div>
-
           <!-- 지역/카테고리 버튼 -->
-          <div class="flex whitespace-nowrap overflow-x-auto gap-x-2 gap-y-1">
+          <div class="flex whitespace-nowrap overflow-x-auto px-space-2 gap-x-2 gap-y-1">
             <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">📌 홍익대</button>
             <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">📌 홍대입구역</button>
             <button class="bg-secondary-color text-white rounded-md text-label-s font-bold p-space-1">🍚 한정식</button>
