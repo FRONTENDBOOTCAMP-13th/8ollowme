@@ -10,7 +10,7 @@ const renderMessages = () => {
   chatList.innerHTML = store.state.messages
     .map((msg) => {
       const isUser = msg.role === 'user';
-      const iconSrc = '/src/assets/icons/follow-me.svg'; // 챗봇 메시지 아이콘
+      const iconSrc = '/images/follow-me.svg'; // 챗봇 메시지 아이콘
 
       return `
         <li class="py-2 px-4 rounded-xl relative ${isUser ? 'bg-gray-100 text-black self-end rounded-br-sm max-w-4/5' : 'bg-secondary-color rounded-tl-sm text-white self-start'}">
@@ -62,12 +62,12 @@ chatStarterEl?.addEventListener('click', () => {
   if (isOpen) {
     chatContainer.classList.remove('opacity-100', 'visible');
     chatContainer.classList.add('opacity-0', 'invisible');
-    chatIcon.src = '/src/assets/icons/follow-me.svg'; // 원래 아이콘으로 변경
+    chatIcon.src = '/images/follow-me.svg'; // 원래 아이콘으로 변경
   } else {
     // 열기
     chatContainer.classList.remove('opacity-0', 'invisible');
     chatContainer.classList.add('opacity-100', 'visible');
-    chatIcon.src = '/src/assets/icons/close.svg'; // 닫기 아이콘으로 변경
+    chatIcon.src = '/images/close.svg'; // 닫기 아이콘으로 변경
     setTimeout(() => {
       chatInput?.focus();
     }, 300); // 100ms 정도 지연
