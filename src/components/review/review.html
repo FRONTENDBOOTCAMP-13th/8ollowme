@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>- Tailwind CSS</title>
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="w-screen flex flex-col gap-4 p-4">
+    <!-- todo: 이미지 상대단위로 수정 필요 aspect사용 -->
+    <!--          section: Theme card section          -->
+    <section class="components-section bg-gray-200">
+      <!--           follow: save card component          -->
+      <div class="flex flex-col justify-between overflow-hidden min-w-[148px] h-[184px] bg-(image:--cheeze-cake) bg-contain rounded-xl p-[9px] relative">
+        <div class="w-full h-full card-gradient absolute inset-0"></div>
+        <button class="px-1 flex w-fit items-center justify-center bg-white/70 text-label-s font-bold text-gray-600 rounded-[4px] mb-[38px] z-10">임시저장</button>
+        <div class="z-10 mb-5">
+          <p class="text-phrase-m font-semibold">연남/합정 데이트</p>
+          <div class="flex items-center gap-[3px] text-phrase-s leading-[160%]">
+            <span>장소 2</span>
+            <div class="icon-box-12">
+              <img src="../../assets/icons/eye-black.svg" alt="" class="icon" />
+            </div>
+            <span>7</span>
+          </div>
+        </div>
+        <div class="flex z-10 gap-0.5">
+          <div class="rounded-[4px] bg-gray-200 w-[42px] h-[42px] flex items-center justify-center text-label-s">img</div>
+          <div class="rounded-[4px] bg-gray-200 w-[42px] h-[42px] flex items-center justify-center text-label-s">img</div>
+        </div>
+      </div>
+
+      <!--          follow: default card component          -->
+      <div class="flex flex-col bg-white min-w-[148px] h-[184px] rounded-xl relative justify-center items-center gap-3.5">
+        <div class="w-11.5 h-11.5 rounded-full flex items-center justify-center bg-gray-800">
+          <img src="../../assets/icons/plus.svg" alt="" class="" />
+        </div>
+        <p class="text-center text-label-s text-gray-600">내 리뷰만 모아 <br />테마만들기</p>
+      </div>
+    </section>
+
+    <!--          section: image screen section          -->
+    <section class="components-section bg-white">
+      <!--          follow: image screen components          -->
+      <figure class="min-w-[141px] min-h-[140px] relative bg-contents-contentSecondary text-white rounded-[3px]">
+        <input type="checkbox" id="bookmark" class="peer hidden" />
+        <label for="bookmark" class="icon-box-24 absolute top-[0.4375rem] right-1.5 cursor-pointer bg-[url('../../assets/icons/bookmark.svg')] bg-cover peer-checked:bg-[url('../../assets/icons/bookmark-true.svg')]"> </label>
+        <div class="flex flex-col gap-0.5 absolute left-[7px] bottom-1.5 text-phrase-s font-semibold w-[97px]">
+          <p class="">서울시 응암동</p>
+          <p class="text-phrase-m truncate">기린 작업실</p>
+        </div>
+      </figure>
+    </section>
+
+    <!--          section: category section          -->
+    <section class="components-section bg-gray-200">
+      <!--          follow: category component          -->
+      <nav class="flex items-center justify-between p-3 min-w-[320px] bg-white">
+        <ul class="flex gap-2 items-center justify-center px-3 py-1">
+          <li class="flex items-center justify-center cursor-pointer">
+            <div class="icon-box-s mr-2">
+              <img src="../../assets/icons/hambuger-gray.svg" alt="" class="" />
+            </div>
+            <span class="text-phrase-s font-semibold text-contents-contentTertiary">전체</span>
+          </li>
+          <li class="flex items-center justify-center cursor-pointer">
+            <div class="icon-box-s mr-2">
+              <img src="../../assets/icons/picture-black.svg" alt="" class="icon" />
+            </div>
+            <span class="text-phrase-s font-semibold">사진</span>
+          </li>
+        </ul>
+        <!-- todo: 수정 필요  -->
+        <select name="custom-select" id="custom-select" class="text-phrase-s font-semibold text-center appearance-none text-contents-contentSecondary rounded-[10px] pl-1 pr-1 py-1 border border-white hover:border-primary hover:text-primary focus:bg-primary focus:text-white">
+          <option value="">최신순</option>
+          <option value="">조회수순</option>
+        </select>
+        <!-- todo: 업다운 아이콘 -->
+      </nav>
+    </section>
+
+    <!--          section: review choice section          -->
+    <section class="components-section bg-gray-200">
+      <!--          follow: review choce component          -->
+      <header class="flex justify-between items-center p-1 bg-white min-w-[320px]">
+        <div class="icon-box-32">
+          <img src="../../assets/icons/left.svg" alt="" class="icon" />
+        </div>
+        <span class="font-bold">리뷰 선택</span>
+        <div class="icon-box-24">
+          <img src="../../assets/icons/close.svg" alt="" class="icon" />
+        </div>
+      </header>
+    </section>
+
+    <!--          section: horizon image section          -->
+    <section class="components-section bg-gray-200">
+      <!--          follow: horizon image component          -->
+      <figure class="flex items-center justify-center bg-white w-[290px] rounded-2xl overflow-hidden relative">
+        <img src="../../assets/images/futatsu.png" alt="후타츠 홍대본점" class="w-[92px] h-[91px] object-cover object-center" />
+        <div class="flex-1 flex flex-col gap-1 px-3 text-phrase-s leading-[1.6] overflow-hidden truncate">
+          <p class="font-semibold truncate">titleText</p>
+          <p class="truncate">content</p>
+          <p class="truncate text-contents-contentTertiary">text</p>
+        </div>
+        <div class="icon-box-18 absolute right-2.5 top-2.5">
+          <img src="../../assets/icons/call-bw.svg" alt="" class="icon" />
+        </div>
+      </figure>
+    </section>
+
+    <!--          section: enroll button section          -->
+    <section class="components-section bg-[#404040]">
+      <!--          follow: enroll button components          -->
+      <button class="flex gap-1 items-center justify-center py-2 px-3 text-white rounded-[50px] border border-contents-contentTertiary">
+        <div class="icon-box-24">
+          <img src="../../assets/icons/check.svg" alt="" />
+        </div>
+        <span>text</span>
+      </button>
+      <button class="flex gap-1 items-center justify-center py-2 px-3 text-white rounded-[50px] border border-contents-contentTertiary focus:border-lightblue-300 focus:bg-lightblue-300 outline-none">
+        <div class="icon-box-24">
+          <img src="../../assets/icons/check.svg" alt="" />
+        </div>
+        <span>text</span>
+      </button>
+      <button class="flex gap-1 items-center justify-center py-2 px-3 text-white rounded-[50px] bg-lightblue-300">
+        <div class="icon-box-24">
+          <img src="../../assets/icons/check.svg" alt="" />
+        </div>
+        <span>text</span>
+      </button>
+      <button class="flex gap-1 items-center justify-center py-2 px-3 text-white rounded-[50px] border border-white">
+        <div class="icon-box-24">
+          <img src="../../assets/icons/photo.svg" alt="" />
+        </div>
+        <span class="font-semibold">커버변경 <span class="text-phrase-s text-contents-contentTertiary leading-[1.6]">필수</span></span>
+      </button>
+    </section>
+
+    <!--          section: input section          -->
+    <section class="components-section bg-[#404040] items-end">
+      <!--          follow: title input component          -->
+      <div class="min-w-[288px] text-contents-contentTertiary relative flex flex-col">
+        <div class="flex pb-0.5 border-b items-end gap-2">
+          <input type="text" placeholder="제목을 입력해주세요" class="text-label-xl font-semibold text-white placeholder:text-white focus:outline-none focus:ring-0 focus:border-transparent flex-1" required maxlength="20" />
+          <span class="text-phrase-s leading-[1.6]">필수</span>
+        </div>
+        <p class="text-right text-phrase-s leading-[1.6]"><span class="text-white">0</span>/20</p>
+      </div>
+      <!--          follow: content input component          -->
+      <div class="min-w-[288px] text-contents-contentTertiary relative flex flex-col">
+        <div class="flex pb-0.5 border-b items-end gap-2">
+          <input type="text" placeholder="어떤 리스트인지 설명해주세요" class="text-phrase-s text-white placeholder:text-contents-contentTertiary focus:outline-none focus:ring-0 focus:border-transparent flex-1" maxlength="100" />
+          <span class="text-phrase-s leading-[1.6]">선택</span>
+        </div>
+        <p class="text-right text-phrase-s leading-[1.6]"><span class="text-white">0</span>/100</p>
+      </div>
+    </section>
+
+    <!--          section: feed section          -->
+    <section class="components-section bg-gray-200 flex-col">
+      <!--          follow: review control component          -->
+      <div class="flex justify-between bg-white min-w-[288px] self-start items-center">
+        <p class="flex gap-1 text-label-m font-semibold">
+          <span>리뷰</span><span class="text-contents-contentTertiary"><span class="text-[#F03F40]">2</span>/10</span>
+        </p>
+        <p class="text-contents-contentSecondary text-label-s font-semibold text-center">
+          <span class="cursor-pointer">임시저장</span> | <span class="cursor-pointer">순서변경</span> |
+          <span class="cursor-pointer">전체삭제</span>
+        </p>
+      </div>
+      <!--          follow: number component          -->
+      <div class="flex gap-1.5 items-center self-start">
+        <div class="bg-lightblue-400 size-[34px] rounded-full flex justify-center items-center">
+          <div class="icon-box-18">
+            <img src="../../assets/icons/paper.svg" alt="" />
+          </div>
+        </div>
+        <span class="text-label-s font-semibold text-lightblue-400">No.1</span>
+      </div>
+      <!--          follow: receipe paper component          -->
+      <figure class="flex flex-col max-w-[288px] rounded-t-[12px] self-start drop-shadow-[0px_6px_7px_rgba(126,39,39,0.25)]">
+        <img src="../../assets/images/americano.png" alt="아메리카노" class="w-[288px] h-[232px] object-cover object-center" />
+        <div class="py-6 px-9.5 flex flex-col gap-2 items-center justify-center overflow-hidden bg-white">
+          <p class="text-label-s text-lightblue-400">
+            <span class="font-semibold mr-0.5"> 22.11.4.금 </span>
+            <span class="px-1 border border-lightblue-400 rounded-[4px] leading-[1.6] inline-block">방문</span>
+          </p>
+          <p class="text-phrase-s leading-[1.6] text-center text-ellipsis overflow-hidden line-clamp-3">지나가다 보고 너무 예뻐서 저장해 놓았다가 이번에 가게 되었는데 너무 예쁘고 좋았어요. 분위기도 힙하고 새로 생겼는데 오래 동안 오픈 하시더라구요! 그래서 더 좋았어요!</p>
+          <div class="flex gap-[3px] text-phrase-s text-contents-contentSecondary items-center">
+            <div class="flex gap-1 bg-gray-50 rounded-[4px] px-1 py-0.5">
+              <span class="text-black">⏱</span>
+              <span>수업시간이 충분해요</span>
+            </div>
+            <span class="flex px-2 py-0.5 bg-gray-50 rounded-[4px]">+4</span>
+          </div>
+        </div>
+        <div class="px-5 py-3 relative border-t-[0.5px] border-dashed border-contents-contentTertiary bg-white">
+          <p class="text-label-m font-semibold w-fit">HOT MESS</p>
+          <p class="text-phrase-s text-contents-contentSecondary">리뷰 <span class="text-label-s">5 |</span> 서울시 연남동</p>
+          <div class="icon-box-18 absolute top-1/2 -translate-y-1/2 right-5">
+            <img src="../../assets/icons/heart.svg" alt="" />
+          </div>
+        </div>
+        <img src="../../assets/icons/recipe-footer.svg" alt="" class="w-full object-cover object-top relative -top-0.5" />
+        <div class="icon-box-18 absolute -top-1.25 -right-1.5 cursor-pointer">
+          <img src="../../assets/icons/close-circle.svg" alt="" />
+        </div>
+      </figure>
+    </section>
+
+    <!--          section: map section          -->
+    <section class="components-section bg-gray-200">
+      <!--          follow: bubble component          -->
+      <div class="min-w-[87px] border border-lightblue-400 bg-white rounded-2xl flex gap-1 py-1 pl-1 pr-2 relative items-center">
+        <div class="icon-box-24 overflow-hidden rounded-full">
+          <img src="../../assets/images/americano.png" alt="아메리카노" class="icon" />
+        </div>
+        <span class="text-label-s font-semibold truncate">HOTMESS</span>
+        <img src="../../assets/icons/bubble.svg" alt="" class="w-[10%] aspect-auto absolute left-[10%] bottom-0 translate-y-[70%]" />
+      </div>
+      <!--          follow: spread component          -->
+      <button class="size-6 bg-white p-0.5 relative shadow-[0px_4px_4px_0px_rgba(0,0,0,0.15)] rounded-[4px]">
+        <div class="icon-box-12 absolute top-0.5 right-0.5">
+          <img src="../../assets/icons/upArrow.svg" alt="" />
+        </div>
+        <div class="icon-box-12 absolute left-0.5 bottom-0.5">
+          <img src="../../assets/icons/downArrow.svg" alt="" />
+        </div>
+      </button>
+    </section>
+  </body>
+</html>

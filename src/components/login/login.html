@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>login-setting-follow</title>
+    <link rel="icon" href="/assets/favicon.svg" />
+    <link rel="preload" as="font" href="/public/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/components/login/login.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="bg-white">
+    <div class="max-w-md w-fukll p-6">
+      <!-- 아이디 -->
+      <div class="mb-4">
+        <input type="text" placeholder="아이디를 입력해주세요" class="text-text-default w-full min-w-[251px] h-[43px] px-4 border border-black rounded-lg bg-transparent focus:outline-none focus:ring-2" />
+      </div>
+
+      <!-- 비밀번호 -->
+      <div class="mb-4">
+        <input type="password" placeholder="비밀번호를 입력해주세요" class="text-text-default w-full min-w-[251px] h-[43px] px-4 border border-black rounded-lg bg-transparent focus:outline-none focus:ring-2" />
+      </div>
+
+      <!-- 회원가입 아이디, 비밀번호 입력창 -->
+      <div class="mb-4">
+        <label for="confirm" class="block text-black text-sm mb-1">텍스트 확인</label>
+        <input type="password" placeholder="비밀번호를 입력해주세요" class="w-full min-w-[251px] h-[43px] px-4 border border-black rounded-lg bg-transparent text-black focus:outline-none focus:ring-2" />
+      </div>
+
+      <!-- 로그인 버튼 -->
+      <button class="w-full min-w-[251px] h-[43px] bg-secondary-color text-text-default rounded-lg font-semibold hover:bg-hover-color transition mb-4">로그인</button>
+
+      <!-- 회원가입 버튼 -->
+      <button class="w-full min-w-[251px] h-[43px] border border-black text-text-default rounded-lg font-semibold hover:bg-hover-color hover:border-hover-color transition mb-4">회원가입</button>
+
+      <!-- 검색창 + 돋보기버튼 -->
+      <div class="mb-4 relative">
+        <input type="search" placeholder="원하는 지역을 검색해 보세요" class="text-text-default w-full h-12 px-4 border border-black rounded-lg bg-transparent focus:outline-none focus:ring-2" />
+        <button class="absolute right-4 inset-y-0 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 hover:text-black transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- 이대로 저장 버튼 -->
+      <button class="w-full h-12 bg-secondary-color text-text-default rounded-lg font-semibold hover:bg-hover-color hover:border-hover-color transition mb-4 flex items-center justify-center gap-2">
+        <!-- 연필 아이콘 -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20h9" />
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z" />
+        </svg>
+        이대로 저장할래요
+      </button>
+
+      <!-- 지역 선택탭 -->
+      <div>
+        <!-- 숨겨진 체크박스 -->
+        <input type="checkbox" id="select-toggle" class="hidden peer" />
+
+        <!-- 기본 상태 (플러스 아이콘) -->
+        <label for="select-toggle" class="mb-space-4 select-box p-space-4 w-[141px] h-[66px] flex items-center justify-between rounded-lg bg-tertiary-color text-text-default border border-gray-300 transition peer-checked:hidden">
+          <div>
+            <p class="text-phrase-s">함께 추천하는</p>
+            <p class="text-lg font-bold">부천역</p>
+          </div>
+          <img src="/src/assets/icons/plus-circle.svg" alt="추가" class="h-6 w-6 text-gray-500" />
+        </label>
+
+        <!-- 선택됨 상태 (체크 아이콘) -->
+        <label for="select-toggle" class="mb-space-4 select-box w-[141px] h-[66px] p-space-4 items-center justify-between rounded-lg bg-secondary-color text-white border border-secondary-color transition hidden peer-checked:flex">
+          <div>
+            <p class="text-phrase-s">함께 추천하는</p>
+            <p class="text-lg font-bold">부천역</p>
+          </div>
+          <img src="/src/assets/icons/check-circle.svg" alt="체크" class="h-6 w-6 text-white" />
+        </label>
+      </div>
+
+      <!-- 관심지역카드 -->
+      <div class="card">
+        <!-- 숨겨진 체크박스 -->
+        <input type="checkbox" id="select-card" class="hidden peer" />
+
+        <!-- 미선택 상태 -->
+        <label for="select-card" class="w-[90px] h-[92px] flex flex-col items-center justify-between p-3 rounded-lg border transition bg-tertiary-color text-black border-gray-300 relative peer-checked:hidden">
+          <!-- 이미지 -->
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img src="" alt="지역 이미지" class="w-full h-full object-cover" />
+          </div>
+
+          <!-- 텍스트 -->
+          <p class="text-sm font-semibold text-text-default">제주도</p>
+
+          <!-- 플러스 아이콘 -->
+          <div class="absolute top-2 right-2">
+            <img src="/src/assets/icons/plus-circle.svg" alt="추가" class="h-5 w-5 text-gray-500" />
+          </div>
+        </label>
+
+        <!-- 선택 상태 -->
+        <label for="select-card" class="w-[90px] h-[92px] flex flex-col items-center justify-between p-3 rounded-lg border transition bg-primary-color text-white border-primary-color relative hidden peer-checked:flex">
+          <!-- 이미지 -->
+          <div class="w-12 h-12 rounded-full overflow-hidden">
+            <img src="" alt="지역 이미지" class="w-full h-full object-cover" />
+          </div>
+
+          <!-- 텍스트 -->
+          <p class="text-sm font-semibold text-text-default">제주도</p>
+
+          <!-- 체크 아이콘 -->
+          <div class="absolute top-2 right-2">
+            <img src="/src/assets/icons/check-circle.svg" alt="체크" class="h-5 w-5 text-white" />
+          </div>
+        </label>
+      </div>
+
+      <!-- 리뷰 모달 -->
+      <div class="mb-4 bg-tertiary-color text-black w-[222px] h-auto pt-3 rounded-md relative shadow-lg">
+        <!-- 닫기 버튼 -->
+        <button class="absolute top-1.5 right-1.5 text-gray-400 hover:text-black text-sm">✖</button>
+
+        <!-- 유저 정보 -->
+        <div class="border-gray-300 px-2 pb-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <!-- 프로필 이미지 -->
+              <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-xs text-white">img</div>
+              <div>
+                <p class="text-sm font-semibold">COOLIOON</p>
+                <p class="text-xs text-gray-500">사진리뷰 23</p>
+              </div>
+            </div>
+            <!-- 팔로우 버튼 -->
+            <button class="bg-black text-white text-xs px-3 py-1 rounded-full">팔로우</button>
+          </div>
+        </div>
+
+        <!-- 이미지 그리드 -->
+        <div class="grid grid-cols-2 w-[222px] h-[222px] gap-0 border-t border-white">
+          <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+            <p>text</p>
+            <p class="font-bold">img</p>
+          </div>
+          <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+            <p>text</p>
+            <p class="font-bold">img</p>
+          </div>
+          <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+            <p>text</p>
+            <p class="font-bold">img</p>
+          </div>
+          <div class="flex flex-col items-center justify-center border border-white text-gray-500 text-xs font-medium">
+            <p>text</p>
+            <p class="font-bold">img</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 북마크 img -->
+      <div>
+        <div class="grid grid-cols-2 w-[288px]">
+          <!-- 카드 1 -->
+          <div class="relative w-[141px] h-[140px] bg-gray-400 rounded-xs">
+            <!-- 북마크 아이콘 -->
+            <div class="absolute top-2 right-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l7-5 7 5V3z" />
+              </svg>
+            </div>
+
+            <!-- 이미지 (대체 텍스트) -->
+            <div class="text-gray-500 text-center">img</div>
+
+            <!-- 텍스트 -->
+            <div>
+              <p class="text-xs text-gray-500">text</p>
+              <p class="text-sm font-bold text-white">text</p>
+            </div>
+          </div>
+
+          <!-- 카드 2 -->
+          <div class="relative w-[141px] h-[140px] bg-gray-400 rounded-xs">
+            <!-- 북마크 아이콘 -->
+            <div class="absolute top-2 right-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l7-5 7 5V3z" />
+              </svg>
+            </div>
+
+            <!-- 이미지 (대체 텍스트) -->
+            <div class="text-gray-500 text-center">img</div>
+
+            <!-- 텍스트 -->
+            <div>
+              <p class="text-xs text-gray-500">text</p>
+              <p class="text-sm font-bold text-white">text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
