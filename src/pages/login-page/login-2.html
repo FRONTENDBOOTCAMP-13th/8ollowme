@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RE:8LACE : login</title>
+    <link rel="icon" href="/images/follow-me.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+
+  <body class="min-h-screen flex justify-center items-center">
+    <div class="shadow-2xl shadow-secondary-color bg-primary-color w-full max-w-[599px] px-4 flex flex-col justify-between items-center min-h-screen py-10">
+      <!-- 로고 및 제목 -->
+      <div class="flex flex-col items-center w-full mt-[100px]">
+        <img src="/src/assets/icon/Re_8lace.png" alt="re8lace 로고" class="block h-[100px] w-[100px]" />
+        <h1 class="text-white text-head-2xl font-bold mt-space-4">RE: 8LACE</h1>
+      </div>
+
+      <!-- 로그인 폼 -->
+      <form action="/src/pages/setting-page/setting-1.html" method="POST" class="w-full">
+        <!-- 로그인 텍스트 -->
+        <h2 class="flex text-white text-head-xl font-bold mb-4 self-start">로그인</h2>
+        <!-- 아이디 -->
+        <div class="mb-space-10">
+          <input type="text" placeholder="아이디를 입력해주세요" class="text-text-default text-phrase-m w-full h-[43px] px-4 border border-text-default rounded-md bg-transparent focus:outline-none focus:ring-1" />
+        </div>
+
+        <!-- 비밀번호 -->
+        <div class="mb-space-10">
+          <input type="password" placeholder="비밀번호를 입력해주세요" class="text-text-default text-phrase-m w-full h-[43px] px-4 border border-text-default rounded-md bg-transparent focus:outline-none focus:ring-1" />
+        </div>
+
+        <!-- 아이디/비번 찾기 -->
+        <div class="flex justify-between w-full mb-space-10 text-text-default text-sm">
+          <a href="#" class="hover:underline">아이디 찾기</a>
+          <a href="#" class="hover:underline">비밀번호 찾기</a>
+        </div>
+
+        <!-- 로그인 버튼 -->
+        <a href="/src/pages/feed/feed-1.html" class="w-full h-[43px] flex items-center justify-center bg-secondary-color text-text-default rounded-md font-semibold hover:bg-hover-color transition mb-4"> 로그인 </a>
+      </form>
+
+      <!-- 회원가입 버튼 -->
+      <a href="/src/pages/login-page/login-3.html" class="mb-[40px] w-full h-[41px] bg-white border border-white text-text-default rounded-md font-semibold flex items-center justify-center hover:bg-hover-color hover:border-hover-color transition"> 회원가입 </a>
+    </div>
+  </body>
+</html>

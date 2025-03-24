@@ -1,5 +1,6 @@
+import Sakura from '../utils/sakura/sakura.js';
+import '../utils/sakura/sakura.css';
 const NAVER_CLIENT_ID = import.meta.env.VITE_NAVER_MAP_CLIENT_ID;
-
 const imageUpload = document.getElementById('imageUpload');
 const parent = document.getElementById('parent');
 const map = document.getElementById('map');
@@ -90,28 +91,24 @@ if (map) {
   }
 }
 
-// if (document.body.classList.contains('sakura-container')) {
-//   new Sakura('body', {
-//     colors: [
-//       {
-//         gradientColorStart: 'rgba(255, 183, 197, 0.9)',
-//         gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
-//         gradientColorDegree: 120,
-//       },
-//       {
-//         gradientColorStart: 'rgba(255,189,189)',
-//         gradientColorEnd: 'rgba(227,170,181)',
-//         gradientColorDegree: 120,
-//       },
-//       {
-//         gradientColorStart: 'rgba(212,152,163)',
-//         gradientColorEnd: 'rgba(242,185,196)',
-//         gradientColorDegree: 120,
-//       },
-//     ],
-//     delay: 200,
-//   });
-// }
+document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.getElementById('music-toggle');
+  const icon = document.getElementById('music-icon');
+  const audio = document.getElementById('bg-music');
+
+  if (checkbox) {
+    checkbox.addEventListener('change', function () {
+      if (checkbox.checked) {
+        icon.src = '/images/music-on.svg';
+        audio.play();
+      } else {
+        icon.src = '/images/music-off.svg';
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    });
+  }
+});
 
 const sakuraContainer = document.querySelector('.sakura-container');
 
@@ -139,21 +136,3 @@ if (sakuraContainer) {
     lifeTime: 10000,
   });
 }
-document.addEventListener('DOMContentLoaded', function () {
-  const checkbox = document.getElementById('music-toggle');
-  const icon = document.getElementById('music-icon');
-  const audio = document.getElementById('bg-music');
-
-  if (checkbox) {
-    checkbox.addEventListener('change', function () {
-      if (checkbox.checked) {
-        icon.src = '../../assets/icons/music-on.svg';
-        audio.play();
-      } else {
-        icon.src = '../../assets/icons/music-off.svg';
-        audio.pause();
-        audio.currentTime = 0;
-      }
-    });
-  }
-});
