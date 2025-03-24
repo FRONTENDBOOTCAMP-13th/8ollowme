@@ -127,7 +127,7 @@ gsap.to('.mangom-container', {
     start: 'top top',
     end: 'bottom bottom',
     scrub: 1,
-    markers: true,
+    markers: false,
   },
 });
 
