@@ -248,55 +248,102 @@
     </section>
 
     <!-- 팀 소개 -->
-    <section id="team" class="py-20 bg-white">
+    <section id="team" class="py-20 bg-white px-space-2">
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">팀 소개</h2>
-      <div class="flex gap-8 overflow-x-auto px-4 md:px-8 justify-center">
-        <div class="min-w-[300px] h-[400px] bg-white rounded-2xl shadow-xl transition-transform duration-300 flex-shrink-0" data-aos="fade-up">
-          <img src="/src/assets/images/hojung.png" alt="Team Member 1" class="w-full h-48 object-cover border-b-4 border-pink-300" />
-          <div class="p-5 text-center">
-            <h3 class="text-xl font-semibold text-pink-500 mb-1">이호정</h3>
-            <p class="text-sm text-gray-600 mb-3 font-medium">Frontend Developer</p>
-            <div class="text-left text-sm text-gray-500 space-y-1 pl-4">
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">React 컴포넌트 개발</p>
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">UI/UX 디자인</p>
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">사용자 경험 최적화</p>
+
+      <div class="flex gap-8 overflow-x-auto md:px-8 justify-center p-10">
+        <!-- 호정 -->
+        <div class="flip-card w-[300px] h-[400px]" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front bg-white rounded-2xl shadow-xl overflow-hidden">
+              <img src="/src/assets/images/hojung.png" alt="Team Member 1" class="w-full h-48 object-cover border-b-4 border-skyaccent" />
+              <div class="p-5 text-center">
+                <h3 class="text-xl font-semibold text-slate mb-1">이호정</h3>
+                <p class="text-sm text-mutedslate mb-3 font-medium">팀장</p>
+                <div class="whitespace-nowrap text-left text-sm text-gray-500 space-y-1">
+                  <p>Visit, Reserve, Order 페이지 제작</p>
+                  <p>index 페이지 디자인</p>
+                  <p>노션 페이지 작성</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Back -->
+            <div class="flip-card-back bg-lightsky rounded-2xl shadow-xl flex flex-col justify-center items-center text-center px-6">
+              <h3 class="text-phrase-l font-bold text-slate mb-2">호정</h3>
+              <p class="text-mutedslate text-phrase-m">프로젝트를 하면서 완벽하게 해내고 싶었지만, 생각처럼 되지 않았을 때 스스로에게 속상한 순간이 많았습니다. 그럴 때마다 팀원들의 격려와 도움이 큰 힘이 되었고 덕분에 다시 마음을 다잡고 끝까지 해낼 수 있었습니다. 혼자였다면 지쳤을지도 모를 순간들을 같이 했기에 버틸 수 있었고 그 과정은 저에게 가장 큰 성장으로 남았습니다. 앞으로도 함께 고민하고, 함께 만들어가는 개발자가 되고 싶습니다!</p>
             </div>
           </div>
         </div>
-        <!-- 다른 팀원 카드 반복 구성 가능 -->
-        <div class="min-w-[300px] h-[400px] bg-white rounded-2xl shadow-xl transition-transform duration-300 flex-shrink-0" data-aos="fade-up">
-          <img src="/src/assets/images/hojung.png" alt="Team Member 1" class="w-full h-48 object-cover border-b-4 border-pink-300" />
-          <div class="p-5 text-center">
-            <h3 class="text-xl font-semibold text-pink-500 mb-1">이호정</h3>
-            <p class="text-sm text-gray-600 mb-3 font-medium">Frontend Developer</p>
-            <div class="text-left text-sm text-gray-500 space-y-1 pl-4">
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">React 컴포넌트 개발</p>
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">UI/UX 디자인</p>
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">사용자 경험 최적화</p>
+        <!-- 도울 -->
+        <div class="flip-card w-[300px] h-[400px]" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front bg-white rounded-2xl shadow-xl overflow-hidden">
+              <img src="/src/assets/profile/doul_profile.png" alt="Team Member 1" class="w-full h-48 object-cover border-b-4 border-skyaccent" />
+              <div class="p-5 text-center">
+                <h3 class="text-xl font-semibold text-slate mb-1">이도울</h3>
+                <p class="text-sm text-mutedslate mb-3 font-medium">팀원</p>
+                <div class="whitespace-nowrap text-left text-sm text-gray-500 space-y-1">
+                  <p>Common, Feed, Community 제작</p>
+                  <p>노션 페이지 작성</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Back -->
+            <div class="flip-card-back bg-lightsky rounded-2xl shadow-xl flex flex-col justify-center items-center text-center px-6">
+              <h3 class="text-phrase-l font-bold text-slate mb-2">도울</h3>
+              <p class="text-mutedslate text-phrase-m">설렘과 걱정으로 시작한 첫 프로젝트, 나의 부족함에 어려움을 느끼기도 했지만 팀원들의 도움과 격려가 큰 힘이되었다. 몰란던 기술들을 찾아보고 되지않는 기능을 고민하며 몇 시간을 헤맸던 경험들은 쌓여 성장의 큰 발판이 될 것 같다.</p>
             </div>
           </div>
         </div>
-        <div class="min-w-[300px] h-[400px] bg-white rounded-2xl shadow-xl transition-transform duration-300 flex-shrink-0" data-aos="fade-up">
-          <img src="/src/assets/images/hojung.png" alt="Team Member 1" class="w-full h-48 object-cover border-b-4 border-pink-300" />
-          <div class="p-5 text-center">
-            <h3 class="text-xl font-semibold text-pink-500 mb-1">이호정</h3>
-            <p class="text-sm text-gray-600 mb-3 font-medium">Frontend Developer</p>
-            <div class="text-left text-sm text-gray-500 space-y-1 pl-4">
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">React 컴포넌트 개발</p>
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">UI/UX 디자인</p>
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">사용자 경험 최적화</p>
+        <!-- 우민 -->
+        <div class="flip-card w-[300px] h-[400px]" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front bg-white rounded-2xl shadow-xl overflow-hidden">
+              <img src="/src/assets/profile/woomin-profile.jpg" alt="Team Member 1" class="w-full h-48 object-cover border-b-4 border-skyaccent" />
+              <div class="p-5 text-center">
+                <h3 class="text-xl font-semibold text-slate mb-1">이우민</h3>
+                <p class="text-sm text-mutedslate mb-3 font-medium">팀원</p>
+                <div class="text-left text-sm text-gray-500 space-y-1 whitespace-nowrap">
+                  <p>Map, Coupon, Review, Order 제작</p>
+                  <p>index 페이지 디자인</p>
+                  <p>코드 전체 피드백</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Back -->
+            <div class="flip-card-back bg-lightsky rounded-2xl shadow-xl flex flex-col justify-center items-center text-center px-6">
+              <h3 class="text-phrase-l font-bold text-slate mb-2">우민</h3>
+              <p class="text-mutedslate text-phrase-m">프로젝트 시작전에 혹여 누가 되지 않을까 걱정했었는데 좋은 팀원분들을 만나 도움을 받으며 성장할 수 있었고 다양한 시도를 해볼 수 있어 좋았습니다!</p>
             </div>
           </div>
         </div>
-        <div class="min-w-[300px] h-[400px] bg-white rounded-2xl shadow-xl transition-transform duration-300 flex-shrink-0" data-aos="fade-up">
-          <img src="/src/assets/images/hojung.png" alt="Team Member 1" class="w-full h-48 object-cover border-b-4 border-pink-300" />
-          <div class="p-5 text-center">
-            <h3 class="text-xl font-semibold text-pink-500 mb-1">이호정</h3>
-            <p class="text-sm text-gray-600 mb-3 font-medium">Frontend Developer</p>
-            <div class="text-left text-sm text-gray-500 space-y-1 pl-4">
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">React 컴포넌트 개발</p>
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">UI/UX 디자인</p>
-              <p class="relative before:content-['•'] before:absolute before:left-0 before:text-pink-300 before:mr-1">사용자 경험 최적화</p>
+        <!-- 한솔 -->
+        <div class="flip-card w-[300px] h-[400px]" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner">
+            <!-- Front -->
+            <div class="flip-card-front bg-white rounded-2xl shadow-xl overflow-hidden">
+              <img src="/src/assets/profile/hansol_profile.png" alt="Team Member 1" class="w-full h-48 object-cover border-b-4 border-skyaccent" />
+              <div class="p-5 text-center">
+                <h3 class="text-xl font-semibold text-slate mb-1">조한솔</h3>
+                <p class="text-sm text-mutedslate mb-3 font-medium">팀원</p>
+                <div class="whitespace-nowrap text-left text-sm text-gray-500 space-y-1">
+                  <p>Login, Setting, Follow, Blossom 제작</p>
+                  <p>ReadMe.md 작성</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Back -->
+            <div class="flip-card-back bg-lightsky rounded-2xl shadow-xl flex flex-col justify-center items-center text-center px-6">
+              <h3 class="text-phrase-l font-bold text-slate mb-2">한솔</h3>
+              <p class="text-mutedslate text-phrase-m">이번 프로젝트를 진행하면서 처음 다른 팀원들과 협업도 해보았고 대학교에서의 팀플이랑은 많이 다르다고 느꼈습니다. 진짜 개발공부를 하는 것 같았으며 내가 모르는 부분을 다른 팀원들이 해결해주시고 순조롭게 잘 흘러가서 성공적으로 첫번째 프로젝트를 마무리한 것 같습니다. 결과물도 생각보다 만족스럽게 잘 나왔으며 이대로만 가면 2번째, 3번째 프로젝트도 걱정없을 것 같습니다!</p>
             </div>
           </div>
         </div>
@@ -306,7 +353,7 @@
     <!-- 기술 스택 -->
     <section id="tech-stack" class="py-20 bg-gradient-to-b from-[#fff] to-[#e5f0ff]">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-16" data-aos="fade-up">기술 스택</h2>
+        <h2 class="text-3xl font-bold text-center text-[#1E293B] mb-16" data-aos="fade-up">기술 스택</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-center" data-aos="fade-up">
           <div class="bg-white p-4 rounded-xl shadow text-center space-y-2">
             <img src="/images/html5.svg" alt="HTML5" class="w-12 h-12 mx-auto" />
