@@ -131,14 +131,14 @@ gsap.to('.mangom-container', {
   },
 });
 
-// 망곰이 통통 튀는 효과
-gsap.to('.mangom-container', {
-  y: '+=10',
-  duration: 0.5,
-  yoyo: true,
-  repeat: -1,
-  ease: 'power1.inOut',
-});
+// // 망곰이 통통 튀는 효과
+// gsap.to('.mangom-container', {
+//   y: '+=10',
+//   duration: 0.5,
+//   yoyo: true,
+//   repeat: -1,
+//   ease: 'power1.inOut',
+// });
 
 // 말풍선 살짝 흔들리는 효과
 gsap.to('.speech-bubble', {
