@@ -2,7 +2,7 @@
   🌸 8OllOW ME - RE:8LACE
 </h1>
 
-<h3 align = "center">
+<p align = "center">
 
 > 우리는 모두 자신만의 공간에서 시작합니다.
 > 익숙한 장소, 나만의 이야기, 그리고 기억이 쌓여 있는 공간이죠.
@@ -23,7 +23,7 @@
 > 서로의 경험이 이어지고, 이야기가 흐르는 구조 속에서
 > 감성과 인터랙션 중심의 사용자 경험을 제공하고자 했습니다.
 
-</h3>
+</p>
 <h2 align= "center">
      👥 팀 소개
 </h2>
@@ -180,10 +180,12 @@
     </tr>
     </table>
   </div>
-
-## 🖼️ 미리보기
-
-  <div aligin="center">
+<h2 align="center">
+  
+   🖼️ 미리보기
+  
+</h2>
+  <div align="center">
     <img src="./public/images/phone/phone_map.png" width="160"style="margin:10px;"/>
     <img src="./public/images/phone/phone_reserve.png" width="160" style="margin: 10px;"/>
     <img src="./public/images/phone/phone_review.png" width="160" style="margin: 10px;"/>
@@ -193,22 +195,22 @@
  <h2 align= "center">
    🔄 프로젝트 플로우차트
  </h2>
-
-> 프로젝트 진행 순서를 시각적으로 정리한 다이어그램입니다.
-
+<p align= "center">
+  프로젝트 진행 순서를 시각적으로 정리한 다이어그램입니다.
+</p>
   <img src="./public/images/flow-chart.png" alt="프로젝트 플로우차트" width="100%"/>
   
  <h2 align= "center">
      💭 프로젝트 소감
  </h2>
 <div align="center">
-  <table>
+  <table align="center">
     <tr>
       <th>팀원</th>
       <th>소감</th>
     </tr>
     <tr>
-      <td align="center">👤 호정</td>
+      <td align="center"  width="60">👤 호정</td>
       <td>프로젝트를 하면서 완벽하게 해내고 싶었지만, 생각처럼 되지 않았을 때 스스로에게 속상한 순간이 많았습니다. 그럴 때마다 팀원들의 격려와 도움이 큰 힘이 되었고 덕분에 다시 마음을 다잡고 끝까지 해낼 수 있었습니다. 혼자였다면 지쳤을지도 모를 순간들을 같이 했기에 버틸 수 있었고 그 과정은 저에게 가장 큰 성장으로 남았습니다. 앞으로도 함께 고민하고, 함께 만들어가는 개발자가 되고 싶습니다!</td>
     </tr>
     <tr>
