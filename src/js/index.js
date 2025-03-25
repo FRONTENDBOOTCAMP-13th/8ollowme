@@ -120,14 +120,14 @@ gsap.to('.title-follow', {
 
 // 스크롤 기반 망곰이 하강 애니메이션
 gsap.to('.mangom-container', {
-  y: '70vh',
+  y: '50vh',
   ease: 'none',
   scrollTrigger: {
     trigger: 'body',
     start: 'top top',
     end: 'bottom bottom',
     scrub: 1,
-    markers: true,
+    markers: false,
   },
 });
 
@@ -165,5 +165,18 @@ ScrollTrigger.create({
     } else {
       speechBubble.textContent = '거의 다 왔어!';
     }
+  },
+});
+
+gsap.to('.hero', {
+  scale: 0.5,
+  y: window.innerHeight * 0.25,
+  borderRadius: '20px', // 점점 둥글어짐
+  ease: 'power1.out',
+  scrollTrigger: {
+    trigger: '.video-section',
+    scrub: 1,
+    start: 'top top',
+    end: 'bottom',
   },
 });
