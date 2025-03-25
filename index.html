@@ -219,7 +219,8 @@
         <div class="flex flex-col md:flex-row items-center justify-between gap-10 mb-24">
           <div class="md:w-1/2 text-center md:text-left feature-text">
             <h3 class="text-2xl font-bold text-pink-500 mb-4">실시간 위치 기반 서비스</h3>
-            <p class="text-gray-600 leading-relaxed">정확한 GPS 추적으로 현재 위치를 중심으로 주변의 관심 장소들을 확인할 수 있습니다.</p>
+            <!-- <p class="text-gray-600 leading-relaxed">정확한 GPS 추적으로 현재 위치를 중심으로 주변의 관심 장소들을 확인할 수 있습니다.</p> -->
+            <p class="text-gray-600 leading-relaxed">내 주변 인기 매장을 한눈에! 실시간 위치 기반으로 트렌디한 핫플레이스를 추천받고, 특별한 순간을 기록하세요.</p>
           </div>
           <div class="md:w-1/2 max-w-sm mx-auto mockup-right">
             <img src="/src/assets/images/mockups-reserve.png" alt="지도 화면" class="rounded-[40px] shadow-2xl w-full" />
@@ -229,7 +230,8 @@
         <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-10 mb-24">
           <div class="md:w-1/2 text-center md:text-left feature-text">
             <h3 class="text-2xl font-bold text-pink-500 mb-4">맞춤형 장소 추천</h3>
-            <p class="text-gray-600 leading-relaxed">사용자의 취향과 방문 기록을 분석하여 새로운 장소를 추천해드립니다.</p>
+            <!-- <p class="text-gray-600 leading-relaxed">사용자의 취향과 방문 기록을 분석하여 새로운 장소를 추천해드립니다.</p> -->
+            <p class="text-gray-600 leading-relaxed">나만의 개성 있는 지도 만들기! 좋아하는 매장을 리스트업하고 태그를 추가해, 내가 원하는 스타일로 지도를 꾸며보세요.</p>
           </div>
           <div class="md:w-1/2 max-w-sm mx-auto mockup-left">
             <img src="/src/assets/images/mockups-spots.png" alt="추천 화면" class="rounded-[40px] shadow-2xl w-full" />
@@ -239,10 +241,22 @@
         <div class="flex flex-col md:flex-row items-center justify-between gap-10">
           <div class="md:w-1/2 text-center md:text-left feature-text">
             <h3 class="text-2xl font-bold text-pink-500 mb-4">추억 공유 기능</h3>
-            <p class="text-gray-600 leading-relaxed">방문한 장소의 사진과 리뷰를 친구들과 공유하고 소통할 수 있습니다.</p>
+            <!-- <p class="text-gray-600 leading-relaxed">방문한 장소의 사진과 리뷰를 친구들과 공유하고 소통할 수 있습니다.</p> -->
+            <p class="text-gray-600 leading-relaxed">소중한 순간을 한곳에 보관하세요. 방문했던 장소의 후기와 사진을 남기고, 나만의 스토리를 지도로 정리해보세요.</p>
           </div>
           <div class="md:w-1/2 max-w-sm mx-auto mockup-right">
             <img src="/src/assets/images/mockups-reserve.png" alt="공유 화면" class="rounded-[40px] shadow-2xl w-full" />
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-10 mb-24">
+          <div class="md:w-1/2 text-center md:text-left feature-text">
+            <h3 class="text-2xl font-bold text-pink-500 mb-4">맞춤형 장소 추천</h3>
+            <!-- <p class="text-gray-600 leading-relaxed">사용자의 취향과 방문 기록을 분석하여 새로운 장소를 추천해드립니다.</p> -->
+            <p class="text-gray-600 leading-relaxed">동네 사람들이 모이는 커뮤니티! 친구들과 맛집, 카페, 핫플 정보를 공유하고, 지역 기반으로 소통하세요.</p>
+          </div>
+          <div class="md:w-1/2 max-w-sm mx-auto mockup-left">
+            <img src="/src/assets/images/mockups-community.png" alt="추천 화면" class="rounded-[40px] shadow-2xl w-full" />
           </div>
         </div>
       </div>
@@ -357,20 +371,135 @@
     <section class="py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4 md:px-0">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">컴포넌트 바로가기</h2>
-        <div class="bg-white rounded-xl shadow-lg mb-6 overflow-hidden accordion-item" data-aos="fade-up">
-          <div class="flex items-center justify-between p-6 cursor-pointer hover:bg-pink-50 transition accordion-header">
-            <div class="flex items-center gap-4">
-              <span class="text-pink-400 font-semibold text-lg">01</span>
-              <h3 class="text-lg font-medium text-gray-800">Navigation Components</h3>
+        <!-- 리스트 -->
+        <ul>
+          <!-- 01 -->
+          <li class="bg-white rounded-xl shadow-lg mb-6 overflow-hidden accordion-item" data-aos="fade-up">
+            <div class="flex items-center justify-between p-6 cursor-pointer hover:bg-pink-50 transition accordion-header">
+              <div class="flex items-center gap-4">
+                <span class="text-pink-400 font-semibold text-lg">01</span>
+                <h3 class="text-lg font-medium text-gray-800">Auth & User</h3>
+              </div>
+              <span class="text-xl text-pink-400">+</span>
             </div>
-            <span class="text-xl text-pink-400">+</span>
-          </div>
-          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out accordion-content">
-            <a href="/components/bottom-nav.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition"> <span class="text-sm text-pink-400 w-6">01</span> <span class="flex-1">Bottom Navigation</span> <span>→</span> </a>
-            <a href="/components/top-header.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition"> <span class="text-sm text-pink-400 w-6">02</span> <span class="flex-1">Top Header</span> <span>→</span> </a>
-            <a href="/components/side-menu.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition"> <span class="text-sm text-pink-400 w-6">03</span> <span class="flex-1">Side Menu</span> <span>→</span> </a>
-          </div>
-        </div>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out accordion-content">
+              <a href="src/components/login/login.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">01</span>
+                <span class="flex-1">Login</span>
+                <span class="text-gray-400">로그인 환경 텍스트 바, 버튼</span>
+                <span>→</span>
+              </a>
+              <a href="src/components/setting/setting.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">02</span>
+                <span class="flex-1">Setting</span>
+                <span class="text-gray-400">관심 지역 검색 및 선택</span>
+                <span>→</span>
+              </a>
+              <a href="src/components/" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">03</span>
+                <span class="flex-1">Follow</span>
+                <span class="text-gray-400">관심 지역 리뷰어 추천</span>
+                <span>→</span>
+              </a>
+            </div>
+          </li>
+          <!-- 02 -->
+          <li class="bg-white rounded-xl shadow-lg mb-6 overflow-hidden accordion-item" data-aos="fade-up">
+            <div class="flex items-center justify-between p-6 cursor-pointer hover:bg-pink-50 transition accordion-header">
+              <div class="flex items-center gap-4">
+                <span class="text-pink-400 font-semibold text-lg">02</span>
+                <h3 class="text-lg font-medium text-gray-800">Feed & Social</h3>
+              </div>
+              <span class="text-xl text-pink-400">+</span>
+            </div>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out accordion-content">
+              <a href="/src/components/feed/feed.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">01</span>
+                <span class="flex-1">Feed</span>
+                <span class="text-gray-400">블로그 리뷰 및 매장 정보</span>
+                <span>→</span>
+              </a>
+              <a href="/src/components/community/community.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">02</span>
+                <span class="flex-1">Community</span>
+                <span class="text-gray-400">주변 모임 및 커뮤니티</span>
+                <span>→</span>
+              </a>
+            </div>
+          </li>
+          <!-- 03 -->
+          <li class="bg-white rounded-xl shadow-lg mb-6 overflow-hidden accordion-item" data-aos="fade-up">
+            <div class="flex items-center justify-between p-6 cursor-pointer hover:bg-pink-50 transition accordion-header">
+              <div class="flex items-center gap-4">
+                <span class="text-pink-400 font-semibold text-lg">03</span>
+                <h3 class="text-lg font-medium text-gray-800">Visit & Review</h3>
+              </div>
+              <span class="text-xl text-pink-400">+</span>
+            </div>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out accordion-content">
+              <a href="src/components/visit/visit.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">01</span>
+                <span class="flex-1">Visit</span>
+                <span class="text-gray-400">간단한 방문평 및 리뷰</span>
+                <span>→</span>
+              </a>
+              <a href="src/components/review/review.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">02</span>
+                <span class="flex-1">Review</span>
+                <span class="text-gray-400">디테일한 방문평 및 리뷰</span>
+                <span>→</span>
+              </a>
+            </div>
+          </li>
+          <!-- 04 -->
+          <li class="bg-white rounded-xl shadow-lg mb-6 overflow-hidden accordion-item" data-aos="fade-up">
+            <div class="flex items-center justify-between p-6 cursor-pointer hover:bg-pink-50 transition accordion-header">
+              <div class="flex items-center gap-4">
+                <span class="text-pink-400 font-semibold text-lg">04</span>
+                <h3 class="text-lg font-medium text-gray-800">Commerce & Reservation</h3>
+              </div>
+              <span class="text-xl text-pink-400">+</span>
+            </div>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out accordion-content">
+              <a href="src/components/reserve/reserve.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">01</span>
+                <span class="flex-1">Reserve</span>
+                <span class="text-gray-400">예약 내역</span>
+                <span>→</span>
+              </a>
+              <a href="src/components/order/order.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">02</span>
+                <span class="flex-1">Order</span>
+                <span class="text-gray-400">예약 & 주문하기</span>
+                <span>→</span>
+              </a>
+              <a href="src/components/coupon/coupon.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">03</span>
+                <span class="flex-1">Coupon</span>
+                <span class="text-gray-400">쿠폰</span>
+                <span>→</span>
+              </a>
+            </div>
+          </li>
+          <!-- 05 -->
+          <li class="bg-white rounded-xl shadow-lg mb-6 overflow-hidden accordion-item" data-aos="fade-up">
+            <div class="flex items-center justify-between p-6 cursor-pointer hover:bg-pink-50 transition accordion-header">
+              <div class="flex items-center gap-4">
+                <span class="text-pink-400 font-semibold text-lg">05</span>
+                <h3 class="text-lg font-medium text-gray-800">Common & Utilities</h3>
+              </div>
+              <span class="text-xl text-pink-400">+</span>
+            </div>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out accordion-content">
+              <a href="src/components/common/common.html" class="flex items-center gap-2 px-6 py-3 text-gray-700 hover:text-pink-500 hover:translate-x-2 transition">
+                <span class="text-sm text-pink-400 w-6">01</span>
+                <span class="flex-1">common</span>
+                <span class="text-gray-400">상단바, 하단바, 프로필, 선택바, 카드</span>
+                <span>→</span>
+              </a>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
