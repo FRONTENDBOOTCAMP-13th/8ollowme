@@ -70,6 +70,13 @@
   --color-black: #000;
   --color-red: #ff0000;
 
+  --color-softsky: #f0f9ff;
+  --color-lightsky: #e0f2fe;
+  --color-skyaccent: #38bdf8;
+  --color-slate: #1e293b;
+  --color-mutedslate: #64748b;
+  --color-skystrong: #0ea5e9;
+
   --color-primary: #171f31;
   --color-lightblue-300: #aac4fa;
   --color-lightblue-400: #8db0f9;
@@ -93,6 +100,18 @@
   --star: url(./assets/icons/star.svg);
   --star-pink: url(./assets/icons/star-pink.svg);
   --hojeong-profile: url(./assets/images/hojung.png);
+
+  --animate-fadeIn: fadeIn 0.8s ease forwards;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 /* 리뷰 페이지 */
