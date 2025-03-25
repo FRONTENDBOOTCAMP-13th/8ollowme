@@ -48,6 +48,13 @@
   --color-text-default: #5c3d2e;
   --color-hover-color: #f29caa;
 
+  --color-softsky: #f0f9ff;
+  --color-lightsky: #e0f2fe;
+  --color-skyaccent: #38bdf8;
+  --color-slate: #1e293b;
+  --color-mutedslate: #64748b;
+  --color-skystrong: #0ea5e9;
+
   --color-gray-50: #f9f9f9;
   --color-gray-100: #f8f9fa;
   --color-gray-200: #e9ecef;
@@ -62,6 +69,19 @@
   --color-white: #fff;
   --color-black: #000;
   --color-red: #ff0000;
+  --color-softsky: #f0f9ff;
+  --color-lightsky: #e0f2fe;
+  --color-skyaccent: #38bdf8;
+  --color-slate: #1e293b;
+  --color-mutedslate: #64748b;
+  --color-skystrong: #0ea5e9;
+
+  --color-softsky: #f0f9ff;
+  --color-lightsky: #e0f2fe;
+  --color-skyaccent: #38bdf8;
+  --color-slate: #1e293b;
+  --color-mutedslate: #64748b;
+  --color-skystrong: #0ea5e9;
 
   --color-primary: #171f31;
   --color-lightblue-300: #aac4fa;
@@ -86,6 +106,18 @@
   --star: url(./assets/icons/star.svg);
   --star-pink: url(./assets/icons/star-pink.svg);
   --hojeong-profile: url(./assets/images/hojung.png);
+
+  --animate-fadeIn: fadeIn 0.8s ease forwards;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 /* 리뷰 페이지 */
@@ -268,5 +300,75 @@
   &.show {
     @apply fixed;
     top: 30px;
+  }
+}
+
+@layer components {
+  .hero {
+    @apply relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 0%, rgba(224, 242, 254, 0.8), transparent 70%);
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 10%, rgba(224, 242, 254, 1), transparent 70%);
+  }
+}
+
+@layer utilities {
+  @keyframes animate {
+    0% {
+      left: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      left: 100%;
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-line {
+    animation: animate 5s infinite linear;
+  }
+}
+
+@layer components {
+  .flip-card {
+    @apply perspective-[1000px] cursor-pointer;
+  }
+
+  .flip-card-inner {
+    @apply relative w-full h-full transition-transform duration-700;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card.is-flipped .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    @apply absolute w-full h-full;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(-180deg);
   }
 }

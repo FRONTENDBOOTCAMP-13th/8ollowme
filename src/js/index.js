@@ -120,25 +120,25 @@ gsap.to('.title-follow', {
 
 // 스크롤 기반 망곰이 하강 애니메이션
 gsap.to('.mangom-container', {
-  y: '70vh',
+  y: 70,
   ease: 'none',
   scrollTrigger: {
     trigger: 'body',
     start: 'top top',
     end: 'bottom bottom',
     scrub: 1,
-    markers: true,
+    markers: false,
   },
 });
 
-// 망곰이 통통 튀는 효과
-gsap.to('.mangom-container', {
-  y: '+=10',
-  duration: 0.5,
-  yoyo: true,
-  repeat: -1,
-  ease: 'power1.inOut',
-});
+// // 망곰이 통통 튀는 효과
+// gsap.to('.mangom-container', {
+//   y: '+=10',
+//   duration: 0.5,
+//   yoyo: true,
+//   repeat: -1,
+//   ease: 'power1.inOut',
+// });
 
 // 말풍선 살짝 흔들리는 효과
 gsap.to('.speech-bubble', {
@@ -149,7 +149,9 @@ gsap.to('.speech-bubble', {
   ease: 'none',
 });
 
-// 스크롤 위치에 따라 말풍선 텍스트 변경
+// 스크롤 위치에 따라 망곰이 말풍선 텍스트 변경
+gsap.registerPlugin(ScrollTrigger);
+let shown = false;
 ScrollTrigger.create({
   trigger: 'body',
   start: 'top top',
@@ -157,13 +159,79 @@ ScrollTrigger.create({
   onUpdate: (self) => {
     const progress = self.progress;
     const speechBubble = document.querySelector('.speech-bubble');
+    const link = document.getElementById('re8laceLink');
 
     if (progress < 0.3) {
-      speechBubble.textContent = '날 따라와라!';
+      speechBubble.textContent = '나를 따라와!💛';
+      shown = false;
+      gsap.to(link, { opacity: 0, duration: 0.3, ease: 'power2.in' });
     } else if (progress < 0.6) {
-      speechBubble.textContent = '이렇게 내려가면 돼!';
-    } else {
+      speechBubble.textContent = '잘 따라오고 있지?';
+      shown = false;
+      gsap.to(link, { opacity: 0, duration: 0.3, ease: 'power2.in' });
+    } else if (progress < 0.9) {
       speechBubble.textContent = '거의 다 왔어!';
+      shown = false;
+      gsap.to(link, { opacity: 0, duration: 0.3, ease: 'power2.in' });
+    } else {
+      speechBubble.textContent = '이제 떠나볼까?✨';
+
+      if (!shown) {
+        shown = true;
+        gsap.to(link, {
+          opacity: 1,
+          duration: 1,
+          ease: 'power2.out',
+        });
+      }
     }
   },
+});
+
+gsap.to('.hero', {
+  scale: 0.5,
+  y: window.innerHeight * 0.25,
+  borderRadius: '20px', // 점점 둥글어짐
+  ease: 'power1.out',
+  scrollTrigger: {
+    trigger: '.video-section',
+    scrub: 1,
+    start: 'top top',
+    end: 'bottom',
+  },
+});
+// 프로젝트 소개 이미지 모달
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+
+  window.openImageModal = function (src) {
+    modalImage.src = src;
+    modal.classList.remove('hidden');
+  };
+
+  window.closeImageModal = function () {
+    modal.classList.add('hidden');
+  };
+});
+
+// 타임라인 토글 스크립트
+document.querySelectorAll('.timeline-toggle').forEach((button) => {
+  button.addEventListener('click', () => {
+    const step = button.getAttribute('data-toggle');
+    const content = document.getElementById(`content-${step}`);
+    const icon = document.getElementById(`icon-${step}`);
+
+    const isOpen = !content.classList.contains('hidden');
+
+    // 모두 닫기
+    document.querySelectorAll("[id^='content-']").forEach((el) => el.classList.add('hidden'));
+    document.querySelectorAll("[id^='icon-']").forEach((el) => el.classList.remove('rotate-180'));
+
+    // 클릭한 것만 열기
+    if (!isOpen) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    }
+  });
 });
