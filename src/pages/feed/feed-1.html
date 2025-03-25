@@ -29,8 +29,8 @@
             fill="currentColor" />
         </svg>
       </div>
-      <!-- status -->
-      <div class="bg-primary-color p-space-5 pt-space-3 font-sans">
+      <!--          section: profile          -->
+      <div class="bg-primary-color p-space-5 pt-space-3 w-full">
         <div class="flex">
           <a href="/src/pages/coupon/coupon.html" type="button" class="block box-border border-2 rounded-md px-space-1 text-phrase-s relative text-white ml-auto">
             쿠폰
@@ -66,16 +66,15 @@
             </table>
           </div>
         </div>
-
-        <div class="mt-space-2 flex gap-space-1 font-bold">
-          <button class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white text-label-s grow-1 hover:bg-hover-color">
+        <div class="mt-space-2 flex gap-space-1">
+          <button class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white grow-1 cursor-pointer hover:bg-hover-color">
             <svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 9L6 15H3V12L9 6L11.1518 3.84825L11.1525 3.8475C11.4487 3.55125 11.5972 3.40275 11.7682 3.34725C11.9189 3.29831 12.0811 3.29831 12.2318 3.34725C12.4028 3.40275 12.5505 3.55125 12.8467 3.84675L14.1517 5.15175C14.4487 5.44875 14.5973 5.59725 14.6528 5.76825C14.7017 5.91888 14.7017 6.08113 14.6528 6.23175C14.5973 6.40275 14.4487 6.55125 14.1517 6.84825L12 9.00075L9 6.00075" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <span>리뷰쓰기</span>
+            <span>피드작성</span>
           </button>
           <!-- 리뷰 버튼 -->
-          <button class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white text-label-s grow-1 hover:bg-hover-color">
+          <button class="inline-block bg-secondary-color rounded-lg px-space-4 py-space-1 text-white grow-1 cursor-pointer hover:bg-hover-color">
             <svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11.25 7.49991L8.25001 10.4999L6.75001 8.99991M9.93451 2.59416L10.8503 3.37416C11.0813 3.57066 11.3678 3.68916 11.6693 3.71391L12.8693 3.80991C13.2103 3.83714 13.5306 3.98494 13.7726 4.22682C14.0146 4.4687 14.1626 4.78885 14.19 5.12991L14.2853 6.32991C14.31 6.63216 14.4293 6.91941 14.6258 7.14966L15.4058 8.06466C15.6281 8.32528 15.7502 8.65661 15.7502 8.99916C15.7502 9.34171 15.6281 9.67304 15.4058 9.93366L14.6258 10.8494C14.4293 11.0804 14.31 11.3669 14.286 11.6692L14.19 12.8692C14.1628 13.2102 14.015 13.5305 13.7731 13.7725C13.5312 14.0145 13.2111 14.1625 12.87 14.1899L11.67 14.2859C11.3679 14.3098 11.081 14.4285 10.8503 14.6249L9.93451 15.4049C9.67383 15.6271 9.34252 15.7491 9.00001 15.7491C8.6575 15.7491 8.3262 15.6271 8.06551 15.4049L7.15051 14.6249C6.91954 14.4283 6.63239 14.3097 6.33001 14.2859L5.13001 14.1899C4.78883 14.1625 4.46859 14.0144 4.22669 13.7722C3.9848 13.53 3.83708 13.2096 3.81001 12.8684L3.71401 11.6692C3.68972 11.3672 3.57084 11.0806 3.37426 10.8502L2.59426 9.93366C2.37236 9.67315 2.25049 9.34212 2.25049 8.99991C2.25049 8.6577 2.37236 8.32667 2.59426 8.06616L3.37426 7.14966C3.57151 6.91866 3.68926 6.63216 3.71326 6.32991L3.80926 5.13066C3.83686 4.78933 3.98508 4.46898 4.22736 4.22698C4.46964 3.98497 4.79016 3.83712 5.13151 3.80991L6.33001 3.71466C6.63221 3.69053 6.91909 3.57163 7.14976 3.37491L8.06551 2.59491C8.3262 2.37275 8.6575 2.25073 9.00001 2.25073C9.34252 2.25073 9.67383 2.372 9.93451 2.59416Z"
@@ -98,7 +97,7 @@
       </div>
       <!-- place select -->
       <div class="relative">
-        <div class="bg-tertiary-color w-full overflow-x-auto h-space-13 py-space-2 flex gap-space-1 text-text-default">
+        <div class="bg-tertiary-color w-full overflow-x-auto h-space-13 py-space-2 flex gap-space-1 text-text-default scrollbar-hide">
           <button type="button" class="whitespace-nowrap px-space-3 py-space-2 text-label-s rounded-sm font-bold clickable-btn">전체</button>
           <button type="button" class="whitespace-nowrap px-space-3 py-space-2 text-label-s rounded-sm font-bold clickable-btn">팔로잉</button>
           <button type="button" class="whitespace-nowrap px-space-3 py-space-2 text-label-s rounded-sm font-bold clickable-btn">홍익대</button>
