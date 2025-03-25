@@ -48,6 +48,13 @@
   --color-text-default: #5c3d2e;
   --color-hover-color: #f29caa;
 
+  --color-softsky: #f0f9ff;
+  --color-lightsky: #e0f2fe;
+  --color-skyaccent: #38bdf8;
+  --color-slate: #1e293b;
+  --color-mutedslate: #64748b;
+  --color-skystrong: #0ea5e9;
+
   --color-gray-50: #f9f9f9;
   --color-gray-100: #f8f9fa;
   --color-gray-200: #e9ecef;
@@ -315,5 +322,30 @@
     bottom: 0;
     pointer-events: none;
     background: radial-gradient(circle at 50% 50%, rgba(255, 51, 102, 0.1), transparent 70%);
+  }
+}
+
+@layer components {
+  .flip-card {
+    @apply perspective-[1000px] cursor-pointer;
+  }
+
+  .flip-card-inner {
+    @apply relative w-full h-full transition-transform duration-700;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card.is-flipped .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    @apply absolute w-full h-full;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(-180deg);
   }
 }
