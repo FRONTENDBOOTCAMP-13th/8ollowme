@@ -200,6 +200,7 @@ gsap.to('.hero', {
     end: 'bottom',
   },
 });
+
 // 프로젝트 소개 이미지 모달
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('imageModal');
