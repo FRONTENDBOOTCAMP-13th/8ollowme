@@ -24,12 +24,14 @@
 
         <!-- 아이디 -->
         <div class="mb-space-10">
-          <input type="text" placeholder="아이디를 입력해주세요" class="text-text-default text-phrase-m w-full h-[43px] px-4 border border-text-default rounded-md bg-transparent focus:outline-none focus:ring-1" />
+          <label for="username" class="sr-only">아이디</label>
+          <input id="username" type="text" placeholder="아이디를 입력해주세요" class="text-text-default text-phrase-m w-full h-[43px] px-4 border border-text-default rounded-md bg-transparent focus:outline-none focus:ring-1" />
         </div>
 
         <!-- 비밀번호 -->
         <div class="mb-space-10">
-          <input type="password" placeholder="비밀번호를 입력해주세요" class="text-text-default text-phrase-m w-full h-[43px] px-4 border border-text-default rounded-md bg-transparent focus:outline-none focus:ring-1" />
+          <label for="password" class="sr-only">비밀번호</label>
+          <input id="password" type="password" placeholder="비밀번호를 입력해주세요" class="text-text-default text-phrase-m w-full h-[43px] px-4 border border-text-default rounded-md bg-transparent focus:outline-none focus:ring-1" />
         </div>
 
         <!-- 아이디/비번 찾기 -->
@@ -39,7 +41,7 @@
         </div>
 
         <!-- 로그인 버튼 -->
-        <a href="/src/pages/feed/feed-1.html" class="w-full h-[43px] flex items-center justify-center bg-secondary-color text-text-default rounded-md font-semibold hover:bg-hover-color transition mb-4"> 로그인 </a>
+        <button type="submit" class="w-full h-[43px] flex items-center justify-center bg-secondary-color text-text-default rounded-md font-semibold hover:bg-hover-color transition mb-4">로그인</button>
 
         <!-- 회원가입 버튼 -->
         <a href="/src/pages/login-page/login-3.html" class="mb-[40px] w-full h-[41px] bg-white border border-white text-text-default rounded-md font-semibold flex items-center justify-center hover:bg-hover-color hover:border-hover-color transition"> 회원가입 </a>
