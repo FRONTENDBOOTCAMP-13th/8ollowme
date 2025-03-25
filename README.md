@@ -3,6 +3,8 @@
 </h1>
 
 <p align = "center">
+  
+<p align="center"><a href="https://re8lace.netlify.app/">RE: 8LACE</a></p>
 
 > 우리는 모두 자신만의 공간에서 시작합니다.
 > 익숙한 장소, 나만의 이야기, 그리고 기억이 쌓여 있는 공간이죠.
