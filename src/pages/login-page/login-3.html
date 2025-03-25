@@ -22,19 +22,19 @@
         <!-- 회원가입 텍스트 -->
         <h2 class="text-white text-head-xl font-bold mb-space-4 self-start">회원가입</h2>
 
-        <label for="confirm" class="block text-black text-phrase-s mb-1">아이디</label>
-        <input type="text" placeholder="영문 3자 이상" class="text-phrase-m mb-space-4 w-full h-[43px] px-space-4 border border-text-default rounded-md bg-transparent text-black focus:outline-none focus:ring-1" />
+        <label for="username" class="block text-black text-phrase-s mb-1">아이디</label>
+        <input id="username" name="username" type="text" placeholder="영문 3자 이상" class="text-phrase-m mb-space-4 w-full h-[43px] px-space-4 border border-text-default rounded-md bg-transparent text-black focus:outline-none focus:ring-1" />
 
-        <label for="confirm" class="block text-black text-phrase-s mb-1">이메일</label>
-        <input type="email" placeholder="인증 가능한 이메일 주소" class="text-phrase-m mb-space-4 w-full h-[43px] px-space-4 border border-text-default rounded-md bg-transparent text-black focus:outline-none focus:ring-1" />
+        <label for="email" class="block text-black text-phrase-s mb-1">이메일</label>
+        <input id="email" name="email" type="email" placeholder="인증 가능한 이메일 주소" class="text-phrase-m mb-space-4 w-full h-[43px] px-space-4 border border-text-default rounded-md bg-transparent text-black focus:outline-none focus:ring-1" />
 
-        <label for="confirm" class="block text-black text-phrase-s mb-1">비밀번호</label>
-        <input type="password" placeholder="8문자 이상, 특수 문자 포함" class="text-phrase-m mb-space-4 w-full h-[43px] px-space-4 border border-text-default rounded-md bg-transparent text-black focus:outline-none focus:ring-1" />
+        <label for="password" class="block text-black text-phrase-s mb-1">비밀번호</label>
+        <input id="password" name="password" type="password" placeholder="8문자 이상, 특수 문자 포함" class="text-phrase-m mb-space-4 w-full h-[43px] px-space-4 border border-text-default rounded-md bg-transparent text-black focus:outline-none focus:ring-1" />
 
-        <label for="confirm" class="block text-black text-phrase-s mb-1">비밀번호 확인</label>
-        <input type="password" placeholder="8문자 이상, 특수 문자 포함" class="text-phrase-m mb-space-12 w-full h-[43px] px-space-4 border border-text-default rounded-md bg-transparent text-black focus:outline-none focus:ring-1" />
+        <label for="confirm-password" class="block text-black text-phrase-s mb-1">비밀번호 확인</label>
+        <input id="confirm-password" name="confirm-password" type="password" placeholder="8문자 이상, 특수 문자 포함" class="text-phrase-m mb-space-12 w-full h-[43px] px-space-4 border border-text-default rounded-md bg-transparent text-black focus:outline-none focus:ring-1" />
 
-        <a href="/src/pages/setting-page/setting-1.html" class="w-full h-[43px] flex items-center justify-center bg-secondary-color text-text-default rounded-md font-semibold hover:bg-hover-color transition mb-4"> 로그인 </a>
+        <button type="submit" class="w-full h-[43px] flex items-center justify-center bg-secondary-color text-text-default rounded-md font-semibold hover:bg-hover-color transition mb-4">회원가입</button>
       </form>
     </div>
   </body>
