@@ -131,14 +131,14 @@ gsap.to('.mangom-container', {
   },
 });
 
-// 망곰이 통통 튀는 효과
-gsap.to('.mangom-container', {
-  y: '+=10',
-  duration: 0.5,
-  yoyo: true,
-  repeat: -1,
-  ease: 'power1.inOut',
-});
+// // 망곰이 통통 튀는 효과
+// gsap.to('.mangom-container', {
+//   y: '+=10',
+//   duration: 0.5,
+//   yoyo: true,
+//   repeat: -1,
+//   ease: 'power1.inOut',
+// });
 
 // 말풍선 살짝 흔들리는 효과
 gsap.to('.speech-bubble', {
@@ -188,6 +188,18 @@ ScrollTrigger.create({
   },
 });
 
+gsap.to('.hero', {
+  scale: 0.5,
+  y: window.innerHeight * 0.25,
+  borderRadius: '20px', // 점점 둥글어짐
+  ease: 'power1.out',
+  scrollTrigger: {
+    trigger: '.video-section',
+    scrub: 1,
+    start: 'top top',
+    end: 'bottom',
+  },
+});
 // 프로젝트 소개 이미지 모달
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('imageModal');
